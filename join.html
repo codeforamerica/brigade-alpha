@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Join Us</title>
+</head>
+<body>
+<form accept-charset="UTF-8" action="http://brigade.codeforamerica.org/members" id="new_user" method="post" novalidate="novalidate">
+    <h2>
+        Join your Brigade. Sign up to get started.
+    </h2>
+		
+    <p>
+        <label for="user_full_name">Full name</label>
+        <input id="user_full_name" name="user[full_name]" size="50" type="text" value="Mike">
+    </p>
+    <p>
+        <label for="user_email">Email</label>
+        <input id="user_email" name="user[email]" size="50" type="text" value="mike@codeforamerica.org">
+    </p>
+    <p>
+        <select name="brigade_id">
+            <option value="32">Alaska Brigade</option>
+            <option value="75">Beta NYC</option>
+            <option value="45">Code for America Alumni</option>
+            <option value="55">Code for Boston</option>
+            <option value="91">Code for BTV</option>
+            <option value="93">Code for Cary</option>
+            <option value="43">Code for Chicago</option>
+            <option value="73">Code for DC</option>
+            <option value="79">Code for Detroit</option>
+            <option value="94">Code for Durham</option>
+            <option value="4">Code for Hampton Roads</option>
+            <option value="68">Code for Hawaii</option>
+            <option value="88">Code for Ireland</option>
+            <option value="89">Code for Japan</option>
+            <option value="83">Code for Kansas City</option>
+            <option value="99">Code for Las Vegas</option>
+            <option value="85">Code for Little Rock</option>
+            <option value="86">Code for Los Angeles</option>
+            <option value="63">Code for Maine</option>
+            <option value="69">Code for Miami</option>
+            <option value="48">Code for NoVA</option>
+            <option value="80">Code for Orlando</option>
+            <option value="102">Code for Pakistan</option>
+            <option value="24">Code for Philadelphia</option>
+            <option value="78">Code for Pittsburgh</option>
+            <option value="90">Code for Poland</option>
+            <option value="67">Code for Raleigh</option>
+            <option value="76">Code for Sacramento</option>
+            <option value="81">Code for San Francisco</option>
+            <option value="25">Code for Seattle</option>
+            <option value="82">Code for Summit County</option>
+            <option value="97">Code for Tampa</option>
+            <option value="95">Code for Tomorrow</option>
+            <option value="12">Code for Tulsa</option>
+            <option value="53">Code for Whitewater</option>
+            <option value="47">Colorado Code for Communities</option>
+            <option value="74">Friendly Code</option>
+            <option value="104">Guatemala Abierta</option>
+            <option value="33">Hacking Madison</option>
+            <option value="100">Hack Michiana</option>
+            <option value="96">Help A Hydrant</option>
+            <option value="35">OlyLab</option>
+            <option value="65">Open Asheville</option>
+            <option value="52">Open Austin</option>
+            <option value="44">Open Chattanooga</option>
+            <option value="70">Open Colorado</option>
+            <option value="84">Open Data Cincinnati</option>
+            <option value="98">Open Data STL</option>
+            <option value="66">Open for Houston</option>
+            <option value="27">Open Gov Chicago Hackers</option>
+            <option value="103">Open JC</option>
+            <option value="5">Open Lexington</option>
+            <option value="54">Open Oakland</option>
+            <option value="58">Open Salt Lake</option>
+            <option value="26">Open San Diego</option>
+            <option value="101">OpenSpokane</option>
+            <option value="40">Open Twin Cities</option>
+            <option value="64">Reno Brigade</option>
+            <option value="7">Syracuse Saves</option>
+        </select>
+    </p>
+
+    <p>
+        <input name="user[work_in_government]" type="hidden" value="0">
+    
+        <label for="user_work_in_government">
+            <input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
+            I work in government
+        </label>
+    </p>
+    
+    <!--<input id="user_location_id" name="user[location_id]" type="hidden" value="171">-->
+    <input id="user_human_check" name="user[human_check]" size="50" type="hidden">
+    <input name="authenticity_token" type="hidden" value="MwScDkF9qzLDzu0EA/kBRK6IWimTdH6sPNC0huj1df0=">
+    <input type="hidden" name="source" value="brigade">
+    <input name="utf8" type="hidden" value="✓">
+    <input name="commit" type="submit" value="Submit">
+</form>
+</body>
+</html>
