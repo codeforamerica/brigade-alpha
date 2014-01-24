@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Join Us</title>
+</head>
+<body>
+<form accept-charset="UTF-8" action="http://brigade.codeforamerica.org/members" class="simple_form form-inline" id="new_user" method="post" novalidate="novalidate">
+	<div style="margin:0;padding:0;display:inline">
+		<input name="utf8" type="hidden" value="✓">
+		<input name="authenticity_token" type="hidden" value="MwScDkF9qzLDzu0EA/kBRK6IWimTdH6sPNC0huj1df0=">
+	</div>
+	<input type="hidden" name="source" value="brigade">
+	<div class="row signup">
+		<div class="span3 offset2 signup-text">
+			<h2>
+				Join your Brigade. Sign up to get started.
+			</h2>
+		</div>
+		<div class="span3 offset1">
+			<div class="control-group string optional">
+				<div class="control-label">
+					<label class="string optional" for="user_full_name">Full name</label>
+				</div>
+				<div class="controls">
+					<input class="string optional span3" id="user_full_name" name="user[full_name]" size="50" type="text">
+				</div>
+			</div>
+			<div class="control-group email optional">
+				<div class="control-label">
+					<label class="email optional" for="user_email">Email</label>
+				</div>
+				<div class="controls">
+					<input class="string email optional span3" id="user_email" name="user[email]" size="50" type="text" value="">
+				</div>
+			</div>
+			<div class="control-group hidden">
+				<div class="controls">
+					<input class="hidden" id="user_location_id" name="user[location_id]" type="hidden" value="171">
+				</div>
+			</div>
+			<input type="hidden" name="brigade_id" value="90">
+			<input name="user[work_in_government]" type="hidden" value="0">
+			<label class="boolean optional checkbox checkbox" for="user_work_in_government">
+			<input class="boolean optional" id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
+			I work in government</label> 
+			<div class="control-group string optional">
+				<div class="controls">
+					<input class="string optional hidden" id="user_human_check" name="user[human_check]" size="50" type="text">
+				</div>
+			</div>
+			<input class="btn btn-primary pull-right" name="commit" type="submit" value="Submit">
+		</div>
+	</div>
+</form>
+</body>
+</html>
