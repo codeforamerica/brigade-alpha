@@ -31,7 +31,7 @@
                             <form action="https://docs.google.com/forms/d/1TCW5zN6UjfRK4qNmig7vLd6j8AxRZllyUnwTSATwRfw/formResponse" method="POST" id="attendance-form">
                                 <ul class="list-form">
                                     <li class="form-field">
-                                        <label>Name</label><input type="text" placeholder="Joe Bloggs" name="entry.1796082838" />
+                                        <label>Name</label><input type="text" placeholder="Joe Bloggs" id="name" name="entry.1796082838" />
                                     </li>
                                     <li class="form-field">
                                         <label>Email</labal><input type="text" placeholder="your@email.com" name="entry.1831969649" />
@@ -43,7 +43,7 @@
                                         <label>Brigade</label><input type="text" name="entry.795874750" Name="date" placeholder="San Francisco" />
                                     </li>
                                 </ul>
-                                <button class="button-prominent button-l">Submit</button>
+                                <button class="button-prominent button-l">Send</button>
                             </form>
                         </div>
                     </div>
@@ -470,7 +470,7 @@
         "name": "Syracuse Saves"
     }
     ];
-
+$(document).ready(function(){
     /* If the URL for this page has a query string such as ?brigade=04, it'll 
     automatically select the appropriate item from the drop down */
 
@@ -505,13 +505,31 @@
         }
 
     };
-    $("body").append("<iframe id='submission-iframe'></iframe>");
-    $("#attendance-form").submit(function(e){
-            var attendanceFormCopy = $("#attendance-form").clone();
-            $('#submission-iframe').contents().find('body').append(attendanceFormCopy);
-            $('#submission-iframe').contents().find('form').submit();
-            e.preventDefault();
+    
+
+    $("button").on("click", function(e){
+        $("body").append("<iframe id='submission-iframe'></iframe>");
+        populateiFrame();
+        $("input[type=text], textarea, button").attr("disabled", "disabled");
+        // need to replace this with something to check iframe sumbitted form
+        setTimeout(function(){
+        resetForm()},3000);
+        $('#submission-iframe').contents().find('form').submit();
+
+        return false;           
     });
+
+    function resetForm(){
+        $("#submission-iframe").remove();
+        $("input[type=text], textarea").val("");
+        $("input[type=text], textarea, button").removeAttr("disabled");
+        $("#name").focus();
+    }
+    function populateiFrame(){
+        var attendanceFormCopy = $("#attendance-form").clone();
+        $('#submission-iframe').contents().find('body').append(attendanceFormCopy);
+    }
+});
     </script>
     
 
