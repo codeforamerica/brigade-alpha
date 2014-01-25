@@ -1,0 +1,27 @@
+header, footer {
+	height:75px;
+	width: 100%;
+	background: #FFF;
+}
+
+#top, #bottom {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header p, footer p {
+	display: inline;
+}
+
+header img, footer img {
+	padding-left: 10px;
+	vertical-align:middle
+}
+
+#map {
+	width: 100%;
+}
+
+#signin-form {
+	display: none;
+}
