@@ -498,12 +498,16 @@ $(document).ready(function(){
 	brigades.sort(function(a, b) { return (a.display_name < b.display_name) ? -1 : 1 });
 
 	var i = brigades.length;
-	while(i--){
+	while(i--)
+	{
+	    var value = brigades[i].id + " - " + brigades[i].display_name,
+	        display = brigades[i].display_name;
+	
 		if(querystringContents["brigade"] == brigades[i].id){
-			var currentOption = brigadeSelect.prepend("<option name='"+brigades[i].id+"' selected='selected'>"+brigades[i].display_name+"</option>")
+			var currentOption = brigadeSelect.prepend("<option value='"+value+"' selected='selected'>"+display+"</option>")
 		}
 		else{
-			var currentOption = brigadeSelect.prepend("<option name='"+brigades[i].id+"'>"+brigades[i].display_name+"</option>");
+			var currentOption = brigadeSelect.prepend("<option value='"+value+"'>"+display+"</option>");
 		}
 
     };
