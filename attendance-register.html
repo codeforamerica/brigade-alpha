@@ -493,6 +493,7 @@ $(document).ready(function(){
             querystringContents.push(hash[1]);
             querystringContents[hash[0]] = hash[1];
         };
+
 	};
 	
 	brigades.sort(function(a, b) { return (a.display_name < b.display_name) ? -1 : 1 });
@@ -510,6 +511,7 @@ $(document).ready(function(){
 			var currentOption = brigadeSelect.prepend("<option value='"+value+"'>"+display+"</option>");
 		}
 
+
     };
     
 
@@ -517,7 +519,8 @@ $(document).ready(function(){
         $("body").append("<iframe id='submission-iframe'></iframe>");
         populateiFrame();
         $("input[type=text], textarea, button").attr("disabled", "disabled");
-        // need to replace this with something to check iframe sumbitted form
+        // TODO: need to replace this with something to check iframe sumbitted form
+        // TODO: Allow form to be re-completed while background form submits
         setTimeout(function(){
         resetForm()},3000);
         $('#submission-iframe').contents().find('form').submit();
