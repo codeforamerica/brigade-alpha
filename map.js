@@ -9,7 +9,7 @@ $(function(){
   map.zoomControl.setPosition('bottomright');
 
   var lat_lngs = [];
-  $.getJSON("data/brigades.json", function(data){
+  $.getJSON("http://brigade.codeforamerica.org/brigades.json", function(data){
   	for(d in data){
 		var brigade = data[d]
 		if(brigade.location){

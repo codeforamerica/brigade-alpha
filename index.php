@@ -36,7 +36,7 @@
     <div id="signin-form">
         <form accept-charset="UTF-8" action="http://brigade.codeforamerica.org/members" id="new_user" method="post" novalidate="novalidate">
     <h2>
-        Want to join?
+        Want to get connected?
     </h2>
         
     <p>
