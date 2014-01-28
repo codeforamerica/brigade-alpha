@@ -520,6 +520,7 @@ $(document).ready(function(){
 
     $("button").on("click", function(e){
         $("body").append("<iframe id='submission-iframe'></iframe>");
+        // TODO: Set event type the first time it's filled out (and make editable again)
         populateiFrame();
         $("input[type=text], textarea, button").attr("disabled", "disabled");
         // TODO: need to replace this with something to check iframe sumbitted form
@@ -538,6 +539,7 @@ $(document).ready(function(){
         $("#name").focus();
     }
     function populateiFrame(){
+        $("#attendance-form").find("select option:selected").attr("selected", "selected")
         var attendanceFormCopy = $("#attendance-form").clone();
         $('#submission-iframe').contents().find('body').append(attendanceFormCopy);
     }
