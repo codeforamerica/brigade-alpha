@@ -71,13 +71,12 @@
         $("#extras").click(function(evt){
             $("#story-bucket-form").toggle();
         })
-        $("#tell").click(function(evt){
-            evt.preventDefault()
-            $("#place").replaceWith($("#place").val()+", ");
-            $("#person").replaceWith($("#person").val());
-            $("#verb").replaceWith($("#verb option:selected").text());
-            $("#thing").replaceWith($("#thing").val());
-            $("#story-submit").val($("#story").text());
+        $("#tell").click(function(){
+            var story = "In " + $("#place").val() + ", ";
+            story += $("#person").val() + " ";
+            story += $("#verb option:selected").text() + " ";
+            story += $("#thing").val() + ".";
+            $("#story-submit").val(story);
             $("#story-bucket-form").submit();
         })
     </script>
