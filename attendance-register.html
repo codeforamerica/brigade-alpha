@@ -35,7 +35,7 @@
                                         <label>Name</label><input autofocus type="text" placeholder="Joe Bloggs" id="name" name="entry.1796082838" class="reset" />
                                     </li>
                                     <li class="form-field">
-                                        <label>Email</labal><input type="text" placeholder="your@email.com" name="entry.1831969649" class="reset" />
+                                        <label>Email</labal><input type="email" placeholder="your@email.com" name="entry.1831969649" class="reset" />
                                     </li>
                                     <li class="form-field">
                                         <input type="checkbox" value="Yes" name="entry.1702937256" checked="on" /><label>Join Brigade mailing list</label>
@@ -521,10 +521,10 @@ $(document).ready(function(){
     $("button").on("click", function(e){
         $("body").append("<iframe id='submission-iframe'></iframe>");
         populateiFrame();
-        $("input[type=text], textarea, button").attr("disabled", "disabled");
+        $("input[type=text], input[type=email], textarea, button").attr("disabled", "disabled");
         // TODO: need to replace this with something to check iframe sumbitted form
         $(".reset").val("");
-        $("input[type=text], textarea").removeAttr("disabled");
+        $("input[type=text], input[type=email], textarea").removeAttr("disabled");
         $("#name").focus();
         setTimeout(function(){
             $("#submission-iframe").remove();
