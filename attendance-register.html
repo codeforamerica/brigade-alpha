@@ -31,11 +31,11 @@
                             <p>Attendee register</p>
                             <form action="https://docs.google.com/forms/d/1TCW5zN6UjfRK4qNmig7vLd6j8AxRZllyUnwTSATwRfw/formResponse" method="POST" id="attendance-form">
                                 <ul class="list-form">
-                                    <li class="form-field">
-                                        <label>Name</label><input type="text" placeholder="Joe Bloggs" id="name" name="entry.1796082838" />
+                                    <li class="form-field"> 
+                                        <label>Name</label><input type="text" placeholder="Joe Bloggs" id="name" name="entry.1796082838" class="reset" />
                                     </li>
                                     <li class="form-field">
-                                        <label>Email</label><input type="text" placeholder="your@email.com" name="entry.1831969649" />
+                                        <label>Email</labal><input type="text" placeholder="your@email.com" name="entry.1831969649" class="reset" />
                                     </li>
                                     <li class="form-field">
                                         <input type="checkbox" value="Yes" name="entry.1702937256" checked="on" /><label>Join Brigade mailing list</label>
@@ -497,7 +497,6 @@ $(document).ready(function(){
             querystringContents.push(hash[1]);
             querystringContents[hash[0]] = hash[1];
         };
-
 	};
 	
 	brigades.sort(function(a, b) { return (a.display_name < b.display_name) ? -1 : 1 });
@@ -518,32 +517,31 @@ $(document).ready(function(){
 
     };
     
-
+    // this is just so we can submit the form in the background (to another domain)
     $("button").on("click", function(e){
         $("body").append("<iframe id='submission-iframe'></iframe>");
-        // TODO: Set event type the first time it's filled out (and make editable again)
         populateiFrame();
         $("input[type=text], textarea, button").attr("disabled", "disabled");
         // TODO: need to replace this with something to check iframe sumbitted form
-        // TODO: Allow form to be re-completed while background form submits
+        $(".reset").val("");
+        $("input[type=text], textarea").removeAttr("disabled");
+        $("#name").focus();
         setTimeout(function(){
-        resetForm()},3000);
-        $('#submission-iframe').contents().find('form').submit();
+            $("#submission-iframe").remove();
+            $("button").removeAttr("disabled");
+        },3000);
 
         return false;           
     });
 
-    function resetForm(){
-        $("#submission-iframe").remove();
-        $("input[type=text], textarea").val("");
-        $("input[type=text], textarea, button").removeAttr("disabled");
-        $("#name").focus();
-    }
     function populateiFrame(){
         $("#attendance-form").find("select option:selected").attr("selected", "selected")
         var attendanceFormCopy = $("#attendance-form").clone();
         $('#submission-iframe').contents().find('body').append(attendanceFormCopy);
+        $('#submission-iframe').contents().find('form').submit();
     }
+
+
 });
     </script>
     
