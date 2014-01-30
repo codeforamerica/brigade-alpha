@@ -56,424 +56,9 @@
         </main>
     </div><!-- /.js-container -->
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
 
 <script>
-    var brigades = [
-    {
-        "id": 32,
-        "lat": 61.2180556,
-        "lon": -149.9002778,
-        "display_name": "Alaska Brigade",
-        "name": "Alaska Brigade"
-    },
-    {
-        "id": 75,
-        "lat": 40.7143528,
-        "lon": -74.0059731,
-        "display_name": "New York City (Beta NYC)",
-        "name": "Beta NYC"
-    },
-    {
-        "id": 45,
-        "lat": null,
-        "lon": null,
-        "display_name": "Code for America Alumni",
-        "name": "Code for America Alumni"
-    },
-    {
-        "id": 55,
-        "lat": 42.3584308,
-        "lon": -71.0597732,
-        "display_name": "Boston (Code for Boston)",
-        "name": "Code for Boston"
-    },
-    {
-        "id": 91,
-        "lat": 44.4758825,
-        "lon": -73.212072,
-        "display_name": "Burlington (Code for BTV)",
-        "name": "Code for BTV"
-    },
-    {
-        "id": 93,
-        "lat": 35.79154,
-        "lon": -78.7811169,
-        "display_name": "Cary (Code for Cary)",
-        "name": "Code for Cary"
-    },
-    {
-        "id": 43,
-        "lat": 41.8781136,
-        "lon": -87.6297982,
-        "display_name": "Chicago (Code for Chicago)",
-        "name": "Code for Chicago"
-    },
-    {
-        "id": 73,
-        "lat": null,
-        "lon": null,
-        "display_name": "Washington DC (Code for DC)",
-        "name": "Code for DC"
-    },
-    {
-        "id": 79,
-        "lat": 42.331427,
-        "lon": -83.0457538,
-        "display_name": "Detroit (Code for Detroit)",
-        "name": "Code for Detroit"
-    },
-    {
-        "id": 94,
-        "lat": 35.9940329,
-        "lon": -78.898619,
-        "display_name": "Durham (Code for Durham)",
-        "name": "Code for Durham"
-    },
-    {
-        "id": 4,
-        "lat": 37.06397,
-        "lon": -76.411434,
-        "display_name": "Hampton Roads (Code for Hampton Roads)",
-        "name": "Code for Hampton Roads"
-    },
-    {
-        "id": 68,
-        "lat": 21.3069444,
-        "lon": -157.8583333,
-        "display_name": "Hawaii (Code for Hawaii)",
-        "name": "Code for Hawaii"
-    },
-    {
-        "id": 88,
-        "lat": 53.41291,
-        "lon": -8.24389,
-        "display_name": "Ireland (Code for Ireland)",
-        "name": "Code for Ireland"
-    },
-    {
-        "id": 89,
-        "lat": 36.204824,
-        "lon": 138.252924,
-        "display_name": "Japan (Code for Japan)",
-        "name": "Code for Japan"
-    },
-    {
-        "id": 83,
-        "lat": 38.8721061,
-        "lon": -94.6079577,
-        "display_name": "Kansas City (Code for Kansas City)",
-        "name": "Code for Kansas City"
-    },
-    {
-        "id": 99,
-        "lat": 36.255123,
-        "lon": -115.2383485,
-        "display_name": "Las Vegas (Code for Las Vegas)",
-        "name": "Code for Las Vegas"
-    },
-    {
-        "id": 85,
-        "lat": null,
-        "lon": null,
-        "display_name": "Little Rock (Code for Little Rock)",
-        "name": "Code for Little Rock"
-    },
-    {
-        "id": 86,
-        "lat": 34.0522342,
-        "lon": -118.2436849,
-        "display_name": "Los Angeles (Code for Los Angeles)",
-        "name": "Code for Los Angeles"
-    },
-    {
-        "id": 63,
-        "lat": 43.661471,
-        "lon": -70.2553259,
-        "display_name": "Maine (Code for Maine)",
-        "name": "Code for Maine"
-    },
-    {
-        "id": 69,
-        "lat": 25.7889689,
-        "lon": -80.2264393,
-        "display_name": "Miami (Code for Miami)",
-        "name": "Code for Miami"
-    },
-    {
-        "id": 48,
-        "lat": 38.8799697,
-        "lon": -77.1067698,
-        "display_name": "Northern Virginia (Code for NoVA)",
-        "name": "Code for NoVA"
-    },
-    {
-        "id": 80,
-        "lat": 28.5383355,
-        "lon": -81.3792365,
-        "display_name": "Orlando (Code for Orlando)",
-        "name": "Code for Orlando"
-    },
-    {
-        "id": 102,
-        "lat": 31.54505,
-        "lon": 74.340683,
-        "display_name": "Pakistan (Code for Pakistan)",
-        "name": "Code for Pakistan"
-    },
-    {
-        "id": 24,
-        "lat": 39.952335,
-        "lon": -75.163789,
-        "display_name": "Philadelphia (Code for Philadelphia)",
-        "name": "Code for Philadelphia"
-    },
-    {
-        "id": 78,
-        "lat": 40.4406248,
-        "lon": -79.9958864,
-        "display_name": "Pittsburgh (Code for Pittsburgh)",
-        "name": "Code for Pittsburgh"
-    },
-    {
-        "id": 90,
-        "lat": 51.919438,
-        "lon": 19.145136,
-        "display_name": "Poland (Code for Poland)",
-        "name": "Code for Poland"
-    },
-    {
-        "id": 67,
-        "lat": 35.772096,
-        "lon": -78.6386145,
-        "display_name": "Raleigh (Code for Raleigh)",
-        "name": "Code for Raleigh"
-    },
-    {
-        "id": 76,
-        "lat": 38.5815719,
-        "lon": -121.4943996,
-        "display_name": "Sacramento (Code for Sacramento)",
-        "name": "Code for Sacramento"
-    },
-    {
-        "id": 81,
-        "lat": 37.7749295,
-        "lon": -122.4194155,
-        "display_name": "San Francisco (Code for San Francisco)",
-        "name": "Code for San Francisco"
-    },
-    {
-        "id": 25,
-        "lat": 47.6062095,
-        "lon": -122.3320708,
-        "display_name": "Seattle (Code for Seattle)",
-        "name": "Code for Seattle"
-    },
-    {
-        "id": 82,
-        "lat": 41.0814447,
-        "lon": -81.5190053,
-        "display_name": "Summit County (Code for Summit County)",
-        "name": "Code for Summit County"
-    },
-    {
-        "id": 97,
-        "lat": 27.950575,
-        "lon": -82.4571776,
-        "display_name": "Tampa (Code for Tampa)",
-        "name": "Code for Tampa"
-    },
-    {
-        "id": 95,
-        "lat": null,
-        "lon": null,
-        "display_name": "Code for Tomorrow",
-        "name": "Code for Tomorrow"
-    },
-    {
-        "id": 12,
-        "lat": 36.1539816,
-        "lon": -95.992775,
-        "display_name": "Tulsa (Code for Tulsa)",
-        "name": "Code for Tulsa"
-    },
-    {
-        "id": 53,
-        "lat": 42.8336205,
-        "lon": -88.7323272,
-        "display_name": "Whitewater (Code for Whitewater)",
-        "name": "Code for Whitewater"
-    },
-    {
-        "id": 47,
-        "lat": 39.7391536,
-        "lon": -104.9847034,
-        "display_name": "Colorado Code for Communities",
-        "name": "Colorado Code for Communities"
-    },
-    {
-        "id": 74,
-        "lat": 42.9633599,
-        "lon": -85.6680863,
-        "display_name": "Friendly Code",
-        "name": "Friendly Code"
-    },
-    {
-        "id": 104,
-        "lat": null,
-        "lon": null,
-        "display_name": "Guatemala Abierta",
-        "name": "Guatemala Abierta"
-    },
-    {
-        "id": 33,
-        "lat": 43.0730517,
-        "lon": -89.4012302,
-        "display_name": "Madison (Hacking Madison)",
-        "name": "Hacking Madison"
-    },
-    {
-        "id": 100,
-        "lat": 41.6763545,
-        "lon": -86.2519898,
-        "display_name": "Michigan/Indiana (Hack Michiana)",
-        "name": "Hack Michiana"
-    },
-    {
-        "id": 96,
-        "lat": null,
-        "lon": null,
-        "display_name": "Help A Hydrant",
-        "name": "Help A Hydrant"
-    },
-    {
-        "id": 35,
-        "lat": 47.0378741,
-        "lon": -122.9006951,
-        "display_name": "OlyLab",
-        "name": "OlyLab"
-    },
-    {
-        "id": 65,
-        "lat": null,
-        "lon": null,
-        "display_name": "Asheville (Open Asheville)",
-        "name": "Open Asheville"
-    },
-    {
-        "id": 52,
-        "lat": 30.267153,
-        "lon": -97.7430608,
-        "display_name": "Austin (Open Austin)",
-        "name": "Open Austin"
-    },
-    {
-        "id": 44,
-        "lat": 35.0456297,
-        "lon": -85.3096801,
-        "display_name": "Chattanooga (Open Chattanooga)",
-        "name": "Open Chattanooga"
-    },
-    {
-        "id": 70,
-        "lat": 39.7391536,
-        "lon": -104.9847034,
-        "display_name": "Colorado (Open Colorado)",
-        "name": "Open Colorado"
-    },
-    {
-        "id": 84,
-        "lat": 39.1031182,
-        "lon": -84.5120196,
-        "display_name": "Cincinnati (Open Data Cincinnati)",
-        "name": "Open Data Cincinnati"
-    },
-    {
-        "id": 98,
-        "lat": null,
-        "lon": null,
-        "display_name": "St. Louis (Open Data STL)",
-        "name": "Open Data STL"
-    },
-    {
-        "id": 66,
-        "lat": 29.7601927,
-        "lon": -95.3693896,
-        "display_name": "Houston (Open Houston)",
-        "name": "Open Houston"
-    },
-    {
-        "id": 27,
-        "lat": null,
-        "lon": null,
-        "display_name": "Chicago (Open Gov Chicago Hackers)",
-        "name": "Open Gov Chicago Hackers"
-    },
-    {
-        "id": 103,
-        "lat": 40.7281575,
-        "lon": -74.0776417,
-        "display_name": "Jersey City (Open JC)",
-        "name": "Open JC"
-    },
-    {
-        "id": 5,
-        "lat": 38.0405837,
-        "lon": -84.5037164,
-        "display_name": "Lexington (Open Lexington)",
-        "name": "Open Lexington"
-    },
-    {
-        "id": 54,
-        "lat": 37.8043637,
-        "lon": -122.2711137,
-        "display_name": "Oakland (Open Oakland)",
-        "name": "Open Oakland"
-    },
-    {
-        "id": 58,
-        "lat": 40.7607793,
-        "lon": -111.8910474,
-        "display_name": "Salt Lake City (Open Salt Lake)",
-        "name": "Open Salt Lake"
-    },
-    {
-        "id": 26,
-        "lat": 32.7153292,
-        "lon": -117.1572551,
-        "display_name": "San Diego (Open San Diego)",
-        "name": "Open San Diego"
-    },
-    {
-        "id": 101,
-        "lat": null,
-        "lon": null,
-        "display_name": "Spokane (OpenSpokane)",
-        "name": "OpenSpokane"
-    },
-    {
-        "id": 40,
-        "lat": 44.9537029,
-        "lon": -93.0899578,
-        "display_name": "Twin Cities (Open Twin Cities)",
-        "name": "Open Twin Cities"
-    },
-    {
-        "id": 64,
-        "lat": 39.5296329,
-        "lon": -119.8138027,
-        "display_name": "Reno Brigade",
-        "name": "Reno Brigade"
-    },
-    {
-        "id": 7,
-        "lat": 43.0481221,
-        "lon": -76.1474244,
-        "display_name": "Syracuse Saves",
-        "name": "Syracuse Saves"
-    }
-    ];
 $(document).ready(function(){
     /* If the URL for this page has a query string such as ?brigade=04, it'll 
     automatically select the appropriate item from the drop down */
@@ -487,7 +72,6 @@ $(document).ready(function(){
 
     brigadeInput.remove();
     
-
     var querystringContents = [], hash;
     var q = document.URL.split('?')[1];
     if(q != undefined){
@@ -499,24 +83,24 @@ $(document).ready(function(){
         };
 	};
 	
-	brigades.sort(function(a, b) { return (a.display_name < b.display_name) ? -1 : 1 });
+    // Get the official Brigades list
+    $.getJSON("http://brigade.codeforamerica.org/brigades.json", function(brigades){
+        brigades.sort(function(a, b) { return (a.name < b.name) ? -1 : 1 });
+        var i = brigades.length;
+        while(i--)
+        {
+            var value = brigades[i].id + " - " + brigades[i].name,
+                display = brigades[i].name;
+        
+            if(querystringContents["brigade"] == brigades[i].id){
+                var currentOption = brigadeSelect.prepend("<option value='"+value+"' selected='selected'>"+display+"</option>")
+            }
+            else{
+                var currentOption = brigadeSelect.prepend("<option value='"+value+"'>"+display+"</option>");
+            }
+        };
+    })
 
-	var i = brigades.length;
-	while(i--)
-	{
-	    var value = brigades[i].id + " - " + brigades[i].display_name,
-	        display = brigades[i].display_name;
-	
-		if(querystringContents["brigade"] == brigades[i].id){
-			var currentOption = brigadeSelect.prepend("<option value='"+value+"' selected='selected'>"+display+"</option>")
-		}
-		else{
-			var currentOption = brigadeSelect.prepend("<option value='"+value+"'>"+display+"</option>");
-		}
-
-
-    };
-    
     // this is just so we can submit the form in the background (to another domain)
     $("button").on("click", function(e){
         $("body").append("<iframe id='submission-iframe'></iframe>");
@@ -540,7 +124,6 @@ $(document).ready(function(){
         $('#submission-iframe').contents().find('body').append(attendanceFormCopy);
         $('#submission-iframe').contents().find('form').submit();
     }
-
 
 });
     </script>
