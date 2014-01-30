@@ -1,5 +1,5 @@
 $(function(){
-  $('#map').css("height", ($(window).height() - 75));
+  $('#map').css("height", ($(window).height() - 150));
   var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', 
   	{
   		scrollWheelZoom:false

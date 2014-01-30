@@ -25,12 +25,12 @@
         </div>
     </header>
     <div id="map"></div>
-    <!-- <footer>
+    <footer>
         <div id="bottom">
             <img src="http://alpha.codeforamerica.org/style/images/badge-rocket-red.svg" width="50px">
-            <p>Stories!!!</p>
+            <p id="story">Stories!!!</p>
         </div>
-    </footer> -->
+    </footer>
 
     <!-- Hidden signin form for map popups -->
     <div id="signin-form">
@@ -68,5 +68,8 @@
 </form>
     </div>
 </body>
-<script src="./map.js"></script>
+<script src="map.js"></script>
+<script src="tabletop.js"></script>
+<script src="stories.js"></script>
+
 </html>

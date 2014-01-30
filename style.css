@@ -9,6 +9,10 @@ header, footer {
 	margin: 0 auto;
 }
 
+#bottom {
+	padding-top: 10px;
+}
+
 header p, footer p {
 	display: inline;
 }
