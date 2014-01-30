@@ -1,7 +1,7 @@
 Brigade Alpha
 =============
 
-We’ve started work on the new Brigade website. It is still very much a work in progress, yet we share early and often around here. The site at this repository is intended to eventually replace the [CfA Brigade site](http://brigade.codeforamerica.org).
+We’ve started work on the [new Brigade website](http://brigade-alpha.codeforamerica.org). It is still very much a work in progress, yet we share early and often around here. The site at this repository is intended to eventually replace the [CfA Brigade site](http://brigade.codeforamerica.org).
 
 We have a few main goals with this early prototype:
 
@@ -12,7 +12,7 @@ We have a few main goals with this early prototype:
 Install
 -------
 
-For the moment, everything here is plain HTML. The index page has a `.php` file extension to trigger the [Apache buildpack](https://github.com/heroku/heroku-buildpack-php) on Heroku, where we’re hosting the work in-progress.
+For the moment, everything here is plain HTML. The index page has a `.php` file extension to trigger the [Apache buildpack](https://github.com/heroku/heroku-buildpack-php) on Heroku, where we’re hosting the [work in-progress](http://brigade-alpha.codeforamerica.org).
 
 Contact
 -------
