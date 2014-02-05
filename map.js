@@ -21,13 +21,15 @@ $(function(){
 				  icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall'})
 				})
 				var html = "<a href="+brigade.group_url+"><button>Visit "+brigade.name+"</button></a>";
-				// html += "<button id='join'>Join "+brigade.name+"</button>";
+				// html += "<button class='join'>Join "+brigade.name+"</button>";
 				$("#brigade_id").html("<option value="+brigade.id+"></option>");
 				html += $("#signin-form").html();
 				marker.bindPopup(html);
 				map.addLayer(marker);
 			}
 		} 
+
+
 	}
 
 	// Get rid of the prototype form after its been copied to each popup.
