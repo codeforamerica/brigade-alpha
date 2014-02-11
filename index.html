@@ -25,51 +25,48 @@
         </div>
     </header>
     <div id="map"></div>
-    <footer>
+  
+
+
+    <div id="brigade-overlay">
+        <h1>Brigade</h1>
         <div id="bottom">
             <img src="http://alpha.codeforamerica.org/style/images/badge-rocket-red.svg" width="50px">
             <p id="story">Stories!!!</p>
         </div>
-    </footer>
-
-    <!-- Hidden signin form for map popups -->
-    <div id="signin-form">
         <form accept-charset="UTF-8" action="http://brigade.codeforamerica.org/members" id="new_user" method="post" novalidate="novalidate">
-    <h2>
-        Want to get connected?
-    </h2>
+            <h2>Want to get connected?</h2>
         
-    <p>
-        <label for="user_full_name">Full name</label>
-        <input id="user_full_name" name="user[full_name]" type="text" value="Ben Franklin">
-    </p>
-    <p>
-        <label for="user_email">Email</label>
-        <input id="user_email" name="user[email]" type="text" value="benfranklin@codeforamerica.org">
-    </p>
-    <p>
-        <select id="brigade_id" name="brigade_id" style="display:none;">
-        </select>
-    </p>
+            <div>
+                <label for="user_full_name">Full name</label>
+                <input id="user_full_name" name="user[full_name]" type="text" value="Ben Franklin">
+            </div>
+            <div>
+                <label for="user_email">Email</label>
+                <input id="user_email" name="user[email]" type="text" value="benfranklin@codeforamerica.org">
+            </div>
 
-    <p>
-        <input name="user[work_in_government]" type="hidden" value="0">
+            <select id="brigade_id" name="brigade_id" style="display:none;">
+            </select>
+
+
+            <div>
+            <input name="user[work_in_government]" type="hidden" value="0">
+        
+            <label for="user_work_in_government">
+                <input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
+                I work in government
+            </label>
+            </div>
     
-        <label for="user_work_in_government">
-            <input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
-            I work in government
-        </label>
-    </p>
     
-    <input id="user_human_check" name="user[human_check]" size="50" type="hidden">
-    <input type="hidden" name="source" value="brigade">
-    <input name="utf8" type="hidden" value="✓">
-    <input name="commit" type="submit" value="Submit">
-</form>
+            <input id="user_human_check" name="user[human_check]" size="50" type="hidden">
+            <input type="hidden" name="source" value="brigade">
+            <input name="utf8" type="hidden" value="✓">
+            <input name="commit" type="submit" value="Submit">
+        </form>
     </div>
-    <div class="brigade-overlay">
-        <h1>Brigade</h1>
-    </div>
+
 </body>
 <script src="js/map.js"></script>
 <script src="js/tabletop.js"></script>

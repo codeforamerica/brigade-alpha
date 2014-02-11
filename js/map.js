@@ -1,4 +1,6 @@
 $(function(){
+
+	
   $('#map').css("height", ($(window).height() - 150));
   var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', 
   	{
@@ -6,7 +8,8 @@ $(function(){
   	}
   	).setView([35, -100], 3)
   ;
-  map.zoomControl.setPosition('bottomright');
+  map.zoomControl.setPosition('bottomleft');
+
 
   var lat_lngs = [];
   $.getJSON("http://brigade.codeforamerica.org/brigades.json", function(data){
@@ -23,17 +26,22 @@ $(function(){
 				var html = "<a href="+brigade.group_url+"><button>Visit "+brigade.name+"</button></a>";
 				// html += "<button class='join'>Join "+brigade.name+"</button>";
 				$("#brigade_id").html("<option value="+brigade.id+"></option>");
-				html += $("#signin-form").html();
+				html += $("#brigade-overlay").html();
 				marker.bindPopup(html);
+
+
+
+				//$("#brigade-overlay").show();
 				map.addLayer(marker);
+				console.log(html);
+				
 			}
 		} 
 
 
 	}
 
-	// Get rid of the prototype form after its been copied to each popup.
-	$("#signin-form").remove();
+	
 
 	// Hide join button when clicked, show form
 	// $("#join").click(function(){
@@ -42,4 +50,20 @@ $(function(){
 	// })
 
   });
+
+	setup = function(){
+		$("#brigade-overlay").css("display", "none");
+	};
+
+	cleanup = function(){
+		// Get rid of the prototype form after its been copied to each popup.
+		$("#signin-form").remove();
+	};
+
+	createOverlay = function(){
+		// create custom 
+		$("#brigade-overlay").css("display", "block");
+	};
+
+
 });

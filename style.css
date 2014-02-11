@@ -27,14 +27,17 @@ header img, footer img {
 }
 
 #signin-form {
-	display: none;
+	
 }
 
-.brigade-overlay{
-  background-color:rgba(204,39,62,0.8);
+#brigade-overlay{
+	display: none;
+  background-color:rgba(204,39,62,0.9);
   position:absolute;
   top:10%;
   right:0;
   width:30%;
   height:100%;
+
 }
+
