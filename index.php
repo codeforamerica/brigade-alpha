@@ -67,9 +67,12 @@
     <input name="commit" type="submit" value="Submit">
 </form>
     </div>
+    <div class="overlay">
+        <h1>Brigade</h1>
+    </div>
 </body>
-<script src="map.js"></script>
-<script src="tabletop.js"></script>
-<script src="stories.js"></script>
+<script src="js/map.js"></script>
+<script src="js/tabletop.js"></script>
+<script src="js/stories.js"></script>
 
 </html>
