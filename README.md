@@ -14,6 +14,17 @@ Install
 
 Mostly, everything here is plain HTML. The app is run under Python Flask, which we will soon start using to host an actual database-driven API. But not yet.
 
+The scheduled update task should be run every 10 minutes. Set up Heroku
+[scheduled tasks](https://devcenter.heroku.com/articles/scheduler) with
+two commands:
+
+    heroku addons:add scheduler:standard
+    heroku addons:open scheduler
+
+The command to run is:
+
+    python update-data.py
+
 Contact
 -------
 
