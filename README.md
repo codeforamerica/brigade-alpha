@@ -12,7 +12,7 @@ We have a few main goals with this early prototype:
 Install
 -------
 
-For the moment, everything here is plain HTML. The index page has a `.php` file extension to trigger the [Apache buildpack](https://github.com/heroku/heroku-buildpack-php) on Heroku, where we’re hosting the [work in-progress](http://brigade-alpha.codeforamerica.org).
+Mostly, everything here is plain HTML. The app is run under Python Flask, which we will soon start using to host an actual database-driven API. But not yet.
 
 Contact
 -------
