@@ -29,3 +29,12 @@ header img, footer img {
 #signin-form {
 	display: none;
 }
+
+.brigade-overlay{
+  background-color:rgba(204,39,62,0.8);
+  position:absolute;
+  top:10%;
+  right:0;
+  width:30%;
+  height:100%;
+}
