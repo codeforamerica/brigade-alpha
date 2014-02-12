@@ -1,6 +1,16 @@
 from sys import stderr
 from os import environ
+from csv import DictReader
+from StringIO import StringIO
+
 import gspread
+import requests
+from app import db, Project
+
+def update_project_info(row):
+    ''' Update info from Github, if it's missing.
+    '''
+    return row
 
 def get_orgs():
     ''' Get a row for each organization from the Brigade Info spreadsheet.
@@ -20,3 +30,10 @@ if __name__ == '__main__':
 
     for org in get_orgs():
         print >> stderr, 'Found', org['name'], 'with projects at', org['projects_url']
+        
+        got = requests.get(org['projects_url'])
+        data = DictReader(StringIO(got.text), dialect='excel-tab')
+        
+        for row in data:
+            row = update_project_info(row)
+            print ' ', row['name'], row['code_url']

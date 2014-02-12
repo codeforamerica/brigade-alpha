@@ -4,4 +4,4 @@ Flask-SQLAlchemy==1.0
 SQLAlchemy==0.9.2
 gspread==0.1.0
 gunicorn==18.0
-
+requests==2.2.1
