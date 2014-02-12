@@ -16,15 +16,14 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 db = SQLAlchemy(app)
 
 class Project(db.Model):
-    id = db.Column(db.Integer(), primary_key=True)
-    name = db.Column(db.Unicode())
+    name = db.Column(db.Unicode(), primary_key=True)
     code_url = db.Column(db.Unicode())
     link_url = db.Column(db.Unicode())
     description = db.Column(db.Unicode())
     type = db.Column(db.Unicode())
     category = db.Column(db.Unicode())
     
-    def __init__(self, name=None, code_url=None, link_url=None,
+    def __init__(self, name, code_url=None, link_url=None,
                  description=None, type=None, category=None):
         self.name = name
         self.code_url = code_url
