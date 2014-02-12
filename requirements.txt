@@ -1,3 +1,4 @@
-Flask
-gunicorn
+Flask==0.10.1
+Flask-SQLAlchemy==1.0
+gunicorn==18.0
 gspread==0.1.0

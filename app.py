@@ -6,10 +6,31 @@ from json import dumps
 
 from flask import Flask
 from flask import Response
+from flask.ext.sqlalchemy import SQLAlchemy
 
 cors = 'Access-Control-Allow-Origin'
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://data.db'
+db = SQLAlchemy(app)
+
+class Project(db.Model):
+    id = db.Column(db.Integer(), primary_key=True)
+    name = db.Column(db.Unicode())
+    code_url = db.Column(db.Unicode())
+    link_url = db.Column(db.Unicode())
+    description = db.Column(db.Unicode())
+    type = db.Column(db.Unicode())
+    category = db.Column(db.Unicode())
+    
+    def __init__(self, name=None, code_url=None, link_url=None,
+                 description=None, type=None, category=None)
+        self.name = name
+        self.code_url = code_url
+        self.link_url = link_url
+        self.description = description
+        self.type = type
+        self.category = category
 
 @app.route('/')
 def index_page():
