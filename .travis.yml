@@ -1,4 +1,6 @@
+language: python
+install: "pip install -r requirements.txt"
+script: python test.py
 env:
-  matrix:
-  - secure: OkcsIPhY417p8EoMK0hbuTTDpYbC2zyXzNDa2cZrC5GbSzS13npVUV0u296NLI1iAOFN/yJJe3zCWEs5TG0JyQvjC+03oqNqBz25cp9F7TVDTaTfEOnIfTsXiBDb/BPJdL/V+TqycBp0TEfk8u67MXTu7a6dSzNKStSdWpP8a5U=
-  - secure: cg375I9nq35ONRcNzorW2jagcxFqnSutjq5OiDU3noPI6w1WsZXykgsNZJBrdsXSzJtE3dV/dtwfpskUI8zLPbU/ZRIpSD5rI8zlArzKDneG5jEFAV/ZgavT2xBIKqlRENTc8PDOR27I+re93Mo0g7lcp3/+IAhnVf1ShfShzUU=
+  global:
+    secure: NCYcD13frWhwSYHl/lTRMpVqIgQgE4kDGSTcCEdNhk2RNoE0hbZ6lUjXB1y0bzZuhFA3rSvcNkVDZEx/5okk7VSq/vppZ4IksSRrvfbz3GgUwlKSOD3Y+1PPG73C5/Swg7lXlp4mg6FxFblexKWOGw8DD3e2adf5pASSLiaON8o=
