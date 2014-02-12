@@ -7,11 +7,12 @@ from json import dumps
 from flask import Flask
 from flask import Response
 from flask.ext.sqlalchemy import SQLAlchemy
+import flask.ext.restless
 
 cors = 'Access-Control-Allow-Origin'
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://data.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 db = SQLAlchemy(app)
 
 class Project(db.Model):
@@ -24,7 +25,7 @@ class Project(db.Model):
     category = db.Column(db.Unicode())
     
     def __init__(self, name=None, code_url=None, link_url=None,
-                 description=None, type=None, category=None)
+                 description=None, type=None, category=None):
         self.name = name
         self.code_url = code_url
         self.link_url = link_url
@@ -60,6 +61,9 @@ def status():
     body = dumps(status)
 
     return Response(body, headers={'Content-type': 'application/json', cors: '*'})
+
+manager = flask.ext.restless.APIManager(app, flask_sqlalchemy_db=db)
+manager.create_api(Project, methods=['GET'], collection_name='projects', max_results_per_page=-1)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
