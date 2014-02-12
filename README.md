@@ -25,6 +25,8 @@ The command to run is:
 
     python update-data.py
 
+Heroku will need login information to access [brigade information](https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0ArHmv-6U1drqdGNCLWV5Q0d5YmllUzE5WGlUY3hhT2c) from Google Docs, in environment variables `GDOCS_USERNAME` and `GDOCS_PASSWORD`.
+
 Contact
 -------
 
