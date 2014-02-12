@@ -2,14 +2,33 @@ from sys import stderr
 from os import environ
 from csv import DictReader
 from StringIO import StringIO
+from urlparse import urlparse
 
 import gspread
-import requests
+from requests import get
 from app import db, Project
 
 def update_project_info(row):
     ''' Update info from Github, if it's missing.
     '''
+    if 'code_url' not in row:
+        return row
+    
+    _, host, path, _, _, _ = urlparse(row['code_url'])
+    
+    if host == 'github.com':
+        repo_url = 'https://api.github.com/repos' + path
+        repo = get(repo_url).json()
+        
+        if 'name' not in row or not row['name']:
+            row['name'] = repo['name']
+        
+        if 'description' not in row or not row['description']:
+            row['description'] = repo['description']
+        
+        if 'link_url' not in row or not row['link_url']:
+            row['link_url'] = repo['homepage']
+    
     return row
 
 def get_orgs():
@@ -31,9 +50,9 @@ if __name__ == '__main__':
     for org in get_orgs():
         print >> stderr, 'Found', org['name'], 'with projects at', org['projects_url']
         
-        got = requests.get(org['projects_url'])
+        got = get(org['projects_url'])
         data = DictReader(StringIO(got.text), dialect='excel-tab')
         
         for row in data:
             row = update_project_info(row)
-            print ' ', row['name'], row['code_url']
+            print row
