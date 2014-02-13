@@ -8,12 +8,16 @@ from flask import Flask
 from flask import Response
 from flask.ext.sqlalchemy import SQLAlchemy
 import flask.ext.restless
+from flask.ext.heroku import Heroku
 
 cors = 'Access-Control-Allow-Origin'
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+heroku = Heroku(app)
 db = SQLAlchemy(app)
+
+# For local development
+# app.config["SQLALCHEMY_DATABASE_URI"] = 'postgres://hackyourcity@localhost/brigadealpha'
 
 class Project(db.Model):
     name = db.Column(db.Unicode(), primary_key=True)

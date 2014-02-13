@@ -5,3 +5,5 @@ SQLAlchemy==0.9.2
 gspread==0.1.0
 gunicorn==18.0
 requests==2.2.1
+flask-heroku==0.1.8
+psycopg2==2.5.2

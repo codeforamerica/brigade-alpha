@@ -6,9 +6,13 @@ from urlparse import urlparse
 from random import shuffle
 from time import sleep
 
-import gspread
+import gspread, os
 from requests import get
 from app import db, Project
+
+GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
+
+# headers = {'Authorization': 'token %s' % GITHUB_TOKEN, 'Accept' : "application/vnd.github.v3+json"}
 
 def update_project_info(row):
     ''' Update info from Github, if it's missing.
@@ -20,7 +24,8 @@ def update_project_info(row):
     
     if host == 'github.com':
         repo_url = 'https://api.github.com/repos' + path
-        got = get(repo_url)
+        
+        got = get(repo_url, auth=(GITHUB_TOKEN,""))
         
         if got.status_code in range(400, 499):
             raise IOError('We done got throttled')
