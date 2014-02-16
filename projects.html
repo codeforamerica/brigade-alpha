@@ -34,6 +34,12 @@
         <h1>Projects <small id='project-count'></small></h1>
         <p>Open source civic tech projects from Code for America</p>
 
+         <ol>
+          <li>
+            <strong><a id='share-toggle' href='#'>Share your existing project</a></strong> - If you have a civic app and it's open sourced on <a href='github.com'>Github</a>, share it with us and we will keep track of it below.
+          </li>
+        </ol>
+
         <div id='share-project' style='display:none;'>
           <div class='well'>
 
@@ -101,6 +107,7 @@
     <script>
       var projects_table;
       // Set this up like this to make it easier to dev this locally -- evz
+      var data_host = "http://civic-json-worker.herokuapp.com"
       // var data_host = 'http://127.0.0.1:5000'
       // var data_host = 'http://civic-json.datamade.dev.work'
 
@@ -210,7 +217,7 @@
 
       $('#hack-night-projects tbody').spin({top: '40px'}); //show a spinner while loading data
 
-      $.when( $.getJSON( "data/project_details.json" ) ).then(function( data, textStatus, jqXHR ) {
+      $.when( $.getJSON( "https://s3-us-west-2.amazonaws.com/project-list/project_details.json" ) ).then(function( data, textStatus, jqXHR ) {
 
         // update project count at the top of the page
         $('#project-count').html(data.length);
