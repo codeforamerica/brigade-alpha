@@ -107,7 +107,8 @@
     <script>
       var projects_table;
       // Set this up like this to make it easier to dev this locally -- evz
-      var data_host = "http://civic-json-worker.herokuapp.com"
+      // var data_host = "http://civic-json-worker.herokuapp.com"
+      var data_host = "http://127.0.0.1:6666"
       // var data_host = 'http://127.0.0.1:5000'
       // var data_host = 'http://civic-json.datamade.dev.work'
 
@@ -140,7 +141,7 @@
           data_host + '/add-project/',
           data={'project_url': $('#github-url').val()},
           function(resp){
-            displayMessage( "<strong>Your project has been submitted!</strong> It should display below within 5 minutes.", 'success' );
+            displayMessage( "<strong>Your project has been submitted!</strong> It should display below within 10 minutes.", 'success' );
             $("#github-url").val("");
           }
         ).fail(function() {
