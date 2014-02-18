@@ -33,17 +33,16 @@ $(function(){
 					//marker.bindPopup(html);*/
 
 					// go through each item and create an appropriate overlay
-
-					console.log(marker);
-					console.log(brigade.id);
-
-
+					var html = "<a href="+brigade.group_url+"><button>"+brigade.name+"</button></a><input type='hidden' value='"+brigade.id+"' />";
+					html += $(".brigade-pin-overlay").html();
+					marker.bindPopup(html);
+					createOverlay(brigade.id, brigade.name);
 					map.addLayer(marker);
 				
 			};
 
 			marker.on('click',function(e) {
-				showOverlay(this._leaflet_id);
+				showOverlay($(".leaflet-container input").val());
 			});
 		} 
 
@@ -59,6 +58,8 @@ $(function(){
 	// })
 
   });
+
+/*
 	init = function(){
 		setup();
 	};
@@ -71,14 +72,17 @@ $(function(){
 		// Get rid of the prototype form after its been copied to each popup.
 		$("#signin-form").remove();
 	};
+*/
+	createOverlay = function(id, name){
 
-	createOverlay = function(){
-		var overlayHTML = "<div class='"+id+" brigade-overlay'>Brigade"+id+"</div>";
+		var content = $(".brigade-overlay-content").html();
+		var overlayHTML = "<div class='"+id+" brigade-overlay'><h1>"+name+"</h1>"+content+"</div>";
+		$("body").append(overlayHTML);
 
 	};
 
 	showOverlay = function(id){
-		console.log(id);
+		$(".brigade-overlay").css("display","none");
 		$("."+id).css("display", "block");
 	};
 

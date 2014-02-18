@@ -40,4 +40,7 @@ header img, footer img {
   height:100%;
 
 }
-
+.brigade-overlay-content{
+	display:none;
+}
+/*.leaflet-popup-content{display:none;}*/	
