@@ -9,7 +9,7 @@ $(function(){
   	}
   	).setView([35, -100], 3);
 
-  map.zoomControl.setPosition('bottomleft');
+  map.zoomControl.setPosition('bottomright');
 
 
   var lat_lngs = [];
@@ -76,14 +76,14 @@ $(function(){
 	createOverlay = function(id, name){
 
 		var content = $(".brigade-overlay-content").html();
-		var overlayHTML = "<div class='"+id+" brigade-overlay'><h1>"+name+"</h1>"+content+"</div>";
+		var overlayHTML = "<div class='"+id+" brigade-overlay slab-red'><a class='close-overlay' href='#'>Close</a><div class='badge-heading'><h2>"+name+"</h2></div>"+content+"</div>";
 		$("body").append(overlayHTML);
 
 	};
 
 	showOverlay = function(id){
-		$(".brigade-overlay").css("display","none");
-		$("."+id).css("display", "block");
+		$(".brigade-overlay").css("display", "none");
+		$("."+id).toggle();
 	};
 
 });
