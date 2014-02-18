@@ -78,12 +78,17 @@ $(function(){
 		var content = $(".brigade-overlay-content").html();
 		var overlayHTML = "<div class='"+id+" brigade-overlay slab-red'><a class='close-overlay' href='#'>Close</a><div class='badge-heading'><h2>"+name+"</h2></div>"+content+"</div>";
 		$("body").append(overlayHTML);
+		$(".close-overlay").on("click", function(){ hideOverlay(); return false; })
 
 	};
 
 	showOverlay = function(id){
-		$(".brigade-overlay").css("display", "none");
+		hideOverlay();
 		$("."+id).toggle();
+	};
+
+	hideOverlay = function(){
+		$(".brigade-overlay").css("display", "none");
 	};
 
 });

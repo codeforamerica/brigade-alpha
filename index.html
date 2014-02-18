@@ -32,16 +32,17 @@
     <div class="brigade-overlay-content">
         
         <form accept-charset="UTF-8" action="http://brigade.codeforamerica.org/members" id="new_user" method="post" novalidate="novalidate">
-            <h2>Want to get connected?</h2>
-        
-            <div>
+            <h3>Want to get connected?</h3>
+            <ul class="list-form">
+            <li class="form-field">
                 <label for="user_full_name">Full name</label>
                 <input id="user_full_name" name="user[full_name]" type="text" value="Ben Franklin">
-            </div>
-            <div>
+            </li>
+            <li class="form-field">
                 <label for="user_email">Email</label>
                 <input id="user_email" name="user[email]" type="text" value="benfranklin@codeforamerica.org">
-            </div>
+            </li>
+            <li class="form-field">
 
             <select id="brigade_id" name="brigade_id" style="display:none;">
             </select>
@@ -53,8 +54,8 @@
             <label for="user_work_in_government">
                 <input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
                 I work in government
-            </label>
-            </div>
+           </li>
+            </ul>
     
     
             <input id="user_human_check" name="user[human_check]" size="50" type="hidden">
