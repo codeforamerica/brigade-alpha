@@ -1,10 +1,11 @@
 from os import environ
-import gspread
+from csv import reader
+from StringIO import StringIO
+from requests import get
+from app import gdoc_url
 
 if __name__ == '__main__':
 
-    gdocs = gspread.login(environ['GDOCS_USERNAME'], environ['GDOCS_PASSWORD'])
-    sheet = gdocs.open_by_key('0ArHmv-6U1drqdGNCLWV5Q0d5YmllUzE5WGlUY3hhT2c')
-    
-    cols = set(sheet.sheet1.row_values(1))
+    got = get(gdoc_url)
+    cols = set(reader(StringIO(got.text)).next())
     assert cols == set(['name', 'website', 'events_url', 'rss', 'projects_url'])

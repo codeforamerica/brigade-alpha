@@ -10,6 +10,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 import flask.ext.restless
 from flask.ext.heroku import Heroku
 
+gdoc_url = 'https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0ArHmv-6U1drqdGNCLWV5Q0d5YmllUzE5WGlUY3hhT2c&output=csv'
 cors = 'Access-Control-Allow-Origin'
 
 app = Flask(__name__)
