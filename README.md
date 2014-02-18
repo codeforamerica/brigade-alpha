@@ -25,7 +25,7 @@ The command to run is:
 
     python update-data.py
 
-Heroku will need login information to access [brigade information](https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0ArHmv-6U1drqdGNCLWV5Q0d5YmllUzE5WGlUY3hhT2c) from Google Docs, in environment variables `GDOCS_USERNAME` and `GDOCS_PASSWORD`.
+Heroku will access [brigade information](https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0ArHmv-6U1drqdGNCLWV5Q0d5YmllUzE5WGlUY3hhT2c) from Google Docs without authentication. A `GITHUB_TOKEN` environment variable can be used to help circumvent Github API throttling; get one under your [settings/applications](https://github.com/settings/applications).
 
 Contact
 -------

@@ -9,7 +9,10 @@ from time import sleep
 from requests import get
 from app import db, Project, gdoc_url
 
-GITHUB_TOKEN = environ['GITHUB_TOKEN']
+if 'GITHUB_TOKEN' in environ:
+    github_auth = (environ['GITHUB_TOKEN'], '')
+else:
+    github_auth = None
 
 # headers = {'Authorization': 'token %s' % GITHUB_TOKEN, 'Accept' : "application/vnd.github.v3+json"}
 
@@ -24,7 +27,7 @@ def update_project_info(row):
     if host == 'github.com':
         repo_url = 'https://api.github.com/repos' + path
         
-        got = get(repo_url, auth=(GITHUB_TOKEN,""))
+        got = get(repo_url, auth=github_auth)
         
         if got.status_code in range(400, 499):
             raise IOError('We done got throttled')
