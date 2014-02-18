@@ -34,7 +34,7 @@ header img, footer img {
 	display: none;
   background-color:rgba(204,39,62,0.9);
   position:absolute;
-  top:10%;
+  top:75px;
   left:0;
   width:30%;
   height:100%;
