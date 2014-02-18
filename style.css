@@ -30,7 +30,7 @@ header img, footer img {
 	
 }
 
-#brigade-overlay{
+.brigade-overlay{
 	display: none;
   background-color:rgba(204,39,62,0.9);
   position:absolute;
