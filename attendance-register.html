@@ -47,7 +47,8 @@
                                         <label>Event</label><input type="text" name="entry.989992967" placeholder="Hacknight" />
                                     </li>
                                 </ul>
-                                <button class="button-prominent button-l">Send</button>
+                                <button class="button-prominent button-l">Send</button></li>
+                                <img id="flag" src="http://style.codeforamerica.org/style/favicons/60x60/flag-red.png" style="float:right;display:none;"/>
                             </form>
                         </div>
                     </div>
@@ -110,9 +111,11 @@ $(document).ready(function(){
         $(".reset").val("");
         $("input[type=text], input[type=email], textarea").removeAttr("disabled");
         $("#name").focus();
+        $("#flag").show();
         setTimeout(function(){
             $("#submission-iframe").remove();
             $("button").removeAttr("disabled");
+            $("#flag").hide();
         },3000);
 
         return false;           
