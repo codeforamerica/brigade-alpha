@@ -218,7 +218,9 @@
 
       $('#hack-night-projects tbody').spin({top: '40px'}); //show a spinner while loading data
 
-      $.when( $.getJSON( "https://cfa-brigade-data.s3.amazonaws.com/project_details.json" ) ).then(function( data, textStatus, jqXHR ) {
+      $.when( $.getJSON( "http://civic-tech-movement.codeforamerica.org/api/projects" ) ).then(function( data, textStatus, jqXHR ) {
+
+        data = data.objects;
 
         // update project count at the top of the page
         $('#project-count').html(data.length);
@@ -228,40 +230,40 @@
           var participation = [];
           var max_participation = 50;
           
-          if (json['participation']) {
-            for (var i = 0; i < json['participation'].length; i++) {
-              var val = ((json['participation'][i] + 1) / parseFloat(max_participation)) * 100;
+          if (json['github_details']['participation']) {
+            for (var i = 0; i < json['github_details']['participation'].length; i++) {
+              var val = ((json['github_details']['participation'][i] + 1) / parseFloat(max_participation)) * 100;
               if (val > 100) val = 100;
               participation.push(val)
             }
-            json['participation_percent'] = participation;
+            json['github_details']['participation_percent'] = participation;
 
             var recent_commits = 0;
-            var recent_commits_arr = json['participation'].splice(48,4); // get the last 4 weeks
+            var recent_commits_arr = json['github_details']['participation'].splice(48,4); // get the last 4 weeks
             $.each(recent_commits_arr, function() {
                 recent_commits += this;
             });
 
-            json['recent_commits'] = recent_commits;
+            json['github_details']['recent_commits'] = recent_commits;
           }
 
           // to display text like 'x days ago' we use moment.js's awesome fromNow function
           // http://momentjs.com/docs/#/displaying/fromnow/
-          json['created_at_formatted'] = moment(json['created_at']).fromNow();
-          json['updated_at_formatted'] = moment(json['updated_at']).fromNow();
-          json['has_project_needs'] = (json['project_needs'].length > 0);
+          json['github_details']['created_at_formatted'] = moment(json['github_details']['created_at']).fromNow();
+          json['github_details']['updated_at_formatted'] = moment(json['github_details']['updated_at']).fromNow();
+          json['github_details']['has_project_needs'] = (json['github_details']['project_needs'].length > 0);
 
           // check to make sure all our URL's have http:// in front of them
           // otherwise they won't link properly
           var prefix_regex = /^https?:\/\/.*/;
-          var homepage = json['homepage'];
+          var homepage = json['github_details']['homepage'];
           if (homepage != null && !prefix_regex.test(homepage))
-            json['homepage_formatted'] = "http://" + homepage;
+            json['github_details']['homepage_formatted'] = "http://" + homepage;
           else
-            json['homepage_formatted'] = homepage;
+            json['github_details']['homepage_formatted'] = homepage;
 
           // using the template above, add the project as a new row to our table
-          $("#hack-night-projects tbody").append(Mustache.render(template, json));
+          $("#hack-night-projects tbody").append(Mustache.render(template, json['github_details']));
         })
 
         // initialize datatables for sorting and searching
