@@ -27,41 +27,10 @@
     <div class="container">
       <div class='col-md-12'>
         <div class="header">
-          <h3 class="text-muted"><a href="index.html" >Code for America</a></h3>
+          <h3 class="text-muted"><a href="index.html" >Open Oakland!!!!</a></h3>
         </div>
 
-        <!-- Begin page content-->
-        <h1>Projects <small id='project-count'></small></h1>
-        <p>Open source civic tech projects from Code for America</p>
-
-         <ol>
-          <li>
-            <strong><a id='share-toggle' href='#'>Share your existing project</a></strong> - If you have a civic app and it's open sourced on <a href='github.com'>Github</a>, share it with us and we will keep track of it below.
-          </li>
-        </ol>
-
-        <div id='share-project' style='display:none;'>
-          <div class='well'>
-
-            <p>Add a project for us to track. We <a href='https://github.com/open-city/civic-json-worker'>automatically update</a> this list based on your <a href='https://github.com/'>Github</a> activity.</p>
-
-            <form class="form-horizontal" role="form">
-              <div class="form-group">
-                <label for="github-url" class="col-lg-2 control-label">Github URL</label>
-                <div class="col-lg-10">
-                  <input type="text" class="form-control" id="github-url" placeholder="https://github.com/my-name/my-project">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-lg-offset-2 col-lg-10">
-                  <button  id='submit-project' type="submit" class="btn btn-success">Submit</button>
-                </div>
-              </div>
-            </form>
-          </div>
-
-          <div id='submit-message' class="alert" style="display: none;"></div>
-        </div>
+       
 
         <hr />
         <table id='hack-night-projects' class='table'>
@@ -218,9 +187,9 @@
 
       $('#hack-night-projects tbody').spin({top: '40px'}); //show a spinner while loading data
 
-      $.when( $.getJSON( "http://civic-tech-movement.codeforamerica.org/api/projects" ) ).then(function( data, textStatus, jqXHR ) {
+      $.when( $.getJSON( "http://civic-tech-movement.codeforamerica.org/api/organizations/54" ) ).then(function( data, textStatus, jqXHR ) {
 
-        data = data.objects;
+        data = data.projects;
 
         // update project count at the top of the page
         $('#project-count').html(data.length);
