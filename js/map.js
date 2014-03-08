@@ -10,14 +10,19 @@ $(function(){
 
   map.zoomControl.setPosition('bottomright');
 
+  cfapi = "http://civic-tech-movement.codeforamerica.org/api/organizations"
+  // cfapi = "http://localhost:5000/api/organizations"
+
   var lat_lngs = [];
-  $.getJSON("http://brigade.codeforamerica.org/brigades.json", function(data){
+  $.getJSON(cfapi, function(data){
+  	data = data.objects;
   	for(d in data){
 		var brigade = data[d]
-		if(brigade.location){
-			if(brigade.location.latitude && brigade.location.longitude){
-				var lat = brigade.location.latitude,
-						lng = brigade.location.longitude;
+		console.log(brigade);
+		if (brigade.type == "Brigade"){
+			if (brigade.latitude && brigade.longitude){
+				var lat = brigade.latitude,
+						lng = brigade.longitude;
 
 				lat_lngs.push([lat,lng])
 				marker = L.marker(new L.LatLng(lat,lng), {
@@ -25,21 +30,18 @@ $(function(){
 				});
 
 				// go through each item and create an appropriate overlay
-				var html = "<a href="+brigade.group_url+"><button>"+brigade.name+"</button></a><input type='hidden' value='"+brigade.id+"' />";
+				var html = "<a href="+brigade.website+"><button>"+brigade.name+"</button></a><input type='hidden' value='"+brigade.id+"' />";
 				html += $(".brigade-pin-overlay").html();
 				marker.bindPopup(html);
 				createOverlay(brigade.id, brigade.name);
 				map.addLayer(marker);
 			
 			};
-
+		}
 			marker.on('click',function(e) {
 				showOverlay($(".leaflet-container input").val());
 			});
 		} 
-
-	}
-
   }).done( function() {
 	// This uses the HTML5 geolocation API, which is available on
 	// most mobile browsers and modern browsers, but not in Internet Explorer
