@@ -1,6 +1,6 @@
 $(function(){
 
-  $('#map').css("height", ($(window).height() - 150));
+  $('#map').css("height", ($(window).height() - 180));
 
   var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', 
   	{

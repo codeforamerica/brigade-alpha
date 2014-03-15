@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Code for America - Brigade</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
     <link rel="stylesheet" href="http://style.codeforamerica.org/style/css/main.css">
     <link rel="stylesheet" href="http://style.codeforamerica.org/style/css/layout.css" media="all and (min-width: 40em)">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+
     <link rel="apple-touch-icon-precomposed" href="/style/favicons/60x60/flag-red.png"/>
 
-    {% if page.js == "map" %}
+    {% if page.name == "index" %}
     <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
     <link href='//api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
     <script src='//api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
     {% endif %}
 
-    <body>
-        
-        <header class="layout-semibreve">
-            
-            <div id="top" >
-                
-                <img src="http://brigade.codeforamerica.org/assets/logo.png">
-                <!-- <p>People just like you building helpful technology for their cities.</p> -->
-                
-                <ul id="nav">
-                    <li><a href="activities">Activities</a></li>
-                    <li><a href="connect">Connections</a></li>
-                    <li><a href="events">Events</a></li>
-                    <li><a href="tools">Tools</a></li>
-                    <li><a href="about">About</a></li>
-                </ul>
-            
-            </div>
+  </head>
 
-        </header>
-        
-        {{ content }}
+  <body>
 
-    </body>
-    <script src="js/map.js"></script>
-    <script src="js/tabletop.js"></script>
-    <script src="js/stories.js"></script>
+    <header class="layout-semibreve">
+
+      <a href="/"><img src="http://brigade.codeforamerica.org/assets/logo.png"></a>
+      <ul id="nav">
+        <li><a href="/activities">Activities</a></li>
+        <li><a href="/connect">Connections</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/tools">Tools</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="http://codeforamerica.tumblr.com">Tumblr</a></li>
+      </ul>
+
+    </header>
+
+      {{ content }}
+
+  </body>
+
+  {% if page.name == "index" %}
+  <script src="js/map.js"></script>
+  <script src="js/tabletop.js"></script>
+  <script src="js/stories.js"></script>
+  {% endif %}
 
 </html>
