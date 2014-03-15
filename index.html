@@ -1,83 +1,59 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Brigade — Code for America</title>
-    <!-- <link rel="stylesheet" href="normalize.css"> -->
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
-    <link rel="stylesheet" href="http://style.codeforamerica.org/style/css/main.css">
-    <link rel="stylesheet" href="http://style.codeforamerica.org/style/css/layout.css" media="all and (min-width: 40em)">
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon-precomposed" href="/style/favicons/60x60/flag-red.png"/>
+---
+layout: default
+js: map
+---
 
-    <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
-    <link href='//api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
-    <script src='//api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
-    <!--<script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.js'></script>
-    <link href='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.css' rel='stylesheet' />-->
+<div id="map"></div>
+
+<div class="slab-blue">
+    <footer class="layout-semibreve">
+
+        <blockquote>
+            <p id="story">Fetching stories...</p>
+        </blockquote>
+    </footer>
+</div>
+
+<div class="brigade-pin-overlay"></div>
+
+<div class="brigade-overlay-content">
     
-<body>
-    <header>
-        <div id="top">
-            <img src="http://brigade.codeforamerica.org/assets/logo.png">
-            <p>People just like you building helpful technology for their cities.</p>
-        </div>
-    </header>
-    <div id="map"></div>
-    <div class="slab-blue">
-    <blockquote>
-        <p id="story">Fetching stories...</p>
-    </blockquote>
-    </div>
-  
-    <div class="brigade-pin-overlay"></div>
+    <form accept-charset="UTF-8" action="http://brigade.codeforamerica.org/members" id="new_user" method="post" novalidate="novalidate">
+        <h3>Latest activity:</h3>
+        <ul>
+            <li>Andrew Hyder built a <a href="">Flask App</a></li>
+            <li>Erica Kwan ordered the <a href="">team lunch</a></li>
+            <li>Mike Migurski gave a <a href="">presentation on PHP</a> at the last <a href="">meetup</a></li>
+        </ul>
+        <h3>Want to get connected?</h3>
+        <ul class="list-form">
+        <li class="form-field">
+            <label for="user_full_name">Full name</label>
+            <input id="user_full_name" name="user[full_name]" type="text" placeholder="Ben Franklin">
+        </li>
+        <li class="form-field">
+            <label for="user_email">Email</label>
+            <input id="user_email" name="user[email]" type="text" placeholder="benfranklin@codeforamerica.org">
+        </li>
+        <li class="form-field">
 
-    <div class="brigade-overlay-content">
-        
-        <form accept-charset="UTF-8" action="http://brigade.codeforamerica.org/members" id="new_user" method="post" novalidate="novalidate">
-            <h3>Latest activity:</h3>
-            <ul>
-                <li>Andrew Hyder built a <a href="">Flask App</a></li>
-                <li>Erica Kwan ordered the <a href="">team lunch</a></li>
-                <li>Mike Migurski gave a <a href="">presentation on PHP</a> at the last <a href="">meetup</a></li>
-            </ul>
-            <h3>Want to get connected?</h3>
-            <ul class="list-form">
-            <li class="form-field">
-                <label for="user_full_name">Full name</label>
-                <input id="user_full_name" name="user[full_name]" type="text" placeholder="Ben Franklin">
-            </li>
-            <li class="form-field">
-                <label for="user_email">Email</label>
-                <input id="user_email" name="user[email]" type="text" placeholder="benfranklin@codeforamerica.org">
-            </li>
-            <li class="form-field">
-
-            <select id="brigade_id" name="brigade_id" style="display:none;">
-            </select>
+        <select id="brigade_id" name="brigade_id" style="display:none;">
+        </select>
 
 
-            <div>
-            <input name="user[work_in_government]" type="hidden" value="0">
-        
-            <label for="user_work_in_government">
-                <input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
-                I work in government
-           </li>
-            </ul>
+        <div>
+        <input name="user[work_in_government]" type="hidden" value="0">
     
-    
-            <input id="user_human_check" name="user[human_check]" size="50" type="hidden">
-            <input type="hidden" name="source" value="brigade">
-            <input name="utf8" type="hidden" value="✓">
-            <input name="commit" type="submit" value="Submit">
-        </form>
-    </div>
+        <label for="user_work_in_government">
+            <input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
+            I work in government
+       </li>
+        </ul>
 
-</body>
-<script src="js/map.js"></script>
-<script src="js/tabletop.js"></script>
-<script src="js/stories.js"></script>
 
-</html>
+        <input id="user_human_check" name="user[human_check]" size="50" type="hidden">
+        <input type="hidden" name="source" value="brigade">
+        <input name="utf8" type="hidden" value="✓">
+        <input name="commit" type="submit" value="Submit">
+    </form>
+</div>
