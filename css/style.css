@@ -39,20 +39,12 @@ header img, footer img {
 	
 }
 
-.brigade-overlay{
-	display: none;
-  background-color:rgba(204,39,62,0.9);
+#overlay{
+  /*background-color:rgba(204,39,62,0.9);*/
+  opacity: 0.85;
   position:absolute;
-  top:75px;
+  top:96px;
   left:0;
   width:30%;
   padding:2em;
-
 }
-.brigade-overlay .close-overlay{
-	float:right;
-}
-.brigade-overlay-content{
-	display:none;
-}
-/*.leaflet-popup-content{display:none;}*/	

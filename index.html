@@ -5,55 +5,74 @@ name: index
 
 <div id="map"></div>
 
-<div class="slab-blue">
-    <footer class="layout-semibreve">
+<div id="overlay" class="slab-red">
 
-        <blockquote>
-            <p id="story">Fetching stories...</p>
-        </blockquote>
-    </footer>
+  <div id="brigade-info">
+
+    <h2 id="brigade-name">The Code for America Brigade</h2>
+    <a id="brigade-url"></a>
+
+    <p id="program-info">The Brigade program helps local volunteer groups partner with government in an effort to enhance their communities. Brigades hold regular hack nights, events, advocate for open data, and deploy apps.</p>
+
+    <div id="stories" style="display:none;">
+      <h3>Stories</h3>
+      <ul>
+      </ul>
+    </div>
+
+    <div id="projects" style="display:none;">
+      <h3>Projects</h3>
+      <ul>
+      </ul>
+    </div>
+
+    <div id="events" style="display:none;">
+      <h3>Events</h3>
+      <ul>
+      </ul>
+    </div>
+
+  </div>
+
+  <form accept-charset="UTF-8" action="http://brigade.codeforamerica.org/members" id="new_user" method="post" novalidate="novalidate">
+    <h3>Want to get connected?</h3>
+    <ul class="list-form">
+      <li class="form-field">
+          <label for="user_full_name">Full name</label>
+          <input id="user_full_name" name="user[full_name]" type="text" placeholder="Ben Franklin">
+      </li>
+      <li class="form-field">
+          <label for="user_email">Email</label>
+          <input id="user_email" name="user[email]" type="text" placeholder="benfranklin@codeforamerica.org">
+      </li>
+      <li class="form-field">
+
+      <select id="brigade_id" name="brigade_id" style="display:none;">
+      </select>
+
+
+      <div>
+      <input name="user[work_in_government]" type="hidden" value="0">
+
+      <label for="user_work_in_government">
+          <input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
+          I work in government
+      </li>
+    </ul>
+
+
+    <input id="user_human_check" name="user[human_check]" size="50" type="hidden">
+    <input type="hidden" name="source" value="brigade">
+    <input name="utf8" type="hidden" value="✓">
+    <input name="commit" type="submit" value="Submit">
+  </form>
+
 </div>
 
-<div class="brigade-pin-overlay"></div>
-
-<div class="brigade-overlay-content">
-    
-    <form accept-charset="UTF-8" action="http://brigade.codeforamerica.org/members" id="new_user" method="post" novalidate="novalidate">
-        <h3>Latest activity:</h3>
-        <ul>
-            <li>Andrew Hyder built a <a href="">Flask App</a></li>
-            <li>Erica Kwan ordered the <a href="">team lunch</a></li>
-            <li>Mike Migurski gave a <a href="">presentation on PHP</a> at the last <a href="">meetup</a></li>
-        </ul>
-        <h3>Want to get connected?</h3>
-        <ul class="list-form">
-        <li class="form-field">
-            <label for="user_full_name">Full name</label>
-            <input id="user_full_name" name="user[full_name]" type="text" placeholder="Ben Franklin">
-        </li>
-        <li class="form-field">
-            <label for="user_email">Email</label>
-            <input id="user_email" name="user[email]" type="text" placeholder="benfranklin@codeforamerica.org">
-        </li>
-        <li class="form-field">
-
-        <select id="brigade_id" name="brigade_id" style="display:none;">
-        </select>
-
-
-        <div>
-        <input name="user[work_in_government]" type="hidden" value="0">
-    
-        <label for="user_work_in_government">
-            <input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
-            I work in government
-       </li>
-        </ul>
-
-
-        <input id="user_human_check" name="user[human_check]" size="50" type="hidden">
-        <input type="hidden" name="source" value="brigade">
-        <input name="utf8" type="hidden" value="✓">
-        <input name="commit" type="submit" value="Submit">
-    </form>
+<div>
+  <footer class="layout-semibreve">
+    <!-- <blockquote>
+      <p id="story">Fetching stories...</p>
+    </blockquote> -->
+  </footer>
 </div>
