@@ -1,8 +1,8 @@
 $(function(){
 
   // Leave some room for the header and footer
-  $('#map').css("height", ($(window).height() - 180));
-  $('#overlay').css("height", ($(window).height() - 243));
+  $('#map').css("height", ($(window).height() - 100));
+  $('#overlay').css("height", ($(window).height() - 163));
 
   var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', 
     {
@@ -14,7 +14,6 @@ $(function(){
 
   cfapi = "http://civic-tech-movement.codeforamerica.org/api/organizations"
   // cfapi = "http://localhost:5000/api/organizations"
-
 
   // Custom marker type with space for Brigade data
   var BrigadeMarker = L.Marker.extend({
@@ -49,57 +48,81 @@ $(function(){
       }
     });
   }).done( function() {
-  // This uses the HTML5 geolocation API, which is available on
-  // most mobile browsers and modern browsers, but not in Internet Explorer
-  //
-  // See this chart of compatibility for details:
-  // http://caniuse.com/#feat=geolocation
-  if (!navigator.geolocation) {
-      console.log('geolocation is not available');
-  } else {
-    map.locate({setView:true, maxZoom:4});
-  }
+    // This uses the HTML5 geolocation API, which is available on
+    // most mobile browsers and modern browsers, but not in Internet Explorer
+    //
+    // See this chart of compatibility for details:
+    // http://caniuse.com/#feat=geolocation
+    if (!navigator.geolocation) {
+        console.log('geolocation is not available');
+    } else {
+      map.locate({setView:true, maxZoom:7});
+    }
   });
 
   function updateOverlay(brigade){
     $("#brigade-name").text(brigade.name);
     $("#brigade-url").text(brigade.website).attr("href",brigade.website).show();
     $("#program-info").hide();
+    $("#join-form").hide();
 
-    for (list in [brigade.stories, brigade.projects, brigade.events]){
-      console.log(list);
-    }
-
-    if (brigade.stories) {
-      $("#stories").show();
-      $.each(brigade.stories, function(i, story){
-        html = "<li><a href="+story.link+">"+story.title+"</li>"
+    // Show two stories
+    if (brigade.stories.length != 0) {
+      $("#stories ul").empty();
+      for (var i = 0; i < 2; i++) {
+        story = brigade.stories[i];
+        html = "<li><a href='"+story.link+"'>"+story.title+"</a></li>"
         $("#stories ul").append(html);
-      })
+      }
+      $("#stories").show();
     } else {
       $("#stories").hide();
     }
 
-    if (brigade.projects) {
-      $("#projects").show();
-      $.each(brigade.projects, function(i, project){
-        html = "<li><a href="+project.link+">"+project.title+"</li>"
+    // Show two projects
+    if (brigade.projects.length != 0) {
+      $("#projects ul").empty();
+      for (var i = 0; i < 2; i++) {
+        project = brigade.projects[i];
+        html = "<li><a href="+project.link_url+">"+project.name+"</a>";
+        html += "<p>"+project.description+"</p></li>";
         $("#projects ul").append(html);
-      })
+      };
+      $("#projects").show();
     } else {
       $("#projects").hide();
     }
 
-    if (brigade.events) {
-      $("#events").show();
-      $.each(brigade.events, function(i, event){
-        html = "<li><a href="+event.link+">"+event.title+"</li>"
-        $("#events ul").append(html);
-      })
-    } else {
-      $("#events").hide();
+    // Show two events
+    if (brigade.events){
+      if (brigade.events.length != 0) {
+        $("#events ul").empty();
+        for (var i = 0; i < 2; i++) {
+          event = brigade.events[i];
+          html = "<li><a href="+event.link+">"+event.title+"</li>"
+          $("#events ul").append(html);
+        }
+        $("#events").show();
+      } else {
+        $("#events").hide();
+      }
     }
     
+  }
+
+  // Clicking elsewhere on the map clears the overlay
+  map.on('click', function(e) {
+    resetOverlay();
+  });
+
+  function resetOverlay(){
+    $("#brigade-name").text("Code for America Brigade");
+    $("#brigade-url").hide();
+    $("#program-info").show();
+    $("#stories").hide();
+    $("#projects").hide();
+    $("#events").hide();
+    $("#join-form").show();
   }
 
 });
