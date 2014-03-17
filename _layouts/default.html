@@ -22,9 +22,10 @@
 
   </head>
 
-  <body>
 
-    <header class="layout-semibreve">
+   <body>
+    <div class="js-container">
+      <header class="layout-semibreve">
 
       <a href="http://codeforamerica.github.io/brigade-alpha/"><img src="http://brigade.codeforamerica.org/assets/logo.png"></a>
       <ul id="nav">
@@ -37,10 +38,15 @@
       </ul>
 
     </header>
-
-      {{ content }}
-
+      <main role="main">
+        {{ content }}
+        
+        {% include global-footer.html %}
+      </main>
+    </div>
+    {% include footer-scripts.html %}
   </body>
+
 
   {% if page.name == "index" %}
   <script src="js/map.js"></script>
