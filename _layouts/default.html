@@ -25,19 +25,7 @@
 
    <body>
     <div class="js-container">
-      <header class="layout-semibreve">
-
-      <a href="http://codeforamerica.github.io/brigade-alpha/"><img src="http://brigade.codeforamerica.org/assets/logo.png"></a>
-      <ul id="nav">
-        <li><a href="/brigade-alpha/activities">Activities</a></li>
-        <li><a href="/brigade-alpha/connect">Connections</a></li>
-        <li><a href="/brigade-alpha/events">Events</a></li>
-        <li><a href="/brigade-alpha/tools">Tools</a></li>
-        <li><a href="/brigade-alpha/about">About</a></li>
-        <li><a href="http://codeforamerica.tumblr.com">Tumblr</a></li>
-      </ul>
-
-    </header>
+      {% include nav.html %}
       <main role="main">
         {{ content }}
         
