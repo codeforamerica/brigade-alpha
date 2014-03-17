@@ -57,7 +57,7 @@ $(function(){
     if (!navigator.geolocation) {
         console.log('geolocation is not available');
     } else {
-      map.locate({setView:true, maxZoom:7});
+      map.locate({setView:true, maxZoom:4});
     }
   });
 
