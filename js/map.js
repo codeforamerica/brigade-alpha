@@ -34,6 +34,7 @@ $(function(){
 
           var marker = new BrigadeMarker(new L.LatLng(lat,lng), {
             icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall'}),
+            title: brigade.name,
             brigade: brigade // Add Brigade data to marker
           });
 
@@ -61,6 +62,7 @@ $(function(){
   });
 
   function updateOverlay(brigade){
+    $("#overlay-reset").show();
     $("#brigade-name").text(brigade.name);
     $("#brigade-url").text(brigade.website).attr("href",brigade.website).show();
     $("#program-info").hide();
@@ -110,13 +112,14 @@ $(function(){
     
   }
 
-  // Clicking elsewhere on the map clears the overlay
-  map.on('click', function(e) {
+  // Reset overlay
+  map.on('click', function(e){
     resetOverlay();
-  });
+  })
 
   function resetOverlay(){
-    $("#brigade-name").text("Code for America Brigade");
+    $("#overlay-reset").hide();
+    $("#brigade-name").text("The Code for America Brigade");
     $("#brigade-url").hide();
     $("#program-info").show();
     $("#stories").hide();
