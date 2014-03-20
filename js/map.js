@@ -1,8 +1,8 @@
 $(function(){
 
   // Leave some room for the header and footer
-  $('#map').css("height", ($(window).height() - 100));
-  $('#overlay').css("height", ($(window).height() - 163));
+  $('#map').css("height", ($(window).height() - 200));
+  $('#overlay').css("height", ($(window).height() - 264));
 
   var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', 
     {
