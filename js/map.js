@@ -26,7 +26,6 @@ $(function(){
     var brigades = data.objects;
 
     $.each(brigades, function(i, brigade){
-      console.log(brigade);
 
       if (brigade.type == "Brigade"){
         if (brigade.latitude && brigade.longitude){
@@ -81,10 +80,25 @@ $(function(){
       $("#stories").hide();
     }
 
+    // Show two events
+    if (brigade.events){
+      if (brigade.events.length != 0) {
+        $("#events ul").empty();
+        for (var i = 0; i < 2; i++) {
+          event = brigade.events[i];
+          html = "<li><a href="+event.link+">"+event.name+"</li>"
+          $("#events ul").append(html);
+        }
+        $("#events").show();
+      } else {
+        $("#events").hide();
+      }
+    }
+
     // Show two projects
     if (brigade.projects.length != 0) {
       $("#projects ul").empty();
-      for (var i = 0; i < 2; i++) {
+      for (var i = 0; i < 3; i++) {
         project = brigade.projects[i];
         html = "<li><a href="+project.link_url+">"+project.name+"</a>";
         html += "<p>"+project.description+"</p></li>";
@@ -93,21 +107,6 @@ $(function(){
       $("#projects").show();
     } else {
       $("#projects").hide();
-    }
-
-    // Show two events
-    if (brigade.events){
-      if (brigade.events.length != 0) {
-        $("#events ul").empty();
-        for (var i = 0; i < 2; i++) {
-          event = brigade.events[i];
-          html = "<li><a href="+event.link+">"+event.title+"</li>"
-          $("#events ul").append(html);
-        }
-        $("#events").show();
-      } else {
-        $("#events").hide();
-      }
     }
     
   }

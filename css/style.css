@@ -47,4 +47,5 @@ header img, footer img {
   left:0;
   width:30%;
   padding:2em;
+  overflow: auto;
 }
