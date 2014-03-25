@@ -3,6 +3,7 @@
         </div>
 
         <script src="<?= $base_url ?>/script/global.js"></script>
+        <script src="<?= $base_url ?>/js/brigade-signup.js"></script>
         <script type="text/javascript">
 
           var _gaq = _gaq || [];

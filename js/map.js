@@ -11,7 +11,7 @@ $(function(){
     ).setView([35, -100], 3);
 
   map.zoomControl.setPosition('bottomright');
-
+  formEvents();
   cfapi = "http://civic-tech-movement.codeforamerica.org/api/organizations.geojson"
   // cfapi = "http://localhost:5000/api/organizations"
 
@@ -94,16 +94,17 @@ $(function(){
     }
   }
   
-  function updateOverlay(brigade)
-  {
+  function updateOverlay(brigade){
+  
     $('#overlay').html('<a href="#" class="button-prominent button-progress"></a>');
     $('#overlay a').text('Loading ' + brigade.name + '...');
-    iWantToGoToThere(brigadePageURL(brigade));
 
     $.ajax(brigadeAjaxURL(brigade), {
         success: function(html)
         {
             $('#overlay').html(html);
+            iWantToGoToThere(brigadePageURL(brigade));
+            formEvents();
         }
         });
   }
@@ -113,15 +114,24 @@ $(function(){
     resetOverlay();
   })
 
-  function resetOverlay()
-  {
+  function formEvents(){
+    $("#brigade-signup-form").css("display", "none");
+    $("#join-brigade").on("click", function(){
+      $("#stories, #events, #projects").css("display", "none");
+      $("#brigade-signup-form").css("display", "block");
+    })
+  };
+
+  function resetOverlay(){
+  
     $('#overlay').html('<a href="#" class="button-prominent button-progress">Loading...</a>');
-    iWantToGoToThere(indexPageURL());
 
     $.ajax(indexAjaxURL(), {
         success: function(html)
         {
             $('#overlay').html(html);
+            iWantToGoToThere(indexPageURL());
+            formEvents();
         }
         });
   }

@@ -82,13 +82,13 @@
         <form action="/members">
             <ul class="list-form">
                 <li class="form-field">
-                    <label for="invitee-name">Your full name</label>
-                        <input id="invitee-name" class="input" type="text" placeholder="Mike Migurski">
+                    <label for="user_full_name">Your full name</label>
+                        <input id="user_full_name" class="input" type="text" name="user[full_name]" placeholder="Mike Migurski">
                     </li>
                     
                     <li class="form-field">
-                        <label for="donor-email">Your email</label>
-                        <input id="donor-email" class="input" type="email" placeholder="your@email.com" />
+                        <label for="user_email">Your email</label>
+                        <input id="user_email" class="input" type="email" name="user[email]" placeholder="your@email.com" />
                     </li>
             <label class="boolean optional checkbox checkbox" for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
             <input type="hidden" id="<?= h($old_brigade_id) ?>" />
