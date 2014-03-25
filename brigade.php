@@ -10,6 +10,20 @@
     $brigade_url = "{$ctm_api_base}/organizations/{$brigade_path}";
     $info = json_decode(file_get_contents($brigade_url), true);
     
+    //
+    // We're looking for numeric IDs from the old site for the Join form.
+    // To do: don't do this.
+    //
+    $old_brigade_id = -1;
+    $old_brigades_url = 'http://brigade.codeforamerica.org/brigades.json';
+    $old_brigades = json_decode(file_get_contents($old_brigades_url), true);
+    
+    foreach($old_brigades as $old)
+    {
+        if($old['name'] == $info['name'])
+            $old_brigade_id = $old['id'];
+    }
+
     if(!function_exists('h'))
     {
         function h($s) 
@@ -77,7 +91,7 @@
                         <input id="donor-email" class="input" type="email" placeholder="your@email.com" />
                     </li>
             <label class="boolean optional checkbox checkbox" for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
-            <input type="hidden" id="0" /><!-- This needs an ID value that matches the specific brigade -->
+            <input type="hidden" id="<?= h($old_brigade_id) ?>" />
             <a href="#" class="button">Join now</a>
         </form>
     </div>
