@@ -53,5 +53,9 @@ header img, footer img {
 /* Story styling */
 
 #brigade-info #stories{
-	
+
+}
+
+#join-brigade{
+	float:right;
 }
