@@ -61,6 +61,15 @@ $(function(){
   });
 
   function updateOverlay(brigade){
+  
+    $.ajax('brigade/' + escape(brigade.name), {
+        success: function(html)
+        {
+            $('#brigade-info').replaceWith(html);
+        }
+        });
+
+    /*
     $("#overlay-reset").show();
     $("#brigade-name").text(brigade.name);
     $("#brigade-url").text(brigade.website).attr("href",brigade.website).show();
@@ -108,6 +117,7 @@ $(function(){
     } else {
       $("#projects").hide();
     }
+    */
     
   }
 
