@@ -73,8 +73,8 @@
                     </li>
                     
                     <li class="form-field">
-                        <label for="donor-email">Email</label>
-                        <input id="donor-email" class="input" type="email">
+                        <label for="donor-email">Your email</label>
+                        <input id="donor-email" class="input" type="email" placeholder="your@email.com" />
                     </li>
             <label class="boolean optional checkbox checkbox" for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
             <input type="hidden" id="0" /><!-- This needs an ID value that matches the specific brigade -->
