@@ -72,7 +72,7 @@ $(function(){
       $("#stories ul").empty();
       for (var i = 0; i < 2; i++) {
         story = brigade.stories[i];
-        html = "<li><a href='"+story.link+"'>"+story.title+"</a></li>"
+        html = "<li class='icon-bullhorn'><a href='"+story.link+"'>"+story.title+"</a></li>"
         $("#stories ul").append(html);
       }
       $("#stories").show();
@@ -86,7 +86,7 @@ $(function(){
         $("#events ul").empty();
         for (var i = 0; i < 2; i++) {
           event = brigade.events[i];
-          html = "<li><a href="+event.link+">"+event.name+"</li>"
+          html = "<li class='icon-calendar'><a href="+event.link+">"+event.name+"</li>"
           $("#events ul").append(html);
         }
         $("#events").show();
@@ -100,7 +100,7 @@ $(function(){
       $("#projects ul").empty();
       for (var i = 0; i < 3; i++) {
         project = brigade.projects[i];
-        html = "<li><a href="+project.link_url+">"+project.name+"</a>";
+        html = "<li class='icon-star'><a href="+project.link_url+">"+project.name+"</a>";
         html += "<p>"+project.description+"</p></li>";
         $("#projects ul").append(html);
       };
