@@ -52,8 +52,11 @@ header img, footer img {
 
 /* Story styling */
 
-#brigade-info #stories{
-
+#brigade-info #stories ul li,
+#brigade-info #events ul li,
+#brigade-info #projects ul li{
+	background-image:none;
+	padding:1em 0;
 }
 
 #join-brigade{
