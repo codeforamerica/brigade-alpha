@@ -36,7 +36,7 @@
             </ul>
         </div>
     <? } ?>
-    <? if($info['stories']) { ?>
+    <? if($info['events']) { ?>
         <div id="events">
             <b>Events</b>
             <ul>
@@ -46,7 +46,7 @@
             </ul>
         </div>
     <? } ?>
-    <? if($info['stories']) { ?>
+    <? if($info['projects']) { ?>
         <div id="projects">
             <b>Recent Projects</b>
             <ul>
