@@ -1,11 +1,14 @@
 <?php
 
+    if(empty($brigade_name))
+    {
+        $brigade_name = ltrim($_SERVER['PATH_INFO'], '/');
+    }
+
     $ctm_api_base = 'http://civic-tech-movement.codeforamerica.org/api';
-    $brigade_name = rawurlencode(ltrim($_SERVER['PATH_INFO'], '/'));
-    $brigade_url = "{$ctm_api_base}/organizations/{$brigade_name}";
+    $brigade_path = rawurlencode($brigade_name);
+    $brigade_url = "{$ctm_api_base}/organizations/{$brigade_path}";
     $info = json_decode(file_get_contents($brigade_url), true);
-    
-    header('Content-Type: text/html');
     
     function h($s) 
     {

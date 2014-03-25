@@ -59,13 +59,13 @@ $(function(){
       map.locate({setView:true, maxZoom:4});
     }
   });
-
+  
   function updateOverlay(brigade){
   
-    $.ajax('brigade/' + escape(brigade.name), {
+    $.ajax('/~migurski/Brigade-Alpha/brigade/' + escape(brigade.name), {
         success: function(html)
         {
-            $('#brigade-info').replaceWith(html);
+            $('#overlay').html(html);
         }
         });
 
@@ -127,6 +127,15 @@ $(function(){
   })
 
   function resetOverlay(){
+  
+    $.ajax('/~migurski/Brigade-Alpha/index-sidebar', {
+        success: function(html)
+        {
+            $('#overlay').html(html);
+        }
+        });
+
+    /*
     $("#overlay-reset").hide();
     $("#brigade-name").text("The Code for America Brigade");
     $("#brigade-url").hide();
@@ -135,6 +144,7 @@ $(function(){
     $("#projects").hide();
     $("#events").hide();
     $("#join-form").show();
+    */
   }
 
 });
