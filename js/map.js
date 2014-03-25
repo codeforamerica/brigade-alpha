@@ -62,22 +62,22 @@ $(function(){
   
   function brigadePageURL(brigade)
   {
-    return document.location.brigade_base_url+'/index/'+escape(brigade.name);
+    return document.location.brigade_base_url+'/index.php/'+escape(brigade.name);
   }
   
   function brigadeAjaxURL(brigade)
   {
-    return document.location.brigade_base_url+'/brigade/'+escape(brigade.name);
+    return document.location.brigade_base_url+'/brigade.php/'+escape(brigade.name);
   }
   
   function indexPageURL()
   {
-    return document.location.brigade_base_url+'/';
+    return document.location.brigade_base_url+'/index.php';
   }
   
   function indexAjaxURL()
   {
-    return document.location.brigade_base_url+'/index-sidebar';
+    return document.location.brigade_base_url+'/index-sidebar.php';
   }
   
   function iWantToGoToThere(url)
