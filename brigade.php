@@ -10,9 +10,12 @@
     $brigade_url = "{$ctm_api_base}/organizations/{$brigade_path}";
     $info = json_decode(file_get_contents($brigade_url), true);
     
-    function h($s) 
+    if(!function_exists('h'))
     {
-        return htmlspecialchars($s);
+        function h($s) 
+        {
+            return htmlspecialchars($s);
+        }
     }
 
 ?>

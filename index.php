@@ -88,6 +88,7 @@
 </div>
 
       <main role="main">
+        <? include('brigades.php') ?>
         <div id="map"></div>
 
 <div id="overlay" class="slab-red">

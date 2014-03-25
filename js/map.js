@@ -21,42 +21,50 @@ $(function(){
       brigade : {}
     }
   });
-
-  $.getJSON(cfapi, function(data){
   
-    for(var i = 0; i < data.features.length; i++)
-    {
-        var feature = data.features[i];
-        
-        var lat = feature.geometry.coordinates[1],
-            lon = feature.geometry.coordinates[0];
-        
-        var marker = new BrigadeMarker(new L.LatLng(lat, lon), {
-          icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall'}),
-          title: feature.properties.name,
-          brigade: feature.properties // Add Brigade data to marker
-        });
-
-        map.addLayer(marker);
-
-        // On click, show the Brigade data on the overlay
-        marker.on('click',function(e) {
-          updateOverlay(e.target.options.brigade);
-        });
-    }
+  /*
+   * Brigade names and locations are in a hidden list called #brigades-list.
+   *
+   * <li data-lat="37.8044" data-lon="-122.2711">
+   *    <a href="Open%20Oakland">Open Oakland</a>
+   * </li>
+   */
+  $('#brigades-list li').each(function(index, _item) {
   
-  }).done( function() {
-    // This uses the HTML5 geolocation API, which is available on
-    // most mobile browsers and modern browsers, but not in Internet Explorer
-    //
-    // See this chart of compatibility for details:
-    // http://caniuse.com/#feat=geolocation
-    if (!navigator.geolocation) {
-        console.log('geolocation is not available');
-    } else {
-      map.locate({setView:true, maxZoom:4});
-    }
+    var item = $(_item),
+        lat = parseFloat(item.data('lat')),
+        lon = parseFloat(item.data('lon')),
+        anchor = item.find('a'),
+        name = anchor.text(),
+        href = anchor.attr('href');
+        
+    var brigade = {name: name};
+    
+    var marker = new BrigadeMarker(new L.LatLng(lat, lon), {
+      icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall'}),
+      title: name,
+      brigade: brigade // Add Brigade data to marker
+    });
+
+    map.addLayer(marker);
+
+    // On click, show the Brigade data on the overlay
+    marker.on('click',function(e) {
+      updateOverlay(e.target.options.brigade);
+    });
+
   });
+  
+  // This uses the HTML5 geolocation API, which is available on
+  // most mobile browsers and modern browsers, but not in Internet Explorer
+  //
+  // See this chart of compatibility for details:
+  // http://caniuse.com/#feat=geolocation
+  if (!navigator.geolocation) {
+      console.log('geolocation is not available');
+  } else {
+    map.locate({setView:true, maxZoom:4});
+  }
   
   function brigadePageURL(brigade)
   {
