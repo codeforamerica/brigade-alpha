@@ -12,7 +12,7 @@ $(function(){
 
   map.zoomControl.setPosition('bottomright');
 
-  cfapi = "http://civic-tech-movement.codeforamerica.org/api/organizations"
+  cfapi = "http://civic-tech-movement.codeforamerica.org/api/organizations.geojson"
   // cfapi = "http://localhost:5000/api/organizations"
 
   // Custom marker type with space for Brigade data
@@ -23,30 +23,28 @@ $(function(){
   });
 
   $.getJSON(cfapi, function(data){
-    var brigades = data.objects;
+  
+    for(var i = 0; i < data.features.length; i++)
+    {
+        var feature = data.features[i];
+        
+        var lat = feature.geometry.coordinates[1],
+            lon = feature.geometry.coordinates[0];
+        
+        var marker = new BrigadeMarker(new L.LatLng(lat, lon), {
+          icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall'}),
+          title: feature.properties.name,
+          brigade: feature.properties // Add Brigade data to marker
+        });
 
-    $.each(brigades, function(i, brigade){
+        map.addLayer(marker);
 
-      if (brigade.type == "Brigade"){
-        if (brigade.latitude && brigade.longitude){
-          var lat = brigade.latitude, lng = brigade.longitude;
-
-          var marker = new BrigadeMarker(new L.LatLng(lat,lng), {
-            icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall'}),
-            title: brigade.name,
-            brigade: brigade // Add Brigade data to marker
-          });
-
-          map.addLayer(marker);
-
-          // On click, show the Brigade data on the overlay
-          marker.on('click',function(e) {
-            updateOverlay(e.target.options.brigade);
-          });
-
-        }
-      }
-    });
+        // On click, show the Brigade data on the overlay
+        marker.on('click',function(e) {
+          updateOverlay(e.target.options.brigade);
+        });
+    }
+  
   }).done( function() {
     // This uses the HTML5 geolocation API, which is available on
     // most mobile browsers and modern browsers, but not in Internet Explorer
