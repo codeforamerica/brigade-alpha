@@ -64,7 +64,6 @@
             </ul>
         </div>
     <? } ?>
-x`
     <div id="brigade-signup-form">
         <form action="/members">
             <label>Full name</label><input placeholder="Mike Migurski" />
