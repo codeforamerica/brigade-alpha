@@ -35,6 +35,11 @@ header img, footer img {
 	width: 100%;
 }
 
+#map .leaflet-marker-icon
+{
+    cursor: pointer !important;
+}
+
 #signin-form {
 	
 }
