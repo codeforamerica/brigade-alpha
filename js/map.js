@@ -60,65 +60,43 @@ $(function(){
     }
   });
   
+  function brigadePageURL(brigade)
+  {
+    return document.location.brigade_base_url+'/index/'+escape(brigade.name);
+  }
+  
+  function brigadeAjaxURL(brigade)
+  {
+    return document.location.brigade_base_url+'/brigade/'+escape(brigade.name);
+  }
+  
+  function indexPageURL()
+  {
+    return document.location.brigade_base_url+'/';
+  }
+  
+  function indexAjaxURL()
+  {
+    return document.location.brigade_base_url+'/index-sidebar';
+  }
+  
+  function iWantToGoToThere(url)
+  {
+    if(history.pushState)
+    {
+        history.pushState({}, '', url);
+    }
+  }
+  
   function updateOverlay(brigade){
   
-    $.ajax('/~migurski/Brigade-Alpha/brigade/' + escape(brigade.name), {
+    $.ajax(brigadeAjaxURL(brigade), {
         success: function(html)
         {
             $('#overlay').html(html);
+            iWantToGoToThere(brigadePageURL(brigade));
         }
         });
-
-    /*
-    $("#overlay-reset").show();
-    $("#brigade-name").text(brigade.name);
-    $("#brigade-url").text(brigade.website).attr("href",brigade.website).show();
-    $("#program-info").hide();
-    $("#join-form").hide();
-
-    // Show two stories
-    if (brigade.stories.length != 0) {
-      $("#stories ul").empty();
-      for (var i = 0; i < 2; i++) {
-        story = brigade.stories[i];
-        html = "<li><a href='"+story.link+"'>"+story.title+"</a></li>"
-        $("#stories ul").append(html);
-      }
-      $("#stories").show();
-    } else {
-      $("#stories").hide();
-    }
-
-    // Show two events
-    if (brigade.events){
-      if (brigade.events.length != 0) {
-        $("#events ul").empty();
-        for (var i = 0; i < 2; i++) {
-          event = brigade.events[i];
-          html = "<li><a href="+event.link+">"+event.name+"</li>"
-          $("#events ul").append(html);
-        }
-        $("#events").show();
-      } else {
-        $("#events").hide();
-      }
-    }
-
-    // Show two projects
-    if (brigade.projects.length != 0) {
-      $("#projects ul").empty();
-      for (var i = 0; i < 3; i++) {
-        project = brigade.projects[i];
-        html = "<li><a href="+project.link_url+">"+project.name+"</a>";
-        html += "<p>"+project.description+"</p></li>";
-        $("#projects ul").append(html);
-      };
-      $("#projects").show();
-    } else {
-      $("#projects").hide();
-    }
-    */
-    
   }
 
   // Reset overlay
@@ -128,23 +106,13 @@ $(function(){
 
   function resetOverlay(){
   
-    $.ajax('/~migurski/Brigade-Alpha/index-sidebar', {
+    $.ajax(indexAjaxURL(), {
         success: function(html)
         {
             $('#overlay').html(html);
+            iWantToGoToThere(indexPageURL());
         }
         });
-
-    /*
-    $("#overlay-reset").hide();
-    $("#brigade-name").text("The Code for America Brigade");
-    $("#brigade-url").hide();
-    $("#program-info").show();
-    $("#stories").hide();
-    $("#projects").hide();
-    $("#events").hide();
-    $("#join-form").show();
-    */
   }
 
 });
