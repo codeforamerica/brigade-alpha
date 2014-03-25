@@ -66,11 +66,20 @@
     <? } ?>
     <div id="brigade-signup-form">
         <form action="/members">
-            <label>Full name</label><input placeholder="Mike Migurski" />
-            <label>Email</a><input placeholder="your@email.com" />
+            <ul class="list-form">
+                <li class="form-field">
+                    <label for="invitee-name">Your full name</label>
+                        <input id="invitee-name" class="input" type="text" placeholder="Mike Migurski">
+                    </li>
+                    
+                    <li class="form-field">
+                        <label for="donor-email">Email</label>
+                        <input id="donor-email" class="input" type="email">
+                    </li>
             <label class="boolean optional checkbox checkbox" for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
             <input type="hidden" id="0" /><!-- This needs an ID value that matches the specific brigade -->
-            <button type="submit" value="Submit" />
+            <a href="#" class="button">Join now</a>
         </form>
     </div>
 </div>
+
