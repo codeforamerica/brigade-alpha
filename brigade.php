@@ -20,11 +20,13 @@
 
 ?>
 <div id="brigade-info">
+    <a class="button" id="join-brigade" href="#join">Join</a>
 	<h2 id="brigade-name"><?= h($info['name']); ?></h2>
 	<p>
         <a id="brigade-url" href="<?= h($info['website']); ?>" style="display: inline;"><?= h($info['website']); ?></a>
 	</p>
-	<!--
+
+    <!--
 	<p id="program-info">
 		The Brigade program helps local volunteer groups partner with government in an effort to enhance their communities. Brigades hold regular hack nights, events, advocate for open data, and deploy apps.
 	</p>
