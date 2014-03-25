@@ -36,7 +36,7 @@
             <b>Recent Stories</b>
             <ul>
                 <? foreach(array_slice($info['stories'], 0, 2) as $s) { ?>
-                    <li><a href="<?= h($s['link']) ?>"><?= h($s['title']) ?></a></li>
+                    <li class="icon-bullhorn"><a href="<?= h($s['link']) ?>"><?= h($s['title']) ?></a></li>
                 <? } ?>
             </ul>
         </div>
@@ -46,7 +46,7 @@
             <b>Events</b>
             <ul>
                 <? foreach(array_slice($info['events'], 0, 2) as $e) { ?>
-                    <li><a href="<?= h($e['event_url']) ?>"><?= h($e['name']) ?></a></li>
+                    <li class="icon-calendar"><a href="<?= h($e['event_url']) ?>"><?= h($e['name']) ?></a></li>
                 <? } ?>
             </ul>
         </div>
@@ -56,7 +56,7 @@
             <b>Recent Projects</b>
             <ul>
                 <? foreach(array_slice($info['projects'], 0, 2) as $p) { ?>
-                    <li>
+                    <li class="icon-star">
                         <a href="<?= h($p['link_url']) ?>"><?= h($p['name']) ?></a>
                         <br><?= h($p['description']) ?>
                     </li>
