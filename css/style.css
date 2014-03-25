@@ -49,3 +49,16 @@ header img, footer img {
   padding:2em;
   overflow: auto;
 }
+
+/* Story styling */
+
+#brigade-info #stories ul li,
+#brigade-info #events ul li,
+#brigade-info #projects ul li{
+	background-image:none;
+	padding:1em 0;
+}
+
+#join-brigade{
+	float:right;
+}
