@@ -16,10 +16,12 @@
     
 ?>
 <ul id="brigades-list" style="display: none">
-    <? foreach($geojson['features'] as $feature) { ?>
-        <li data-lat="<?= h($feature['geometry']['coordinates'][1]) ?>"
-            data-lon="<?= h($feature['geometry']['coordinates'][0]) ?>" >
-            <a href="<?= $base_url.'/brigade.php/'.rawurlencode($feature['properties']['name']) ?>"><?= h($feature['properties']['name']) ?></a>
+    <? foreach($geojson['features'] as $feature) {
+        $p = $feature['properties'];
+        $c = $feature['geometry']['coordinates'];
+        ?>
+        <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>">
+            <a href="<?= $base_url.'/brigade.php/'.rawurlencode($p['name']) ?>"><?= h($p['name']) ?></a>
         </li>
     <? } ?>
 </ul>

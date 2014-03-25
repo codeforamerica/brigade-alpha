@@ -94,16 +94,16 @@ $(function(){
     }
   }
   
-  function updateOverlay(brigade){
-  
+  function updateOverlay(brigade)
+  {
     $('#overlay').html('<a href="#" class="button-prominent button-progress"></a>');
     $('#overlay a').text('Loading ' + brigade.name + '...');
+    iWantToGoToThere(brigadePageURL(brigade));
 
     $.ajax(brigadeAjaxURL(brigade), {
         success: function(html)
         {
             $('#overlay').html(html);
-            iWantToGoToThere(brigadePageURL(brigade));
         }
         });
   }
@@ -113,15 +113,15 @@ $(function(){
     resetOverlay();
   })
 
-  function resetOverlay(){
-  
+  function resetOverlay()
+  {
     $('#overlay').html('<a href="#" class="button-prominent button-progress">Loading...</a>');
+    iWantToGoToThere(indexPageURL());
 
     $.ajax(indexAjaxURL(), {
         success: function(html)
         {
             $('#overlay').html(html);
-            iWantToGoToThere(indexPageURL());
         }
         });
   }

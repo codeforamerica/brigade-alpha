@@ -11,7 +11,7 @@
 
 ?>
 
-<? include('brigades.php') ?>
+<? include('list-brigades.php') ?>
 <div id="map"></div>
 <div id="overlay" class="slab-red">
     <? if($brigade_name) {
@@ -29,5 +29,6 @@
     <h4>Brigade Sponsors</h4>
     <img src="http://codeforamerica.org/media/images/sponsorlogos/accela.gif" width="200">
 </div>
-        
+
+<script src="<?= $base_url ?>/js/map.js"></script>
 <? include('_layouts/bottom.php') ?>
