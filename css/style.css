@@ -59,8 +59,9 @@ header img, footer img {
 
 #brigade-info ul.list-icons li
 {
-	padding-left: 2.5rem;
 	margin-bottom: 1.75rem;
+	padding-left: 3em;
+	padding-top: 0.3em;
 }
 
 #join-brigade{
