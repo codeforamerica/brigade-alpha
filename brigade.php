@@ -92,7 +92,7 @@
                     </li>
             <label class="boolean optional checkbox checkbox" for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
             <input type="hidden" id="<?= h($old_brigade_id) ?>" />
-            <a href="#" class="button">Join now</a>
+            <button href="#" class="button" type="submit" value="Join now" />
         </form>
     </div>
 </div>
