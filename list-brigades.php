@@ -19,8 +19,9 @@
     <? foreach($geojson['features'] as $feature) {
         $p = $feature['properties'];
         $c = $feature['geometry']['coordinates'];
+        $on = ($p['name'] == $brigade_name) ? 1 : 0;
         ?>
-        <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>">
+        <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>">
             <a href="<?= $base_url.'/brigade.php/'.rawurlencode($p['name']) ?>"><?= h($p['name']) ?></a>
         </li>
     <? } ?>

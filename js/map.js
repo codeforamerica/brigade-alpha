@@ -8,7 +8,7 @@ $(function(){
     {
       scrollWheelZoom:false
     }
-    ).setView([35, -100], 3);
+    );
 
   map.zoomControl.setPosition('bottomright');
   formEvents();
@@ -22,6 +22,8 @@ $(function(){
     }
   });
   
+  var latlon = [35, -100], zoom = 3;
+  
   /*
    * Brigade names and locations are in a hidden list called #brigades-list.
    *
@@ -32,6 +34,7 @@ $(function(){
   $('#brigades-list li').each(function(index, _item) {
   
     var item = $(_item),
+        active = parseInt(item.data('on')),
         lat = parseFloat(item.data('lat')),
         lon = parseFloat(item.data('lon')),
         anchor = item.find('a'),
@@ -45,6 +48,12 @@ $(function(){
       title: name,
       brigade: brigade // Add Brigade data to marker
     });
+    
+    if(active)
+    {
+        latlon = [lat, lon]
+        zoom = 6;
+    }
 
     map.addLayer(marker);
 
@@ -54,6 +63,8 @@ $(function(){
     });
 
   });
+  
+  map.setView(latlon, zoom);
   
   // This uses the HTML5 geolocation API, which is available on
   // most mobile browsers and modern browsers, but not in Internet Explorer
