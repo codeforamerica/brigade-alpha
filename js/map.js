@@ -22,7 +22,7 @@ $(function(){
     }
   });
   
-  var latlon = [35, -100], zoom = 3;
+  var geolocate = true, latlon = [35, -100], zoom = 3;
   
   /*
    * Brigade names and locations are in a hidden list called #brigades-list.
@@ -51,6 +51,7 @@ $(function(){
     
     if(active)
     {
+        geolocate = false;
         latlon = [lat, lon]
         zoom = 8;
     }
@@ -64,17 +65,21 @@ $(function(){
 
   });
   
-  map.setView(latlon, zoom);
-  
-  // This uses the HTML5 geolocation API, which is available on
-  // most mobile browsers and modern browsers, but not in Internet Explorer
-  //
-  // See this chart of compatibility for details:
-  // http://caniuse.com/#feat=geolocation
-  if (!navigator.geolocation) {
-      console.log('geolocation is not available');
-  } else {
+  if(geolocate && !navigator.geolocation) {
+    // Use the default latlon if the browser won't help.
+    console.log('geolocation is not available');
+    map.setView(latlon, zoom);
+
+  } else if(geolocate) {
+    // This uses the HTML5 geolocation API, which is available on most
+    // mobile browsers and modern browsers, but not in Internet Explorer.
+    //
+    // See this chart of compatibility for details:
+    // http://caniuse.com/#feat=geolocation
     map.locate({setView:true, maxZoom:4});
+  
+  } else {
+    map.setView(latlon, zoom);
   }
   
   function brigadePageURL(brigade)
