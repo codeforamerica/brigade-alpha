@@ -128,7 +128,7 @@ $(function(){
   function formEvents(){
     $("#brigade-signup-form").css("display", "none");
     $("#join-brigade").on("click", function(){
-      $("#stories, #events, #projects").css("display", "none");
+      $("#item-lists").css("display", "none");
       $("#brigade-signup-form").css("display", "block");
     })
   };

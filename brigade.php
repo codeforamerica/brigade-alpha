@@ -45,30 +45,26 @@
 		The Brigade program helps local volunteer groups partner with government in an effort to enhance their communities. Brigades hold regular hack nights, events, advocate for open data, and deploy apps.
 	</p>
 	-->
-    <? if($info['stories']) { ?>
-        <div id="stories">
-            <b>Recent Stories</b>
-            <ul>
+	<div id="item-lists">
+        <? if($info['stories']) { ?>
+            <h5>Recent Stories</h4>
+            <ul class="list-no-bullets list-icons">
                 <? foreach(array_slice($info['stories'], 0, 2) as $s) { ?>
                     <li class="icon-bullhorn"><a href="<?= h($s['link']) ?>"><?= h($s['title']) ?></a></li>
                 <? } ?>
             </ul>
-        </div>
-    <? } ?>
-    <? if($info['events']) { ?>
-        <div id="events">
-            <b>Events</b>
-            <ul>
+        <? } ?>
+        <? if($info['events']) { ?>
+            <h5>Events</h5>
+            <ul class="list-no-bullets list-icons">
                 <? foreach(array_slice($info['events'], 0, 2) as $e) { ?>
                     <li class="icon-calendar"><a href="<?= h($e['event_url']) ?>"><?= h($e['name']) ?></a></li>
                 <? } ?>
             </ul>
-        </div>
-    <? } ?>
-    <? if($info['projects']) { ?>
-        <div id="projects">
-            <b>Recent Projects</b>
-            <ul>
+        <? } ?>
+        <? if($info['projects']) { ?>
+            <h5>Recent Projects</h5>
+            <ul class="list-no-bullets list-icons">
                 <? foreach(array_slice($info['projects'], 0, 2) as $p) { ?>
                     <li class="icon-star">
                         <a href="<?= h($p['link_url']) ?>"><?= h($p['name']) ?></a>
@@ -76,8 +72,8 @@
                     </li>
                 <? } ?>
             </ul>
-        </div>
-    <? } ?>
+        <? } ?>
+    </div>
     <div id="brigade-signup-form">
         <form action="/members">
             <ul class="list-form">
