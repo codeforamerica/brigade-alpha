@@ -89,7 +89,7 @@ $(function(){
   
   function brigadeAjaxURL(brigade)
   {
-    return document.location.brigade_base_url+'/brigade/'+escape(brigade.name);
+    return document.location.brigade_base_url+'/overlay-brigade/'+escape(brigade.name);
   }
   
   function indexPageURL()
@@ -99,7 +99,7 @@ $(function(){
   
   function indexAjaxURL()
   {
-    return document.location.brigade_base_url+'/index-sidebar';
+    return document.location.brigade_base_url+'/overlay-home';
   }
   
   function iWantToGoToThere(url)

@@ -16,11 +16,11 @@
 <div id="overlay" class="slab-red">
     <? if($brigade_name) {
 
-      include('brigade.php');
+      include('overlay-brigade.php');
       
     } else {
 
-      include('index-sidebar.php');
+      include('overlay-home.php');
     
     } ?>
 </div>
