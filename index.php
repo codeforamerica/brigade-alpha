@@ -6,7 +6,7 @@
     
     if(preg_match('#^/(.+)#', $_SERVER['PATH_INFO']))
     {
-        $brigade_name = ltrim($_SERVER['PATH_INFO'], '/');
+        $brigade_slug = ltrim($_SERVER['PATH_INFO'], '/');
     }
 
 ?>
@@ -14,7 +14,7 @@
 <? include('list-brigades.php') ?>
 <div id="map"></div>
 <div id="overlay" class="slab-red">
-    <? if($brigade_name) {
+    <? if($brigade_slug) {
 
       include('overlay-brigade.php');
       

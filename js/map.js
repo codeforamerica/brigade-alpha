@@ -41,7 +41,7 @@ $(function(){
         name = anchor.text(),
         href = anchor.attr('href');
         
-    var brigade = {name: name};
+    var brigade = {name: name, href: href};
     
     var marker = new BrigadeMarker(new L.LatLng(lat, lon), {
       icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall'}),
@@ -84,7 +84,7 @@ $(function(){
   
   function brigadePageURL(brigade)
   {
-    return document.location.brigade_base_url+'/index/'+escape(brigade.name);
+    return brigade.href;
   }
   
   function brigadeAjaxURL(brigade)
