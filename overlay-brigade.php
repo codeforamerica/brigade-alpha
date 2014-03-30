@@ -1,6 +1,6 @@
 <?php
 
-    date_default_timezone_set('America/Los_Angeles');
+    date_default_timezone_set('UTC');
 
     if(empty($brigade_slug))
     {
@@ -62,7 +62,7 @@
                 <? foreach($info['recent_events'] as $e) { ?>
                     <li class="icon-calendar">
                         <a href="<?= h($e['event_url']) ?>"><?= h($e['name']) ?></a>
-                        <br><?= h(date('D, M j Y g:ia T', strtotime($e['start_time']))) ?>
+                        <br><?= (new DateTime($e['start_time']))->format('D, M j Y g:ia <!--O-->') ?>
                     </li>
                 <? } ?>
             </ul>
