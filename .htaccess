@@ -1,2 +1,6 @@
+#
+# For this work, Apache must be configured with:
+# AllowOverride +FileInfo +Options=MultiViews
+#
 Options +MultiViews
 MultiviewsMatch Any

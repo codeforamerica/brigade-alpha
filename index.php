@@ -4,10 +4,9 @@
     
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
     
-    if(preg_match('#^/(.+)#', $_SERVER['PATH_INFO']))
-    {
-        $brigade_slug = ltrim($_SERVER['PATH_INFO'], '/');
-    }
+    $brigade_slug = preg_match('#^/(.+)#', $_SERVER['PATH_INFO'])
+        ? ltrim($_SERVER['PATH_INFO'], '/')
+        : false;
 
 ?>
 
