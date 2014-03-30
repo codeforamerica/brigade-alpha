@@ -62,7 +62,7 @@
                 <? foreach($info['recent_events'] as $e) { ?>
                     <li class="icon-calendar">
                         <a href="<?= h($e['event_url']) ?>"><?= h($e['name']) ?></a>
-                        <br><?= (new DateTime($e['start_time']))->format('D, M j Y g:ia <!--O-->') ?>
+                        <br><? $dt = new DateTime($e['start_time']); echo $dt->format('D, M j Y g:ia <!--O-->') ?>
                     </li>
                 <? } ?>
             </ul>
