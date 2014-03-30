@@ -80,19 +80,20 @@
         <? } ?>
     </div>
     <div id="brigade-signup-form">
-        <form action="/members">
+        <form action="http://brigade.codeforamerica.org/members" id="new_user" method="post" novalidate="novalidate">
+            <input type="hidden" name="source" value="brigade" />
             <ul class="list-form">
                 <li class="form-field">
                     <label for="user_full_name">Your full name</label>
-                        <input id="user_full_name" class="input" type="text" name="user[full_name]" placeholder="Mike Migurski">
+                        <input id="user_full_name" class="input" type="text" name="user[full_name]" placeholder="Ben Franklin">
                     </li>
                     
                     <li class="form-field">
                         <label for="user_email">Your email</label>
-                        <input id="user_email" class="input" type="email" name="user[email]" placeholder="your@email.com" />
+                        <input id="user_email" class="input" type="email" name="user[email]" placeholder="benfranklin@codeforamerica.org" />
                     </li>
-            <label class="boolean optional checkbox checkbox" for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
-            <input type="hidden" id="<?= h($old_brigade_id) ?>" />
+            <label for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
+            <input type="hidden" id="user_location_id" name="brigade_id" value="<?= h($old_brigade_id) ?>" />
             <button class="button" type="submit">Join now</button>
         </form>
     </div>
