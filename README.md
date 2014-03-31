@@ -67,7 +67,7 @@ Submitting a Pull Request
 5. Submit a pull request.
 
 
-Copywrite
+Copyright
 ---------
 
 Copyright (c) 2014 Code for America.
