@@ -17,13 +17,17 @@
 ?>
 <ul id="brigades-list" style="display: none">
     <? foreach($geojson['features'] as $feature) {
-        $id = $feature['id'];
-        $p = $feature['properties'];
-        $c = $feature['geometry']['coordinates'];
-        $on = ($id == $brigade_slug) ? 1 : 0;
-        ?>
-        <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>" data-id="<?= h($id) ?>">
-            <a href="<?= $base_url.'/index/'.rawurlencode($id) ?>"><?= h($p['name']) ?></a>
-        </li>
-    <? } ?>
+            if ($feature['properties']['type'] == "Brigade") {
+                $id = $feature['id'];
+                $p = $feature['properties'];
+                $c = $feature['geometry']['coordinates'];
+                $on = ($id == $brigade_slug) ? 1 : 0;
+                ?>
+                <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>" data-id="<?= h($id) ?>">
+                    <a href="<?= $base_url.'/index/'.rawurlencode($id) ?>"><?= h($p['name']) ?></a>
+                </li>
+                <?
+            }
+            
+        } ?>
 </ul>
