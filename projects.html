@@ -187,7 +187,7 @@
 
       $('#hack-night-projects tbody').spin({top: '40px'}); //show a spinner while loading data
 
-      $.when( $.getJSON( "http://civic-tech-movement.codeforamerica.org/api/organizations/51" ) ).then(function( data, textStatus, jqXHR ) {
+      $.when( $.getJSON( "http://codeforamerica.org/api/organizations/51" ) ).then(function( data, textStatus, jqXHR ) {
 
         data = data.projects;
 

@@ -1,6 +1,6 @@
 <?php
 
-    $ctm_api_base = 'http://civic-tech-movement.codeforamerica.org/api';
+    $ctm_api_base = 'http://codeforamerica.org/api';
     $brigades_url = "{$ctm_api_base}/organizations.geojson";
     $geojson = json_decode(file_get_contents($brigades_url), true);
     

@@ -12,7 +12,7 @@ $(function(){
 
   map.zoomControl.setPosition('bottomright');
   formEvents();
-  cfapi = "http://civic-tech-movement.codeforamerica.org/api/organizations.geojson"
+  cfapi = "http://codeforamerica.org/api/organizations.geojson"
   // cfapi = "http://localhost:5000/api/organizations"
 
   // Custom marker type with space for Brigade data
