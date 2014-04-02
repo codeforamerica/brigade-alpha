@@ -14,7 +14,7 @@ Tech
 ----
 This site is built with HTML, CSS, Javascript, and PHP.
 
-The data about the Brigades will is from the [Civic Tech Movement API](http://civic-tech-movement.codeforamerica.org/). The work on that project is happening under the [civic-json-worker](https://github.com/codeforamerica/civic-json-worker) repository.
+The data about the Brigades will is from the [Civic Tech Movement API](http://codeforamerica.org/api). The work on that project is happening under the [civic-json-worker](https://github.com/codeforamerica/civic-json-worker) repository.
 
 
 Contacts

@@ -7,7 +7,7 @@
         $brigade_slug = ltrim($_SERVER['PATH_INFO'], '/');
     }
 
-    $ctm_api_base = 'http://civic-tech-movement.codeforamerica.org/api';
+    $ctm_api_base = 'http://codeforamerica.org/api';
     $brigade_path = rawurlencode($brigade_slug);
     $brigade_url = "{$ctm_api_base}/organizations/{$brigade_path}";
     $info = json_decode(file_get_contents($brigade_url), true);
