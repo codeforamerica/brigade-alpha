@@ -48,18 +48,18 @@
 	</p>
 	-->
 	<div id="item-lists">
-        <? if($info['recent_stories']) { ?>
-            <h5>Recent Stories</h4>
+        <? if($info['current_stories']) { ?>
+            <h5>Current Stories</h4>
             <ul class="list-no-bullets list-icons">
-                <? foreach($info['recent_stories'] as $s) { ?>
+                <? foreach($info['current_stories'] as $s) { ?>
                     <li class="icon-bullhorn"><a href="<?= h($s['link']) ?>"><?= h($s['title']) ?></a></li>
                 <? } ?>
             </ul>
         <? } ?>
-        <? if($info['recent_events']) { ?>
-            <h5>Events</h5>
+        <? if($info['current_events']) { ?>
+            <h5>Current Events</h5>
             <ul class="list-no-bullets list-icons">
-                <? foreach($info['recent_events'] as $e) { ?>
+                <? foreach($info['current_events'] as $e) { ?>
                     <li class="icon-calendar">
                         <a href="<?= h($e['event_url']) ?>"><?= h($e['name']) ?></a>
                         <br><? $dt = new DateTime($e['start_time']); echo $dt->format('D, M j Y g:ia <!--O-->') ?>
@@ -67,10 +67,10 @@
                 <? } ?>
             </ul>
         <? } ?>
-        <? if($info['recent_projects']) { ?>
-            <h5>Recent Projects</h5>
+        <? if($info['current_projects']) { ?>
+            <h5>Current Projects</h5>
             <ul class="list-no-bullets list-icons">
-                <? foreach($info['recent_projects'] as $p) { ?>
+                <? foreach($info['current_projects'] as $p) { ?>
                     <li class="icon-star">
                         <a href="<?= h($p['link_url']) ?>"><?= h($p['name']) ?></a>
                         <br><?= h($p['description']) ?>
