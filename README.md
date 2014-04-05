@@ -1,7 +1,7 @@
 Brigade Alpha
 =============
 
-Welcome to the [new Brigade website](http://codeforamerica..org/brigade).
+Welcome to the [new Brigade website](http://codeforamerica.org/brigade).
 
 We have a few main goals with this website:
 

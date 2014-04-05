@@ -1,7 +1,10 @@
----
-layout: default
----
+<?
 
+    include('_layouts/top.php');
+    
+    $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
+
+?>
 <div class="layout-semibreve">
 
   <h1>Brigade Activities</h1>
@@ -51,3 +54,4 @@ layout: default
   <p>Brigade is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons, Attribution, Non-Commercial, No-Derivs.</a></p>
 
 </div>
+<? include('_layouts/bottom.php') ?>

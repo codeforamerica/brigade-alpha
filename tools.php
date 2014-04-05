@@ -1,7 +1,10 @@
----
-layout: default
----
+<?
 
+    include('_layouts/top.php');
+    
+    $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
+
+?>
 <section>
   <div class="layout-breve">      
     <div class="layout-crotchet-staccato">
@@ -48,3 +51,4 @@ layout: default
     </div>
   </div>
 </section>
+<? include('_layouts/bottom.php') ?>
