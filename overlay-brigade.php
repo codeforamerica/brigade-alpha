@@ -80,7 +80,7 @@
         <? } ?>
     </div>
     <div id="brigade-signup-form">
-        <form action="http://brigade.codeforamerica.org/members" id="new_user" method="post" novalidate="novalidate">
+        <form id="new_user" novalidate="novalidate">
             <input type="hidden" name="source" value="brigade" />
             <ul class="list-form">
                 <li class="form-field">
@@ -93,9 +93,36 @@
                         <input id="user_email" class="input" type="email" name="user[email]" placeholder="benfranklin@codeforamerica.org" />
                     </li>
             <label for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
-            <input type="hidden" id="user_location_id" name="brigade_id" value="<?= h($old_brigade_id) ?>" />
-            <button class="button" type="submit">Join now</button>
+            <select id="user_location_id" name="user[location_id]" style="display:none;">
+              <option value></option>
+            </select>
+            <input type="hidden" name="brigade_id" value="<?= h($old_brigade_id) ?>" />
         </form>
+        <button id="button">Join</button>
     </div>
 </div>
+<div id="brigade_text" style="display:none;">
+    <p><b>Thanks for signing up for <?= $info['name'] ?>.</b></p>
+    <p><a href="<?= $info['events_url'] ?>"><?= $info['website'] ?></a></p>
+    <p>You should join <?= $info['name'] ?>’s Meetup and check out their upcoming events:</p>
+    <p><a href="<?= $info['events_url'] ?>"><?= $info['events_url'] ?></a></p>
+    <p>Thanks again and see you soon.</p>
+    <br>
+    <p><i>Brigade Support Team</i></p>
+    <p><a href='mailto:brigade-info@codeforamerica.org'>brigade-info@codeforamerica.org</a></p>
+</div>
+
+<script>
+    $("#button").click(function(e){
+      e.preventDefault();
+
+      data = $("#new_user").serialize();
+      $.post("http://old-brigade.codeforamerica.org/members", data);
+
+      $("#brigade-info").hide()
+      $("#join-form").hide()
+      $("#button").hide()
+      $("#brigade_text").show()
+    });
+</script>
 
