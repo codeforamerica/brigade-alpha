@@ -72,7 +72,7 @@
             <ul class="list-no-bullets list-icons">
                 <? foreach($info['current_projects'] as $p) { ?>
                     <li class="icon-star">
-                        <a href="<?= h($p['link_url']) ?>"><?= h($p['name']) ?></a>
+                        <a href="<?= h($p['link_url'] ? $p['link_url'] : $p['code_url']) ?>"><?= h($p['name']) ?></a>
                         <br><?= h($p['description']) ?>
                     </li>
                 <? } ?>
