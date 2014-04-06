@@ -37,11 +37,16 @@ $(function(){
         active = parseInt(item.data('on')),
         lat = parseFloat(item.data('lat')),
         lon = parseFloat(item.data('lon')),
+        id = item.data('id'),
         anchor = item.find('a'),
         name = anchor.text(),
         href = anchor.attr('href');
         
-    var brigade = {name: name, href: href};
+    var brigade = {
+        name: name,
+        page_href: href,
+        ajax_href: brigadeAjaxURL(id)
+        };
     
     var marker = new BrigadeMarker(new L.LatLng(lat, lon), {
       icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall'}),
@@ -82,14 +87,9 @@ $(function(){
     map.setView(latlon, zoom);
   }
   
-  function brigadePageURL(brigade)
+  function brigadeAjaxURL(id)
   {
-    return brigade.href;
-  }
-  
-  function brigadeAjaxURL(brigade)
-  {
-    return document.location.brigade_base_url+'/overlay-brigade/'+escape(brigade.name);
+    return document.location.brigade_base_url+'/overlay-brigade/'+escape(id);
   }
   
   function indexPageURL()
@@ -114,9 +114,9 @@ $(function(){
   {
     $('#overlay').html('<a href="#" class="button-prominent button-progress"></a>');
     $('#overlay a').text('Loading ' + brigade.name + '...');
-    iWantToGoToThere(brigadePageURL(brigade));
+    iWantToGoToThere(brigade.page_href);
 
-    $.ajax(brigadeAjaxURL(brigade), {
+    $.ajax(brigade.ajax_href, {
         success: function(html)
         {
             $('#overlay').html(html);
