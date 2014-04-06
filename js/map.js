@@ -92,14 +92,14 @@ $(function(){
     return document.location.brigade_base_url+'/overlay-brigade/'+escape(id);
   }
   
-  function indexPageURL()
+  function indexPageURL(brigade_base_url)
   {
-    return document.location.brigade_base_url+'/';
+    return brigade_base_url+'/';
   }
   
-  function indexAjaxURL()
+  function indexAjaxURL(brigade_base_url)
   {
-    return document.location.brigade_base_url+'/overlay-home';
+    return brigade_base_url+'/overlay-home';
   }
   
   function iWantToGoToThere(url)
@@ -126,8 +126,9 @@ $(function(){
   }
 
   // Reset overlay
-  map.on('click', function(e){
-    resetOverlay();
+  map.on('click', function(e) {
+    var brigade_base_url = document.location.brigade_base_url;
+    resetOverlay(brigade_base_url);
   })
 
   function formEvents(){
@@ -138,12 +139,12 @@ $(function(){
     })
   };
 
-  function resetOverlay()
+  function resetOverlay(brigade_base_url)
   {
     $('#overlay').html('<a href="#" class="button-prominent button-progress">Loading...</a>');
-    iWantToGoToThere(indexPageURL());
+    iWantToGoToThere(indexPageURL(brigade_base_url));
 
-    $.ajax(indexAjaxURL(), {
+    $.ajax(indexAjaxURL(brigade_base_url), {
         success: function(html)
         {
             $('#overlay').html(html);
