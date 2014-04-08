@@ -47,7 +47,7 @@
           <li><a href='https://docs.google.com/open?id=0B_WC8QOgiwjzT05IdVdwSk5TX0E'>Meetup Sign</a></li>
       </ul>
       <h4 class="h3">Brigade Sponsors</h4>
-       <p><a href='http://accela.com'><img src='/brigade-alpha/images/accela.gif' width="300"></a></p>
+       <p><a href='http://accela.com'><img src='/images/accela.gif' width="300"></a></p>
     </div>
   </div>
 </section>
