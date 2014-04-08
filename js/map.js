@@ -37,11 +37,16 @@ $(function(){
         active = parseInt(item.data('on')),
         lat = parseFloat(item.data('lat')),
         lon = parseFloat(item.data('lon')),
+        id = item.data('id'),
         anchor = item.find('a'),
         name = anchor.text(),
         href = anchor.attr('href');
         
-    var brigade = {name: name, href: href};
+    var brigade = {
+        name: name,
+        page_href: href,
+        ajax_href: brigadeAjaxURL(id)
+        };
     
     var marker = new BrigadeMarker(new L.LatLng(lat, lon), {
       icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall'}),
@@ -82,24 +87,19 @@ $(function(){
     map.setView(latlon, zoom);
   }
   
-  function brigadePageURL(brigade)
+  function brigadeAjaxURL(id)
   {
-    return brigade.href;
+    return document.location.brigade_base_url+'/overlay-brigade/'+escape(id);
   }
   
-  function brigadeAjaxURL(brigade)
+  function indexPageURL(brigade_base_url)
   {
-    return document.location.brigade_base_url+'/overlay-brigade/'+escape(brigade.name);
+    return brigade_base_url+'/';
   }
   
-  function indexPageURL()
+  function indexAjaxURL(brigade_base_url)
   {
-    return document.location.brigade_base_url+'/';
-  }
-  
-  function indexAjaxURL()
-  {
-    return document.location.brigade_base_url+'/overlay-home';
+    return brigade_base_url+'/overlay-home';
   }
   
   function iWantToGoToThere(url)
@@ -114,9 +114,9 @@ $(function(){
   {
     $('#overlay').html('<a href="#" class="button-prominent button-progress"></a>');
     $('#overlay a').text('Loading ' + brigade.name + '...');
-    iWantToGoToThere(brigadePageURL(brigade));
+    iWantToGoToThere(brigade.page_href);
 
-    $.ajax(brigadeAjaxURL(brigade), {
+    $.ajax(brigade.ajax_href, {
         success: function(html)
         {
             $('#overlay').html(html);
@@ -126,8 +126,9 @@ $(function(){
   }
 
   // Reset overlay
-  map.on('click', function(e){
-    resetOverlay();
+  map.on('click', function(e) {
+    var brigade_base_url = document.location.brigade_base_url;
+    resetOverlay(brigade_base_url);
   })
 
   function formEvents(){
@@ -138,12 +139,12 @@ $(function(){
     })
   };
 
-  function resetOverlay()
+  function resetOverlay(brigade_base_url)
   {
     $('#overlay').html('<a href="#" class="button-prominent button-progress">Loading...</a>');
-    iWantToGoToThere(indexPageURL());
+    iWantToGoToThere(indexPageURL(brigade_base_url));
 
-    $.ajax(indexAjaxURL(), {
+    $.ajax(indexAjaxURL(brigade_base_url), {
         success: function(html)
         {
             $('#overlay').html(html);
