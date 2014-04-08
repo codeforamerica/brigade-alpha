@@ -33,8 +33,8 @@
       </ul>
       <h4><strong>Logos</strong></h4>      
       <ul class="list-ruled">
-          <li><a href='http://codeforamerica.org/wp-content/uploads/2012/01/CfA_Brigade_logo.png'><img src='http://codeforamerica.org/wp-content/uploads/2012/01/CfA_Brigade_logo.png' style='width: 270px; height: 102px;'></a></li>
-          <li><a href='/brigade-alpha/images/BrigadeIcon.png'><img height='100' src='/brigade-alpha/images/BrigadeIcon.png' width='100'></a></li>
+          <li><a href='http://codeforamerica.org/media/images/logos/brigade.png'><img src='http://codeforamerica.org/media/images/logos/brigade.png' style='width: 270px; height: 102px;'></a></li>
+          <li><a href='images/BrigadeIcon.png'><img height='100' src='images/BrigadeIcon.png' width='100'></a></li>
           <li><a href='http://codeforamerica.org/wp-content/uploads/2013/04/tumblr_glasses.png'><img height='100' src='http://codeforamerica.org/wp-content/uploads/2013/04/tumblr_glasses.png' width='100'></a></li>
           <li><a href='http://www.codeforamerica.org/wp-content/uploads/2013/02/the_brigade.png'><img height='100' src='http://www.codeforamerica.org/wp-content/uploads/2013/02/the_brigade.png' width='300'></a></li>
           <li><a href='http://codeforamerica.org/logos/'>More Code for America logos</a></li>
@@ -47,7 +47,7 @@
           <li><a href='https://docs.google.com/open?id=0B_WC8QOgiwjzT05IdVdwSk5TX0E'>Meetup Sign</a></li>
       </ul>
       <h4 class="h3">Brigade Sponsors</h4>
-       <p><a href='http://accela.com'><img src="<?= $base_url ?>/images/accela.gif" width="300"></a></p>
+       <p><a href='http://accela.com'><img src="images/accela.gif" width="300"></a></p>
     </div>
   </div>
 </section>
