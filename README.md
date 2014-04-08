@@ -6,7 +6,7 @@ Welcome to the [new Brigade website](http://codeforamerica.org/brigade).
 We have a few main goals with this website:
 
 1. Clearly explain what the Brigade is.
-2. Show off the activities and stories of the Brigades.
+2. Show off the activities of the Brigades.
 3. Make it easy to find a local Brigade.
 4. Make it easy to join a Brigade.
 
@@ -14,7 +14,7 @@ Tech
 ----
 This site is built with HTML, CSS, Javascript, and PHP.
 
-The data about the Brigades will is from the [Civic Tech Movement API](http://codeforamerica.org/api). The work on that project is happening under the [civic-json-worker](https://github.com/codeforamerica/civic-json-worker) repository.
+The data about the Brigades is from the [Code for America API](http://codeforamerica.org/api). The work on that project is happening under the [cfapi](https://github.com/codeforamerica/cfapi) repository.
 
 
 Contacts
