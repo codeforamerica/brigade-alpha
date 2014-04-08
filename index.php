@@ -26,7 +26,7 @@
 
 <div id="sponsors" class="layout-semibreve">
     <h4>Brigade Sponsors</h4>
-    <img src="http://codeforamerica.org/media/images/sponsorlogos/accela.gif" width="200">
+    <img src="<?= $base_url ?>/images/accela.gif" width="200">
 </div>
 
 <script src="<?= $base_url ?>/js/map.js"></script>
