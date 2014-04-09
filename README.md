@@ -10,9 +10,9 @@ We have a few main goals with this website:
 3. Make it easy to find a local Brigade.
 4. Make it easy to join a Brigade.
 
-Tech
-----
-This site is built with HTML, CSS, Javascript, and PHP.
+Install
+-------
+This site is built with HTML, CSS, Javascript, and PHP. Place it in a publicly-visible directory with a webserver that has PHP installed, such as Apache. No external libraries are required.
 
 The data about the Brigades is from the [Code for America API](http://codeforamerica.org/api). The work on that project is happening under the [cfapi](https://github.com/codeforamerica/cfapi) repository.
 
