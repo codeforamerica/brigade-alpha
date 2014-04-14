@@ -47,7 +47,7 @@
   <div id="organizer_text" style="display:none;">
     <p><b>Thanks for signing up to organize in your community.</b></p>
     <p>Currently, we are hosting a Brigade Organizers hangout outlining your next steps. We hope you will join.</p>
-    <p>Monday, April 7, from 9:00 AM to 10:00 AM PDT <a href='http://www.eventbrite.com/e/code-for-america-brigade-organizers-orientation-april-2014-tickets-10933218551'>RSVP</a>
+    <p>Tuesday, May 6th, from 5:00 PM to 6:00 PM PDT <a href='https://www.eventbrite.com/e/code-for-america-brigade-leaders-orientation-may-2014-tickets-11305730745'>RSVP</a>
     <p>If you are writing us from abroad and can't make this time please contact our International Programs Manager at <a href="mailto:lynn@codeforamerica.org">lynn@codeforamerica.org</a>.</p>
     <p>In the meantime, we have put together some materials for you to start looking through.</p>
     <p><a href='http://codeforamerica.org/brigade/tools'>http://codeforamerica.org/brigade/tools</a></p>
