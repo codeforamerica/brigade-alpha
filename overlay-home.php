@@ -1,6 +1,6 @@
   <div id="brigade-info">
     <h2 id="brigade-name">The Code for America Brigade</h2>
-    <p id="program-info">The Brigade program helps local volunteer groups partner with government in an effort to enhance their communities. Brigades hold regular hack nights, events, advocate for open data, and deploy apps.</p>
+    <p id="program-info">The Code for America Brigade program is an international network of people committed to using their voices and hands, in collaboration with local governments, to make their cities better.</p>
   </div>
 
   <div id="join-form">
