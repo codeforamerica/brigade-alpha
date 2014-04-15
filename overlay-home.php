@@ -35,7 +35,6 @@
 
   <div id="no_brigade_text" style="display:none;">
     <p><b>Thanks for your interest in a Code for America Brigade in your community.</b></p>
-    <p>We’ll let you know if things start picking up in your area.</p>
     <p>In the meantime, we’ll keep in touch about opportunities to participate in activities at the national level.</p>
     <p>Remember, if you change your mind, you can always come back to sign up to be an organizer and take a more proactive role.</p>
     <p>Good luck and we'll be in touch.</p>
