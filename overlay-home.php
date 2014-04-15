@@ -60,20 +60,31 @@
     $("#button").click(function(e){
       e.preventDefault();
 
-      data = $("#new_user").serialize();
-      $.post("http://old-brigade.codeforamerica.org/members", data);
+      // Check that the form is filled out
+      if ($("#user_full_name").val() && $("#user_email").val()) {
 
-      if ($("#no_brigade").is('[name]')){
-        $("#no_brigade_text").show();
+        // Post form data to old Brigade site
+        data = $("#new_user").serialize();
+        $.post("http://old-brigade.codeforamerica.org/members", data);
+
+        // If no Brigade selected, show appropriate thanks
+        if ($("#no_brigade").is('[name]')){
+          $("#no_brigade_text").show();
+        }
+
+        // If Organizing, show appropriate thanks
+        if ($("#organizer").is('[name]')) {
+          $("#organizer_text").show();
+        }
+        
+        $("#brigade-info").hide()
+        $("#join-form").hide()
+        $("#button").hide()
       }
-      if ($("#organizer").is('[name]')) {
-        $("#organizer_text").show();
-      }
-      $("#brigade-info").hide()
-      $("#join-form").hide()
-      $("#button").hide()
+
+
     });
-    
+
     $('#organizer').bind('change', function(){
       if ($('#organizer').is(':checked')) {
         $("#no_brigade").attr("name",null);
