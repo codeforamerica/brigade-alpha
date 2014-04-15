@@ -3,7 +3,13 @@
     $ctm_api_base = 'http://codeforamerica.org/api';
     $brigades_url = "{$ctm_api_base}/organizations.geojson";
     $geojson = json_decode(file_get_contents($brigades_url), true);
-    
+    // Sort the geojson alphabetically
+    function alphabet_sort($a, $b)
+      {
+        return strcmp($a['properties']['city'], $b['properties']['city']);
+      }
+    usort($geojson['features'], "alphabet_sort");
+
     if(!function_exists('h'))
     {
         function h($s) 
