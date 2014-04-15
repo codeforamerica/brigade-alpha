@@ -20,7 +20,7 @@
             <label for="user_work_in_geovernment"><input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
         </li>
         <li class="form-field">
-            <label for="source"><input id="organizer" value="organizer" type="checkbox">I want to Organize!</label>
+            <label for="source"><input id="organizer" value="organizer" type="checkbox">I want to start a Brigade in my community!</label>
         </li>
         <select id="user_location_id" name="user[location_id]" style="display:none;">
           <option value></option>
