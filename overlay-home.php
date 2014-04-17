@@ -30,7 +30,7 @@
       <input id="user_human_check" name="user[human_check]" size="50" type="hidden">
       <input name="utf8" type="hidden" value="✓">
     </form>
-    <button id="button">Join</button>
+    <button id="join-button">Join</button>
   </div>
 
   <div id="no_brigade_text" style="display:none;">
@@ -57,7 +57,7 @@
   </div>
 
   <script>
-    $("#button").click(function(e){
+    $("#join-button").click(function(e){
       e.preventDefault();
 
       // Check that the form is filled out
@@ -68,18 +68,21 @@
         $.post("http://old-brigade.codeforamerica.org/members", data);
 
         // If no Brigade selected, show appropriate thanks
-        if ($("#no_brigade").is('[name]')){
+        if ($("#no_brigade").attr("name")){
           $("#no_brigade_text").show();
         }
 
         // If Organizing, show appropriate thanks
-        if ($("#organizer").is('[name]')) {
+        if ($("#organizer").attr("name")){
           $("#organizer_text").show();
         }
-        
+
         $("#brigade-info").hide()
         $("#join-form").hide()
-        $("#button").hide()
+        $("#join-button").hide()
+
+      } else {
+        console.log("FILL OUT THE FORM")
       }
 
 
