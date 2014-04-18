@@ -97,6 +97,7 @@
               <option value></option>
             </select>
             <input type="hidden" name="brigade_id" value="<?= h($old_brigade_id) ?>" />
+            <input type="hidden" name="brigade_url" value="<?= h($brigade_url) ?>" />
         </form>
         <button id="button">Join</button>
     </div>
