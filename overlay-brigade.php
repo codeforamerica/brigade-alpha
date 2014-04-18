@@ -69,7 +69,6 @@
     </div>
     <div id="brigade-signup-form">
         <form id="new_user" novalidate="novalidate" action="<?= $base_url ?>/signup" method="POST">
-            <input type="hidden" name="source" value="brigade" />
             <ul class="list-form">
                 <li class="form-field">
                     <label for="user_full_name">Your full name</label>

@@ -45,7 +45,6 @@
     &lt;/label&gt;
     
     &lt;input name="brigade_url" type="hidden" value="<?= h($brigade_url) ?>" /&gt;
-    &lt;input type="hidden" name="source" value="brigade" /&gt;
     &lt;button&gt;Join <?= h($info['name']) ?>&lt;/button&gt;
 
 &lt;/form&gt;

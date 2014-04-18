@@ -3,7 +3,7 @@
     //
     // What kind of request is this?
     //
-    $is_specific_brigade = ($_POST['source'] == 'brigade' && $_POST['brigade_url']) ? true : false;
+    $is_specific_brigade = ($_POST['brigade_url']) ? true : false;
     $is_organizer = (!$is_specific_brigade && $_POST['source'] == 'organizer') ? true : false;
     $is_generic = (!$is_specific_brigade && !$is_organizer) ? true : false;
 
@@ -11,6 +11,7 @@
     // We're looking for numeric IDs from the old site for the Join form.
     //
     $old_brigade_id = null;
+    $brigade_url = null;
 
     if($is_specific_brigade)
     {
@@ -31,9 +32,19 @@
     //
     // Construct a POST request to the old Brigade site.
     //
+    if($is_specific_brigade) {
+        $source = 'brigade';
+    
+    } elseif($is_organizer) {
+        $source = 'organizer';
+    
+    } else {
+        $source = 'no_brigade';
+    }
+    
     $posted = array(
         // Source is one of "organizer", "brigade", or "no_brigade".
-        'source' => ($_POST['source'] ? $_POST['source'] : 'no_brigade'),
+        'source' => $source,
 
         // Brigade ID is the numeric identifier for the old site.
         'brigade_id' => $old_brigade_id,
@@ -74,7 +85,7 @@
     */
     
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
-    $query = array('source' => $_POST['source'], 'brigade_url' => $_POST['brigade_url']);
+    $query = array('source' => $posted['source'], 'brigade_url' => $brigade_url);
     $redirect = sprintf('%s/thank-you?%s', $base_url, http_build_query($query));
     
     header('HTTP/1.1 303 See Other');
