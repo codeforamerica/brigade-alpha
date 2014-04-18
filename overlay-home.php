@@ -22,7 +22,7 @@
         </li>
         <li class="form-field">
             <label for="user_work_in_geovernment">
-              <input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
+              <input id="user_work_in_government" name="work_in_government" type="checkbox" value="1">
               I work in government
             </label>
         </li>

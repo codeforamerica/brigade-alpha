@@ -80,7 +80,7 @@
                         <label for="user_email">Your email</label>
                         <input id="user_email" class="input" type="email" name="email" placeholder="benfranklin@codeforamerica.org" />
                     </li>
-            <label for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
+            <label for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="work_in_government" type="checkbox" value="1">I work in government</label>
             <select id="user_location_id" name="user[location_id]" style="display:none;">
               <option value></option>
             </select>

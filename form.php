@@ -41,7 +41,7 @@
 
     &lt;label&gt;
     I work in government
-    &lt;input name="user[work_in_government]" value="1" type="checkbox"&gt;
+    &lt;input name="work_in_government" value="1" type="checkbox"&gt;
     &lt;/label&gt;
     
     &lt;input name="brigade_url" type="hidden" value="<?= h($brigade_url) ?>" /&gt;

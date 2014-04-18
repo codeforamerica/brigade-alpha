@@ -58,7 +58,7 @@
             <input id="user_email_mobile" name="email" type="text" placeholder="benfranklin@codeforamerica.org">
         </li>
         <li class="form-field">
-            <label for="user_work_in_geovernment_mobile"><input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
+            <label for="user_work_in_geovernment_mobile"><input id="user_work_in_government" name="work_in_government" type="checkbox" value="1">I work in government</label>
         </li>
         <li class="form-field">
             <label>

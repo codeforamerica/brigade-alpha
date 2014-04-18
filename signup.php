@@ -43,7 +43,8 @@
             'email' => $_POST['email'],
             'full_name' => $_POST['name'],
             'location_id' => $_POST['user']['location_id'],
-            'work_in_government' => $_POST['user']['work_in_government']
+            'work_in_government' => $_POST['work_in_government'],
+            'willing_to_organize' => ($is_organizer ? 'true' : '')
             )
         );
 
