@@ -12,14 +12,14 @@
 
     if(!function_exists('h'))
     {
-        function h($s) 
+        function h($s)
         {
             return htmlspecialchars($s);
         }
     }
 
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
-    
+
 ?>
 <ul id="brigades-list" style="display: none">
     <? foreach($geojson['features'] as $feature) {
@@ -48,7 +48,8 @@
     <button id="show-form-mobile">Want to get connected?</button>
 
     <form accept-charset="UTF-8" id="new_user_mobile" novalidate="novalidate" style="display: none;">
-      <input id="no_brigade_mobile" type="hidden" name="source" value="no_brigade">
+      <input id="no_brigade_mobile" type="hidden" value="no_brigade" name="source">
+      <input id="organizer_mobile" type="hidden" value="organizer">
       <ul class="list-form">
         <li class="form-field">
             <label for="user_full_name">Full name</label>
@@ -62,7 +63,10 @@
             <label for="user_work_in_geovernment_mobile"><input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
         </li>
         <li class="form-field">
-            <label for="source"><input id="organizer_mobile" value="organizer" type="checkbox">I want to lead a Brigade in my community!</label>
+            <label>
+              <input id="user_willing_to_organize_true_mobile" name="user[willing_to_organize]" type="checkbox" value="true" />
+              I want to lead a Brigade in my community!
+            </label>
         </li>
         <select id="user_location_id_mobile" name="user[location_id]" style="display:none;">
           <option value></option>
@@ -135,8 +139,8 @@
 
     });
 
-    $('#organizer_mobile').bind('change', function(){
-      if ($('#organizer_mobile').is(':checked')) {
+    $('#user_willing_to_organize_true_mobile').bind('change', function(){
+      if ($('#user_willing_to_organize_true_mobile').is(':checked')) {
         $("#no_brigade_mobile").attr("name",null);
         $("#organizer_mobile").attr("name","source");
       } else {

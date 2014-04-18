@@ -28,7 +28,7 @@
 
     if(!function_exists('h'))
     {
-        function h($s) 
+        function h($s)
         {
             return htmlspecialchars($s);
         }

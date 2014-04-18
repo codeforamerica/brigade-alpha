@@ -7,6 +7,7 @@
     <h4>Want to get connected?</h4>
     <form accept-charset="UTF-8" id="new_user" novalidate="novalidate">
       <input id="no_brigade" type="hidden" name="source" value="no_brigade">
+      <input id="organizer" type="hidden" value="organizer">
       <ul class="list-form">
         <li class="form-field">
             <label for="user_full_name">Full name</label>
@@ -17,10 +18,16 @@
             <input id="user_email" name="user[email]" type="text" placeholder="benfranklin@codeforamerica.org">
         </li>
         <li class="form-field">
-            <label for="user_work_in_geovernment"><input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
+            <label for="user_work_in_geovernment">
+              <input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
+              I work in government
+            </label>
         </li>
         <li class="form-field">
-            <label for="source"><input id="organizer" value="organizer" type="checkbox">I want to lead a Brigade in my community!</label>
+            <label>
+              <input id="user_willing_to_organize_true" name="user[willing_to_organize]" type="checkbox" value="true" />
+              I want to lead a Brigade in my community!
+            </label>
         </li>
         <select id="user_location_id" name="user[location_id]" style="display:none;">
           <option value></option>
@@ -88,8 +95,8 @@
 
     });
 
-    $('#organizer').bind('change', function(){
-      if ($('#organizer').is(':checked')) {
+    $('#user_willing_to_organize_true').bind('change', function(){
+      if ($('#user_willing_to_organize_true').is(':checked')) {
         $("#no_brigade").attr("name",null);
         $("#organizer").attr("name","source");
       } else {
