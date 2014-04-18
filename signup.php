@@ -8,6 +8,27 @@
     $is_generic = (!$is_specific_brigade && !$is_organizer) ? true : false;
 
     //
+    // We're looking for numeric IDs from the old site for the Join form.
+    //
+    $old_brigade_id = null;
+
+    if($is_specific_brigade)
+    {
+        $old_brigade_id = -1;
+        $old_brigades_url = 'http://old-brigade.codeforamerica.org/brigades.json';
+        $old_brigades = json_decode(file_get_contents($old_brigades_url), true);
+
+        $brigade_url = $_POST['brigade_url'];
+        $brigade_info = json_decode(file_get_contents($brigade_url), true);
+
+        foreach($old_brigades as $old)
+        {
+            if($old['name'] == $brigade_info['name'])
+                $old_brigade_id = $old['id'];
+        }
+    }
+
+    //
     // Construct a POST request to the old Brigade site.
     //
     $posted = array(
@@ -15,7 +36,7 @@
         'source' => ($_POST['source'] ? $_POST['source'] : 'no_brigade'),
 
         // Brigade ID is the numeric identifier for the old site.
-        'brigade_id' => $_POST['brigade_id'],
+        'brigade_id' => $old_brigade_id,
 
         // User information.
         'user' => array(

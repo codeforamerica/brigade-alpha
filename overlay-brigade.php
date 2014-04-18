@@ -14,20 +14,6 @@
     $brigade_url = "{$ctm_api_base}/organizations/{$brigade_path}";
     $info = json_decode(file_get_contents($brigade_url), true);
 
-    //
-    // We're looking for numeric IDs from the old site for the Join form.
-    // To do: don't do this.
-    //
-    $old_brigade_id = -1;
-    $old_brigades_url = 'http://old-brigade.codeforamerica.org/brigades.json';
-    $old_brigades = json_decode(file_get_contents($old_brigades_url), true);
-
-    foreach($old_brigades as $old)
-    {
-        if($old['name'] == $info['name'])
-            $old_brigade_id = $old['id'];
-    }
-
     if(!function_exists('h'))
     {
         function h($s) 
@@ -98,7 +84,6 @@
             <select id="user_location_id" name="user[location_id]" style="display:none;">
               <option value></option>
             </select>
-            <input type="hidden" name="brigade_id" value="<?= h($old_brigade_id) ?>" />
             <input type="hidden" name="brigade_url" value="<?= h($brigade_url) ?>" />
         </form>
         <button id="button">Join</button>
