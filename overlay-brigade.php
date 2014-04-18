@@ -101,16 +101,6 @@
         <button id="button">Join</button>
     </div>
 </div>
-<div id="brigade_text" style="display:none;">
-    <p><b>Thanks for signing up for <?= $info['name'] ?>.</b></p>
-    <p><a href="<?= $info['events_url'] ?>"><?= $info['website'] ?></a></p>
-    <p>You should join <?= $info['name'] ?>’s Meetup and check out their upcoming events:</p>
-    <p><a href="<?= $info['events_url'] ?>"><?= $info['events_url'] ?></a></p>
-    <p>Thanks again and see you soon.</p>
-    <br>
-    <p><i>Brigade Support Team</i></p>
-    <p><a href='mailto:brigade-info@codeforamerica.org'>brigade-info@codeforamerica.org</a></p>
-</div>
 
 <script>
     /*

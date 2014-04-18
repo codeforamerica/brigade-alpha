@@ -74,29 +74,6 @@
     </form>
   </div>
 
-  <div id="no_brigade_text_mobile" style="display:none;">
-    <p><b>Thanks for your interest in a Code for America Brigade in your community.</b></p>
-    <p>In the meantime, we’ll keep in touch about opportunities to participate in activities at the national level.</p>
-    <p>Remember, if you change your mind, you can always come back to sign up to be an organizer and take a more proactive role.</p>
-    <p>Good luck and we'll be in touch.</p>
-    <br>
-    <p><i>Brigade Support Team</i></p>
-    <p><a href='mailto:brigade-info@codeforamerica.org'>brigade-info@codeforamerica.org</a></p>
-  </div>
-
-  <div id="organizer_text_mobile" style="display:none;">
-    <p><b>Thanks for signing up to organize in your community.</b></p>
-    <p>Currently, we are hosting a Brigade Organizers hangout outlining your next steps. We hope you will join.</p>
-    <p>Tuesday, May 6th, from 5:00 PM to 6:00 PM PDT <a href='https://www.eventbrite.com/e/code-for-america-brigade-leaders-orientation-may-2014-tickets-11305730745'>RSVP</a>
-    <p>If you are writing us from abroad and can't make this time please contact our International Programs Manager at <a href="mailto:lynn@codeforamerica.org">lynn@codeforamerica.org</a>.</p>
-    <p>In the meantime, we have put together some materials for you to start looking through.</p>
-    <p><a href='http://codeforamerica.org/brigade/tools'>http://codeforamerica.org/brigade/tools</a></p>
-    <p>Thanks again and see you soon.</p>
-    <br>
-    <p><i>Brigade Support Team</i></p>
-    <p><a href='mailto:brigade-info@codeforamerica.org'>brigade-info@codeforamerica.org</a></p>
-  </div>
-
   <script>
     $("#show-form-mobile").click(function(e){
       $("#new_user_mobile").show();
