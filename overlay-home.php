@@ -5,8 +5,7 @@
 
   <div id="join-form">
     <h4>Want to get connected?</h4>
-    <form accept-charset="UTF-8" id="new_user" novalidate="novalidate">
-      <input id="no_brigade" type="hidden" name="source" value="no_brigade">
+    <form accept-charset="UTF-8" id="new_user" novalidate="novalidate" action="<?= $base_url ?>/signup" method="POST">
       <ul class="list-form">
         <li class="form-field">
             <label for="user_full_name">Full name</label>
@@ -20,7 +19,7 @@
             <label for="user_work_in_geovernment"><input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
         </li>
         <li class="form-field">
-            <label for="source"><input id="organizer" value="organizer" type="checkbox">I want to lead a Brigade in my community!</label>
+            <label for="source"><input name="source" id="organizer" value="organizer" type="checkbox">I want to lead a Brigade in my community!</label>
         </li>
         <select id="user_location_id" name="user[location_id]" style="display:none;">
           <option value></option>
@@ -29,8 +28,8 @@
       </ul>
       <input id="user_human_check" name="user[human_check]" size="50" type="hidden">
       <input name="utf8" type="hidden" value="✓">
+      <button id="join-button">Join</button>
     </form>
-    <button id="join-button">Join</button>
   </div>
 
   <div id="no_brigade_text" style="display:none;">
@@ -57,6 +56,7 @@
   </div>
 
   <script>
+    /*
     $("#join-button").click(function(e){
       e.preventDefault();
 
@@ -97,5 +97,6 @@
         $("#organizer").attr("name",null);
       }
     });
+    */
 
   </script>
