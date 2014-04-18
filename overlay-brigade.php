@@ -117,7 +117,7 @@
       e.preventDefault();
 
       data = $("#new_user").serialize();
-      $.post("http://old-brigade.codeforamerica.org/members", data);
+      $.post("<?= $base_url ?>/signup", data);
 
       $("#brigade-info").hide()
       $("#join-form").hide()
