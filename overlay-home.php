@@ -65,7 +65,7 @@
 
         // Post form data to old Brigade site
         data = $("#new_user").serialize();
-        $.post("http://old-brigade.codeforamerica.org/members", data);
+        $.post("<?= $base_url ?>/signup", data);
 
         // If no Brigade selected, show appropriate thanks
         if ($("#no_brigade").attr("name")){
