@@ -21,10 +21,16 @@
             <input id="user_email" name="email" type="text" placeholder="benfranklin@codeforamerica.org">
         </li>
         <li class="form-field">
-            <label for="user_work_in_geovernment"><input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
+            <label for="user_work_in_geovernment">
+              <input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">
+              I work in government
+            </label>
         </li>
         <li class="form-field">
-            <label for="source"><input name="source" id="organizer" value="organizer" type="checkbox">I want to lead a Brigade in my community!</label>
+            <label>
+              <input id="user_willing_to_organize_true" name="source" type="checkbox" value="organizer" />
+              I want to lead a Brigade in my community!
+            </label>
         </li>
         <select id="user_location_id" name="user[location_id]" style="display:none;">
           <option value></option>
@@ -70,8 +76,8 @@
 
     });
 
-    $('#organizer').bind('change', function(){
-      if ($('#organizer').is(':checked')) {
+    $('#user_willing_to_organize_true').bind('change', function(){
+      if ($('#user_willing_to_organize_true').is(':checked')) {
         $("#no_brigade").attr("name",null);
         $("#organizer").attr("name","source");
       } else {
