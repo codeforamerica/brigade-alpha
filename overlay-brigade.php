@@ -1,5 +1,7 @@
 <?php
 
+    $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
+    
     date_default_timezone_set('UTC');
 
     if(empty($brigade_slug))

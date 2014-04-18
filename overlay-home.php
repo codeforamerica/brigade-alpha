@@ -1,3 +1,8 @@
+<?php
+
+    $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
+
+?>    
   <div id="brigade-info">
     <h2 id="brigade-name">The Code for America Brigade</h2>
     <p id="program-info">The Code for America Brigade program is an international network of people committed to using their voices and hands, in collaboration with local governments, to make their cities better.</p>
