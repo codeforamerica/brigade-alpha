@@ -83,49 +83,6 @@
       $("#join-button-mobile").show();
       $("#show-form").hide();
     })
-
-    /*
-    $("#join-button-mobile").click(function(e){
-
-      e.preventDefault();
-
-      // Check that the form is filled out
-      if ($("#user_full_name_mobile").val() && $("#user_email_mobile").val()) {
-
-        // Post form data to old Brigade site
-        data = $("#new_user_mobile").serialize();
-        $.post("<?= $base_url ?>/signup", data);
-
-        // If no Brigade selected, show appropriate thanks
-        if ($("#no_brigade_mobile").attr("name")){
-          $("#no_brigade_text_mobile").show();
-        }
-
-        // If Organizing, show appropriate thanks
-        if ($("#organizer_mobile").attr("name")){
-          $("#organizer_text_mobile").show();
-        }
-
-        $("#brigade-info-mobile").hide()
-        $("#join-form-mobile").hide()
-        $("#join-button-mobile").hide()
-      } else {
-        console.log("Fill out the form.");
-      }
-
-    });
-
-    $('#user_willing_to_organize_true_mobile').bind('change', function(){
-      if ($('#user_willing_to_organize_true_mobile').is(':checked')) {
-        $("#no_brigade_mobile").attr("name",null);
-        $("#organizer_mobile").attr("name","source");
-      } else {
-        $("#no_brigade_mobile").attr("name","source");
-        $("#organizer_mobile").attr("name",null);
-      }
-    });
-    */
-
   </script>
 
   <br />

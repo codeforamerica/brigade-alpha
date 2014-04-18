@@ -88,20 +88,3 @@
         <button id="button">Join</button>
     </div>
 </div>
-
-<script>
-    /*
-    $("#button").click(function(e){
-      e.preventDefault();
-
-      data = $("#new_user").serialize();
-      $.post("<?= $base_url ?>/signup", data);
-
-      $("#brigade-info").hide()
-      $("#join-form").hide()
-      $("#button").hide()
-      $("#brigade_text").show()
-    });
-    */
-</script>
-
