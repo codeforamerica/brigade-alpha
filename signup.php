@@ -40,8 +40,8 @@
 
         // User information.
         'user' => array(
-            'email' => $_POST['user']['email'],
-            'full_name' => $_POST['user']['full_name'],
+            'email' => $_POST['email'],
+            'full_name' => $_POST['name'],
             'location_id' => $_POST['user']['location_id'],
             'work_in_government' => $_POST['user']['work_in_government']
             )

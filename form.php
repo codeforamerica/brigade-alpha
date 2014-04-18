@@ -31,12 +31,12 @@
 
     &lt;label&gt;
     Your full name
-    &lt;input name="user[full_name]" placeholder="Ben Franklin" type="text"&gt;
+    &lt;input name="name" placeholder="Ben Franklin" type="text"&gt;
     &lt;/label&gt;
 
     &lt;label&gt;
     Your email
-    &lt;input name="user[email]" placeholder="benfranklin@codeforamerica.org" type="email"&gt;
+    &lt;input name="email" placeholder="benfranklin@codeforamerica.org" type="email"&gt;
     &lt;/label&gt;
 
     &lt;label&gt;

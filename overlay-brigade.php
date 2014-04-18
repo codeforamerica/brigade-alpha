@@ -73,12 +73,12 @@
             <ul class="list-form">
                 <li class="form-field">
                     <label for="user_full_name">Your full name</label>
-                        <input id="user_full_name" class="input" type="text" name="user[full_name]" placeholder="Ben Franklin">
+                        <input id="user_full_name" class="input" type="text" name="name" placeholder="Ben Franklin">
                     </li>
                     
                     <li class="form-field">
                         <label for="user_email">Your email</label>
-                        <input id="user_email" class="input" type="email" name="user[email]" placeholder="benfranklin@codeforamerica.org" />
+                        <input id="user_email" class="input" type="email" name="email" placeholder="benfranklin@codeforamerica.org" />
                     </li>
             <label for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
             <select id="user_location_id" name="user[location_id]" style="display:none;">

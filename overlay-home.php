@@ -14,11 +14,11 @@
       <ul class="list-form">
         <li class="form-field">
             <label for="user_full_name">Full name</label>
-            <input id="user_full_name" name="user[full_name]" type="text" placeholder="Ben Franklin">
+            <input id="user_full_name" name="name" type="text" placeholder="Ben Franklin">
         </li>
         <li class="form-field">
             <label for="user_email">Email</label>
-            <input id="user_email" name="user[email]" type="text" placeholder="benfranklin@codeforamerica.org">
+            <input id="user_email" name="email" type="text" placeholder="benfranklin@codeforamerica.org">
         </li>
         <li class="form-field">
             <label for="user_work_in_geovernment"><input id="user_work_in_government" name="user[work_in_government]" type="checkbox" value="1">I work in government</label>
