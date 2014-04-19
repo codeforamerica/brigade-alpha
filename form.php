@@ -44,7 +44,7 @@
     &lt;input name="work_in_government" value="1" type="checkbox"&gt;
     &lt;/label&gt;
     
-    &lt;input name="brigade_url" type="hidden" value="<?= h($brigade_url) ?>" /&gt;
+    &lt;input name="brigade_url" type="hidden" value="<?= h($info['api_url']) ?>" /&gt;
     &lt;button&gt;Join <?= h($info['name']) ?>&lt;/button&gt;
 
 &lt;/form&gt;
