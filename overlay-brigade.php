@@ -69,22 +69,24 @@
         <? } ?>
     </div>
 
-    <form id="brigade-signup-form" style="display: none" action="<?= $base_url ?>/signup" method="POST" novalidate="novalidate">
+    <form id="brigade-signup-form" style="display: none" action="<?= $base_url ?>/signup" method="POST">
         <ul class="list-form">
             <li class="form-field">
-                <label for="user_full_name">Your full name</label>
-                    <input id="user_full_name" class="input" type="text" name="name" placeholder="Ben Franklin">
-                </li>
-                
-                <li class="form-field">
-                    <label for="user_email">Your email</label>
-                    <input id="user_email" class="input" type="email" name="email" placeholder="benfranklin@codeforamerica.org" />
-                </li>
-        <label for="user_work_in_government"><input class="boolean optional" id="user_work_in_government" name="work_in_government" type="checkbox" value="1">I work in government</label>
-        <select id="user_location_id" name="user[location_id]" style="display:none;">
-          <option value></option>
-        </select>
-        <input type="hidden" name="brigade_url" value="<?= h($brigade_url) ?>" />
-        <button id="button">Join</button>
+                <label for="name">Your full name</label>
+                <input name="name" type="text" placeholder="Ben Franklin">
+            </li>
+            <li class="form-field">
+                <label for="email">Your email</label>
+                <input name="email" type="email" placeholder="benfranklin@codeforamerica.org" />
+            </li>
+            <li class="form-field">
+                <label><input name="work_in_government" type="checkbox" value="1"> I work in government</label>
+            </li>
+            <li class="form-field">
+                <input type="hidden" name="user[location_id]" value="" /><!-- why is this here? -->
+                <input type="hidden" name="brigade_url" value="<?= h($brigade_url) ?>" />
+                <button>Join</button>
+            </li>
+        </ul>
     </form>
 </div>
