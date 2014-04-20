@@ -1,3 +1,10 @@
+function showBrigadeSignupForm(button)
+{
+    document.getElementById('brigade-signup-form').style.display = 'block';
+    document.getElementById('brigade-item-lists').style.display = 'none';
+    button.style.display = 'none';
+}
+
 $(function(){
 
   // Leave some room for the header and footer
@@ -11,7 +18,7 @@ $(function(){
     );
 
   map.zoomControl.setPosition('bottomright');
-  formEvents();
+
   cfapi = "http://codeforamerica.org/api/organizations.geojson"
   // cfapi = "http://localhost:5000/api/organizations"
 
@@ -120,7 +127,6 @@ $(function(){
         success: function(html)
         {
             $('#overlay').html(html);
-            formEvents();
         }
         });
   }
@@ -131,14 +137,6 @@ $(function(){
     resetOverlay(brigade_base_url);
   })
 
-  function formEvents(){
-    $("#brigade-signup-form").css("display", "none");
-    $("#join-brigade").on("click", function(){
-      $("#item-lists").css("display", "none");
-      $("#brigade-signup-form").css("display", "block");
-    })
-  };
-
   function resetOverlay(brigade_base_url)
   {
     $('#overlay').html('<a href="#" class="button-prominent button-progress">Loading...</a>');
@@ -148,7 +146,6 @@ $(function(){
         success: function(html)
         {
             $('#overlay').html(html);
-            formEvents();
         }
         });
   }
