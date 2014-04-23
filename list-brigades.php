@@ -38,7 +38,7 @@
         } ?>
 </ul>
 
-<ul class="list-no-bullets layout-breve" id="brigades-list-mobile">
+<div class="layout-semibreve" id="brigades-list-mobile">
 
   <h4 id="brigade-info-mobile">The Code for America Brigade program is an international network of people committed
   to using their voices and hands, in collaboration with local governments, to make their cities better.</h4>
@@ -85,19 +85,23 @@
     })
   </script>
 
-  <br />
+  <ul class="list-no-bullets layout-grid">
 
   <? foreach($geojson['features'] as $feature) {
           if ($feature['properties']['type'] == "Brigade") {
               $p = $feature['properties'];
               ?>
-              <li class="billboard">
-                  <a href="<?= h($p['website']) ?>"><?= h($p['name']) ?></a>
+              <li class="layout-crotchet">
+                  <a class="billboard" href="<?= h($p['website']) ?>">
+                  <?= h($p['name']) ?>
                   <strong class="billboard-label"><?= h($p['city']) ?></strong>
+                  </a>
               </li>
               <?
           }
 
       } ?>
 
-</ul>
+  </ul>
+
+</div>
