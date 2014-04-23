@@ -33,7 +33,7 @@
   </head>
 
 
-   <body>
+   <body class="unknown-width">
     <div class="js-container">
 
       <? include('nav.html') ?>

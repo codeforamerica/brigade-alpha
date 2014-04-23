@@ -5,7 +5,16 @@ function showBrigadeSignupForm(button)
     button.style.display = 'none';
 }
 
-$(function(){
+if(window.getComputedStyle(document.getElementById('map')).display == 'none')
+{
+  // If the map display is none, we are probably starting with
+  // a narrow screen. Change the body class name to reflect it.
+  document.body.className = document.body.className.replace(/\bunknown-width\b/, ' narrow-screen ');
+  
+} else {
+  // Otherwise, we are probably starting with a wide screen.
+  // Change the body class name to reflect it.
+  document.body.className = document.body.className.replace(/\bunknown-width\b/, ' wide-screen ');
 
   // Leave some room for the header and footer
   $('#map').css("height", ($(window).height() - 200));
@@ -149,5 +158,5 @@ $(function(){
         }
         });
   }
-
-});
+  
+}

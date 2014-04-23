@@ -35,19 +35,35 @@ header img, footer img {
 	width: 100%;
 }
 
-@media (max-width: 40em) {
-  #map, #overlay {
-    display: none;
-  }
-	#brigades-list-mobile {
-		padding-top: 65px;
-	}
+/* On narrow screens, don't show the map or overlay */
+.narrow-screen #map, .narrow-screen #overlay { display: none }
+.narrow-screen #brigades-list-mobile { padding-top: 65px }
+
+@media (max-width: 40em)
+{
+    .unknown-width #map,
+    .unknown-width #overlay,
+    .wide-screen #map,
+    .wide-screen #overlay
+    {
+        display: none;
+    }
+
+    .unknown-width #brigades-list-mobile,
+    .wide-screen #brigades-list-mobile
+    {
+        padding-top: 65px;
+    }
 }
 
-@media (min-width: 40em) {
-	#brigades-list-mobile {
-		display: none;
-	}
+/* On wide screens, do show the map and overlay */
+@media (min-width: 40em)
+{
+    .unknown-width #brigades-list-mobile,
+    .wide-screen #brigades-list-mobile
+    {
+        display: none;
+    }
 }
 
 
