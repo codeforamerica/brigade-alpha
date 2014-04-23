@@ -3,11 +3,13 @@
     $ctm_api_base = 'http://codeforamerica.org/api';
     $brigades_url = "{$ctm_api_base}/organizations.geojson";
     $geojson = json_decode(file_get_contents($brigades_url), true);
+
     // Sort the geojson alphabetically
     function alphabet_sort($a, $b)
-      {
+    {
         return strcmp($a['properties']['city'], $b['properties']['city']);
-      }
+    }
+
     usort($geojson['features'], "alphabet_sort");
 
     if(!function_exists('h'))
@@ -21,23 +23,6 @@
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
 
 ?>
-<ul id="brigades-list" style="display: none">
-    <? foreach($geojson['features'] as $feature) {
-            if ($feature['properties']['type'] == "Brigade") {
-                $id = $feature['id'];
-                $p = $feature['properties'];
-                $c = $feature['geometry']['coordinates'];
-                $on = ($id == $brigade_slug) ? 1 : 0;
-                ?>
-                <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>" data-id="<?= h($id) ?>">
-                    <a href="<?= $base_url.'/index/'.rawurlencode($id) ?>"><?= h($p['name']) ?></a>
-                </li>
-                <?
-            }
-
-        } ?>
-</ul>
-
 <div class="layout-semibreve" id="brigades-list-mobile">
 
   <h4 id="brigade-info-mobile">The Code for America Brigade program is an international network of people committed
@@ -89,9 +74,12 @@
 
   <? foreach($geojson['features'] as $feature) {
           if ($feature['properties']['type'] == "Brigade") {
+              $id = $feature['id'];
               $p = $feature['properties'];
+              $c = $feature['geometry']['coordinates'];
+              $on = ($id == $brigade_slug) ? 1 : 0;
               ?>
-              <li class="layout-crotchet">
+              <li class="layout-crotchet organization" data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>" data-id="<?= h($id) ?>">
                   <a class="billboard" href="<?= h($p['website']) ?>">
                   <?= h($p['name']) ?>
                   <strong class="billboard-label"><?= h($p['city']) ?></strong>

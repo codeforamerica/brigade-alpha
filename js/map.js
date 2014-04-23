@@ -32,13 +32,13 @@ $(function(){
   var geolocate = true, latlon = [35, -100], zoom = 3;
   
   /*
-   * Brigade names and locations are in a hidden list called #brigades-list.
+   * Brigade names and locations are in a hidden list called #brigades-list-mobile.
    *
    * <li data-lat="37.8044" data-lon="-122.2711">
    *    <a href="Open%20Oakland">Open Oakland</a>
    * </li>
    */
-  $('#brigades-list li').each(function(index, _item) {
+  $('#brigades-list-mobile li.organization').each(function(index, _item) {
   
     var item = $(_item),
         active = parseInt(item.data('on')),
