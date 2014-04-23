@@ -1,9 +1,9 @@
 <?
 
-    include('_layouts/top.php');
-    
+    include('top.php');
+
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
-    
+
     $brigade_slug = preg_match('#^/(.+)#', $_SERVER['PATH_INFO'])
         ? ltrim($_SERVER['PATH_INFO'], '/')
         : false;
@@ -16,11 +16,11 @@
     <? if($brigade_slug) {
 
       include('overlay-brigade.php');
-      
+
     } else {
 
       include('overlay-home.php');
-    
+
     } ?>
 </div>
 
@@ -30,4 +30,4 @@
 </div>
 
 <script src="<?= $base_url ?>/js/map.js"></script>
-<? include('_layouts/bottom.php') ?>
+<? include('bottom.php') ?>

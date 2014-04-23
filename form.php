@@ -20,7 +20,7 @@
 
     $post_url = "http://{$_SERVER['SERVER_NAME']}".rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
     
-    include('_layouts/top.php');
+    include('top.php');
 
 ?>
 
@@ -52,4 +52,4 @@
 
 </div>
 
-<? include('_layouts/bottom.php') ?>
+<? include('bottom.php') ?>

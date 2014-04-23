@@ -17,7 +17,7 @@
         $brigade_info = null;
     }
 
-    include('_layouts/top.php');
+    include('top.php');
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
 
 ?>
@@ -68,4 +68,4 @@
 
 </div>
 
-<? include('_layouts/bottom.php') ?>
+<? include('bottom.php') ?>

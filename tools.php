@@ -1,6 +1,6 @@
 <?
 
-    include('_layouts/top.php');
+    include('top.php');
     
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
 
@@ -51,4 +51,4 @@
     </div>
   </div>
 </section>
-<? include('_layouts/bottom.php') ?>
+<? include('bottom.php') ?>

@@ -1,6 +1,6 @@
 <?
 
-    include('_layouts/top.php');
+    include('top.php');
 
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
 
@@ -58,4 +58,4 @@
   <p>Brigade is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons, Attribution, Non-Commercial, Share-Alike</a></p>
 
 </div>
-<? include('_layouts/bottom.php') ?>
+<? include('bottom.php') ?>
