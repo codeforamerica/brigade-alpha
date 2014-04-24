@@ -80,7 +80,7 @@
               $on = ($id == $brigade_slug) ? 1 : 0;
               ?>
               <li class="layout-crotchet organization" data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>" data-id="<?= h($id) ?>">
-                  <a class="billboard" href="<?= h($p['website']) ?>">
+                  <a class="billboard" href="<?= $base_url.'/index/'.rawurlencode($id) ?>">
                   <?= h($p['name']) ?>
                   <strong class="billboard-label"><?= h($p['city']) ?></strong>
                   </a>
