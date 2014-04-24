@@ -55,7 +55,7 @@ if(window.getComputedStyle(document.getElementById('map')).display == 'none')
         lon = parseFloat(item.data('lon')),
         id = item.data('id'),
         anchor = item.find('a'),
-        name = anchor.text(),
+        name = item.data('name'),
         href = anchor.attr('href');
         
     var brigade = {
