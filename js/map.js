@@ -5,6 +5,29 @@ function showBrigadeSignupForm(button)
     button.style.display = 'none';
 }
 
+function brigadeAjaxURL(id)
+{
+  return document.location.brigade_base_url+'/overlay-brigade/'+escape(id);
+}
+
+function indexPageURL(brigade_base_url)
+{
+  return brigade_base_url+'/';
+}
+
+function indexAjaxURL(brigade_base_url)
+{
+  return brigade_base_url+'/overlay-home';
+}
+
+function iWantToGoToThere(url)
+{
+  if(history.pushState)
+  {
+      history.pushState({}, '', url);
+  }
+}
+
 if(window.getComputedStyle(document.getElementById('map')).display == 'none')
 {
   // If the map display is none, we are probably starting with
@@ -101,29 +124,6 @@ if(window.getComputedStyle(document.getElementById('map')).display == 'none')
   
   } else {
     map.setView(latlon, zoom);
-  }
-  
-  function brigadeAjaxURL(id)
-  {
-    return document.location.brigade_base_url+'/overlay-brigade/'+escape(id);
-  }
-  
-  function indexPageURL(brigade_base_url)
-  {
-    return brigade_base_url+'/';
-  }
-  
-  function indexAjaxURL(brigade_base_url)
-  {
-    return brigade_base_url+'/overlay-home';
-  }
-  
-  function iWantToGoToThere(url)
-  {
-    if(history.pushState)
-    {
-        history.pushState({}, '', url);
-    }
   }
   
   function updateOverlay(brigade)
