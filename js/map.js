@@ -7,11 +7,10 @@ function showBrigadeSignupForm(button)
 
 $(function(){
 
-  // Leave some room for the header and footer
-  $('#map').css("height", ($(window).height() - 200));
-  $('#overlay').css("height", ($(window).height() - 264));
+  $('#map').css("height", ($(window).height() - 89));
+  $('#overlay').css("height", ($(window).height() - 139));
 
-  var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', 
+  var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj',
     {
       scrollWheelZoom:false
     }
@@ -28,9 +27,9 @@ $(function(){
       brigade : {}
     }
   });
-  
+
   var geolocate = true, latlon = [35, -100], zoom = 3;
-  
+
   /*
    * Brigade names and locations are in a hidden list called #brigades-list.
    *
@@ -39,7 +38,7 @@ $(function(){
    * </li>
    */
   $('#brigades-list li').each(function(index, _item) {
-  
+
     var item = $(_item),
         active = parseInt(item.data('on')),
         lat = parseFloat(item.data('lat')),
@@ -48,19 +47,19 @@ $(function(){
         anchor = item.find('a'),
         name = anchor.text(),
         href = anchor.attr('href');
-        
+
     var brigade = {
         name: name,
         page_href: href,
         ajax_href: brigadeAjaxURL(id)
         };
-    
+
     var marker = new BrigadeMarker(new L.LatLng(lat, lon), {
       icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall'}),
       title: name,
       brigade: brigade // Add Brigade data to marker
     });
-    
+
     if(active)
     {
         geolocate = false;
@@ -76,7 +75,7 @@ $(function(){
     });
 
   });
-  
+
   if(geolocate && !navigator.geolocation) {
     // Use the default latlon if the browser won't help.
     console.log('geolocation is not available');
@@ -89,26 +88,26 @@ $(function(){
     // See this chart of compatibility for details:
     // http://caniuse.com/#feat=geolocation
     map.locate({setView:true, maxZoom:4});
-  
+
   } else {
     map.setView(latlon, zoom);
   }
-  
+
   function brigadeAjaxURL(id)
   {
     return document.location.brigade_base_url+'/overlay-brigade/'+escape(id);
   }
-  
+
   function indexPageURL(brigade_base_url)
   {
     return brigade_base_url+'/';
   }
-  
+
   function indexAjaxURL(brigade_base_url)
   {
     return brigade_base_url+'/overlay-home';
   }
-  
+
   function iWantToGoToThere(url)
   {
     if(history.pushState)
@@ -116,7 +115,7 @@ $(function(){
         history.pushState({}, '', url);
     }
   }
-  
+
   function updateOverlay(brigade)
   {
     $('#overlay').html('<a href="#" class="button-prominent button-progress"></a>');

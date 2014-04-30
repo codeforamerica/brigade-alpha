@@ -1,38 +1,9 @@
-body {
-	background-color: #FFF;
-}
-
-header, footer {
-	height: 75px;
-	padding: 10px !important;
-}
-
-#bottom {
-	padding-top: 10px;
-}
-
-header p, footer p {
-	display: inline;
-}
-
-header img, footer img {
-	padding-left: 10px;
-	vertical-align:middle
-}
-
-#nav {
-	display: inline;
-}
-
-#nav li{
-	display: inline;
-	list-style-type: none;
-	padding-right: 20px;
-	background-image: none;
-}
-
 #map {
 	width: 100%;
+}
+
+.global-header {
+	margin-bottom : 0px;
 }
 
 @media (max-width: 40em) {
@@ -51,24 +22,19 @@ header img, footer img {
 }
 
 
-
 #map .leaflet-marker-icon
 {
     cursor: pointer !important;
-}
-
-#signin-form {
-
 }
 
 #overlay{
   /*background-color:rgba(204,39,62,0.9);*/
   opacity: 0.85;
   position:absolute;
-  top:165px;
+  top:89px;
   left:0;
   width:30%;
-  padding:2em;
+  padding: 25px;
   overflow: auto;
 }
 
