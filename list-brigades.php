@@ -1,6 +1,7 @@
 <?php
 
     $ctm_api_base = 'http://codeforamerica.org/api';
+    // $ctm_api_base = 'http://localhost:5000/api';
     $brigades_url = "{$ctm_api_base}/organizations.geojson";
     $geojson = json_decode(file_get_contents($brigades_url), true);
     // Sort the geojson alphabetically
@@ -29,8 +30,8 @@
                 $c = $feature['geometry']['coordinates'];
                 $on = ($id == $brigade_slug) ? 1 : 0;
                 ?>
-                <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>" data-id="<?= h($id) ?>">
-                    <a href="<?= $base_url.'/index/'.rawurlencode($id) ?>"><?= h($p['name']) ?></a>
+                <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>" data-id="<?= $id ?>">
+                    <a href="<?= $base_url.'/index/'.$id ?>"><?= h($p['name']) ?></a>
                 </li>
                 <?
             }

@@ -18,9 +18,6 @@ $(function(){
 
   map.zoomControl.setPosition('bottomright');
 
-  cfapi = "http://codeforamerica.org/api/organizations.geojson"
-  // cfapi = "http://localhost:5000/api/organizations"
-
   // Custom marker type with space for Brigade data
   var BrigadeMarker = L.Marker.extend({
     options: {
@@ -95,7 +92,7 @@ $(function(){
 
   function brigadeAjaxURL(id)
   {
-    return document.location.brigade_base_url+'/overlay-brigade/'+escape(id);
+    return document.location.brigade_base_url+'/overlay-brigade/'+id;
   }
 
   function indexPageURL(brigade_base_url)
