@@ -48,6 +48,7 @@
       </ul>
       <h4 class="h3">Brigade Sponsors</h4>
        <p><a href='http://accela.com'><img src="images/accela.gif" width="300"></a></p>
+       <p><a href='http://sap.com'><img src="images/SAP.jpg" width="180" hspace="60"></a></p>
     </div>
   </div>
 </section>
