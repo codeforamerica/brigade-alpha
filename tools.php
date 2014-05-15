@@ -46,9 +46,9 @@
           <li><a href='http://dl.dropbox.com/u/85457263/brigade_name_tag.indd'>Name Tag Template</a> <a href='http://dl.dropbox.com/u/85457263/brigade_name_tag.pdf'>[PDF version]</a></li>
           <li><a href='https://docs.google.com/open?id=0B_WC8QOgiwjzT05IdVdwSk5TX0E'>Meetup Sign</a></li>
       </ul>
-
-      <h3>Brigade Sponsors</h3>
-      <p><a href='http://accela.com'><img src="images/accela.gif" width="300"></a></p>
+    <h4 class="h3">Brigade Sponsors</h4>
+         <p><a href='http://accela.com'><img src="images/accela.gif" width="300"></a></p>
+         <p><a href='http://sap.com'><img src="images/SAP.jpg" width="180" hspace="60"></a></p>
 
       <h3>Free Stuff!</h3>
       <h5>Just for Brigades with Captains</h5>
@@ -62,6 +62,8 @@
           <li><a href="https://cloud.google.com/developers/starterpack/">Google Cloud Platform</a></li>
           <!-- <li><a href="#">OpenShift</a></li> -->
       </ul>
+
+
     </div>
   </div>
 </section>

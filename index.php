@@ -26,7 +26,8 @@
 
 <div id="sponsors" class="layout-semibreve">
     <h4>Brigade Sponsors</h4>
-    <img src="<?= $base_url ?>/images/accela.gif" width="200">
+    <a href="http://www.accela.com"><img src="<?= $base_url ?>/images/accela.gif" width="200" valign="middle"></a>
+    <a href="http://www.sap.com"><img src="<?= $base_url ?>/images/SAP.jpg" width="120" valign="middle"></a>
 </div>
 
 <script src="<?= $base_url ?>/js/map.js"></script>
