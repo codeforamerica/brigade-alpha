@@ -11,7 +11,6 @@
       <h3><strong>Getting started</strong></h3>
       <ul class="list-ruled">
           <li><a href='https://docs.google.com/document/d/1usHMpLu4FBdMTpfmQeQYz4Y4hfW-LXbGtTNpnMw20R4/edit?usp=sharing'>Introduction</a></li>
-          <!--<li><a href='https://docs.google.com/document/d/1OH-rmKsuMoSj6FCR8H89TlR08co0WwAv28ISUT277nY/edit?usp=sharing'>How To: Get Started</a></li>-->
           <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1eMck9XmxPH6pWbx7gbn9Q_UZYEbRNFPFQfkj1YlYAEY/edit#'>Leader to Captain Process</a></li>
           <li><a href='https://docs.google.com/document/d/1oEB1CuzCHldxP_bzcvmcrmK0yAE1BzV2AGhtwtYKZVY/edit?usp=sharing'>Roles within a Local Brigade</a></li>
           <li><a href='https://docs.google.com/document/d/1ukivPQNeIH2GcJHcZ50yjzh1uQj70FlilFQcUKOH49k/edit?usp=sharing'>How To: Host a Hack Night</a></li>
@@ -21,6 +20,7 @@
           <li><a href='https://docs.google.com/document/d/1fR-uImfI3zbH__BhEzlsTgsKxgs21FK4C6zIwgeuWGw/edit?usp=sharing'>Websites, Meetups, and Social Media</a></li>
           <li><a href='https://docs.google.com/document/d/1r0aEcMwpMSwo4P-x6PJ5WV5y1ouciOkvRTiGATFJAmU/edit?usp=sharing'>Template: City Profile / City Assessment Document</a></li>
           <li><a href='https://docs.google.com/document/d/1jTl0jRtyfPvlxweDuUSygnpo7ZG-rRV5lDnYpTLwbsI/edit?usp=sharing'>Template: Strategic Plan</a></li>
+<li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1RKkjW0YZfysBZ6JiJgV8j7o61H_Sh9y9pUl9fZzI2Bw/edit#heading=h.lfbjsp7i33tk'>Support Reimbursement Process</a></li>
       </ul>
     </div>
 
