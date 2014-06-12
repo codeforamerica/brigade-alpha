@@ -33,8 +33,8 @@
     <p><a href="<?= $brigade_info['events_url'] ?>"><?= $brigade_info['events_url'] ?></a></p>
     <p>Thanks again and see you soon.</p>
     <br>
-    <p><i>Brigade Support Team</i></p>
-    <p><a href='mailto:brigade-info@codeforamerica.org'>brigade-info@codeforamerica.org</a></p>
+    <p><i>Brielle Plump - Communities Coordinator</i></p>
+    <p><a href='mailto:brielle@codeforamerica.org'>brielle@codeforamerica.org</a></p>
   </div>
 
 <? } elseif($is_organizer) { ?>
@@ -42,14 +42,18 @@
   <div id="organizer_text">
     <p><b>Thanks for signing up to organize in your community.</b></p>
     <p>Currently, we are hosting a Brigade Organizers hangout outlining your next steps. We hope you will join.</p>
-    <p>Tuesday, May 6th, from 5:00 PM to 6:00 PM PDT <a href='https://www.eventbrite.com/e/code-for-america-brigade-leaders-orientation-may-2014-tickets-11305730745'>RSVP</a>
-    <p>If you are writing us from abroad and can't make this time please contact our International Programs Manager at <a href="mailto:lynn@codeforamerica.org">lynn@codeforamerica.org</a>.</p>
+    <p>Tuesday, July 15th, from 10:30 AM to 11:30 AM PDT <a href='
+https://www.eventbrite.com/e/july-15-2014-how-to-start-a-code-for-america-brigade-tickets-11939706985'>RSVP</a></p>
+<b>OR</b><br/>
+   <p>Tuesday, July 22nd, from 5:30 PM to 6:30 PM PDT <a href='
+https://www.eventbrite.com/e/july-22-2014-how-to-start-a-code-for-america-brigade-tickets-11939682913'>RSVP</a></p>
+    <p>If you are writing us from abroad and can't make this time please contact us.</p>
     <p>In the meantime, we have put together some materials for you to start looking through.</p>
     <p><a href='http://codeforamerica.org/brigade/tools'>http://codeforamerica.org/brigade/tools</a></p>
     <p>Thanks again and see you soon.</p>
     <br>
-    <p><i>Brigade Support Team</i></p>
-    <p><a href='mailto:brigade-info@codeforamerica.org'>brigade-info@codeforamerica.org</a></p>
+    <p><i>Brielle Plump - Communities Coordinator</i></p>
+    <p><a href='mailto:brielle@codeforamerica.org'>brielle@codeforamerica.org</a></p>
   </div>
 
 <? } else { ?>
@@ -60,8 +64,8 @@
     <p>Remember, if you change your mind, you can always come back to sign up to be an organizer and take a more proactive role.</p>
     <p>Good luck and we'll be in touch.</p>
     <br>
-    <p><i>Brigade Support Team</i></p>
-    <p><a href='mailto:brigade-info@codeforamerica.org'>brigade-info@codeforamerica.org</a></p>
+    <p><i>Brielle Plump - Communities Coordinator</i></p>
+    <p><a href='mailto:brielle@codeforamerica.org'>brielle@codeforamerica.org</a></p>
   </div>
 
 <? } ?>
