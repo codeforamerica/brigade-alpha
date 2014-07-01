@@ -22,7 +22,7 @@
     </li>
     <li>
       <blockquote>What if there isn’t a Brigade where I live?</blockquote>
-      <p>If there isn’t a Brigade where you live, <a href="http://codeforamerica.org/brigade/">sign up to lead one</a>. If you’re not interested in leading a Brigade, you can stay in the loop about global Brigade activity by signing up for the <a href="http://codeforamerica.org/brigade/">Brigade listserv</a>.</p>
+      <p>If there isn’t a Brigade where you live, <a href="http://codeforamerica.org/brigade/">sign up to lead one</a>. If you’re not interested in leading a Brigade, you can stay in the loop about global Brigade activity by signing up for the <a href="https://groups.google.com/a/codeforamerica.org/forum/#!forum/brigade">Brigade listserv</a>.</p>
     </li>
     <li>
       <blockquote>When does a Brigade become official?</blockquote>
@@ -34,7 +34,7 @@
     </li>
     <li>
       <blockquote>How can I stay plugged into the global Brigade network?</blockquote>
-      <p>Sign up for the <a href="http://codeforamerica.org/brigade/">Brigade listserv</a>.</p>
+      <p>Sign up for the <a href="https://groups.google.com/a/codeforamerica.org/forum/#!forum/brigade">Brigade listserv</a>.</p>
     </li>
     <li>
       <blockquote>How can I participate if I’m not in the United States?</blockquote>
