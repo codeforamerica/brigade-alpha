@@ -17,6 +17,7 @@
           <li><a href='https://docs.google.com/document/d/1WtoE_Kfqcu73MCUOIXujrzTfqrQAW3DGt0sC8iKJ6Rw/edit?usp=sharing'>How To: Collaborate with Government</a></li>
           <li><a href='https://docs.google.com/document/d/1LIUcCLwmn-SR6_X93TOMIoIJOhNXd0t_27TAIOofdIo/edit?usp=sharing'>How To: Brand and Market Your Brigade</a></li>
           <li><a href='https://docs.google.com/document/d/1AuMsUqCZ1Em99NvQje1dCI2cD1C54dD711sbm6FgYhE/edit?usp=sharing'>How To: Welcome New Members</a></li>
+          <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1Uc8cmQt9-c4DaMD0hvamQwG6cOxNtjFO5Mq6dcdQ9_o/edit'>How To: Local Fundraising</a></li>
           <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1Zg2FDt7awgfCmdcbzMwKHMb1A7KDOhs_z7ibCb3TLLQ/edit'>How To: Anti-Harassment Policy</a></li>
           <li><a href='https://docs.google.com/document/d/1fR-uImfI3zbH__BhEzlsTgsKxgs21FK4C6zIwgeuWGw/edit?usp=sharing'>Websites, Meetups, and Social Media</a></li>
           <li><a href='https://docs.google.com/document/d/1r0aEcMwpMSwo4P-x6PJ5WV5y1ouciOkvRTiGATFJAmU/edit?usp=sharing'>Template: City Profile / City Assessment Document</a></li>
