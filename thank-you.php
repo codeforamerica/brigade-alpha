@@ -42,9 +42,6 @@
   <div id="organizer_text">
     <p><b>Thanks for signing up to organize in your community.</b></p>
     <p>Currently, we are hosting a Brigade Organizers hangout outlining your next steps. We hope you will join.</p>
-    <p><p>Tuesday, July 22nd, from 5:30 PM to 6:30 PM PDT <a href='
-https://www.eventbrite.com/e/july-22-2014-how-to-start-a-code-for-america-brigade-tickets-11939682913'>RSVP</a></p>
-<b>OR</b><br/>
    <p>Tuesday, August 26th, from 10:30 PM to 11:30 AM PDT <a href='
 https://www.eventbrite.com/e/august-26-2014-how-to-start-a-code-for-america-brigade-1030am-pst-tickets-12153121313'>RSVP</a></p>
 <b>OR</b><br/>
