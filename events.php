@@ -23,7 +23,7 @@
         // http://codeforamerica.org/api/events/upcoming_events
         // http://localhost:5000/api/events/upcoming_events
         // Use /all at the end to get more than 25 events.
-        $.getJSON('http://codeforamerica.org/api/events/upcoming_events', function(response){
+        $.getJSON('http://codeforamerica.org/api/events/upcoming_events/all', function(response){
           
           events = response.objects;
           
