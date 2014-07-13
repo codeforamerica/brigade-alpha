@@ -7,29 +7,44 @@
 ?>
 <section>
   <div class="layout-breve">
-    <ul>
-    <?php
-      $events_api = 'http://localhost:5000/api/events/upcoming_events';
-      $events = json_decode(file_get_contents($events_api), true);
-    ?>
 
-    <? foreach($events['objects'] as $event) {
-      $organization_name = $event['organization_name'];
-      $name = $event['name'];
-      $url = $event['event_url'];
-      $time = $event['start_time'];
-    ?>
-      <li style="padding-bottom:25px;">
-        <?= $organization_name ?>
-        <br/>
-        <?= $name ?>
-        <br/>
-        <a href="<?= $url ?>"><?= $url ?></a>
-        <br/>
-        <?= $time ?>
-      </li>
-    <? } ?>
-    </ul>
+    <!-- scripts for calendar -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.0.2/fullcalendar.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.0.2/fullcalendar.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.0.2/fullcalendar.print.css">
+    
+    <div id='calendar'></div>
+
+    <script>
+    $(document).ready(function() {
+
+        // Call the /events api
+        $.getJSON('http://codeforamerica.org/api/events/upcoming_events', function(response){
+          
+          events = response.objects;
+          
+          // Set up the fields that fullcalendarjs expects
+          $.each(events, function(i, event){
+            event.title = event.name;
+            event.start = event.start_time;
+            event.end = event.end_time;
+            event.url = event.event_url;
+          })
+        
+          $('#calendar').fullCalendar({
+              events: events,
+              // Add the org name
+              eventRender: function(event, element) {
+                  element.prepend(event.organization_name);
+              }
+          })
+
+        })
+
+    });
+    </script>
   </div>
 </section>
+
 <? include('bottom.php') ?>
