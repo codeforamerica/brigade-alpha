@@ -18,14 +18,14 @@ $(function(){
 
   map.zoomControl.setPosition('bottomright');
 
+  var latlon = [27, -85], zoom = 2;
+
   // Custom marker type with space for Brigade data
   var BrigadeMarker = L.Marker.extend({
     options: {
       brigade : {}
     }
   });
-
-  var geolocate = true, latlon = [35, -100], zoom = 3;
 
   /*
    * Brigade names and locations are in a hidden list called #brigades-list.
@@ -59,9 +59,8 @@ $(function(){
 
     if(active)
     {
-        geolocate = false;
         latlon = [lat, lon]
-        zoom = 8;
+        zoom = 7;
     }
 
     map.addLayer(marker);
@@ -71,24 +70,9 @@ $(function(){
       updateOverlay(e.target.options.brigade);
     });
 
+    map.setView(latlon, zoom);
+
   });
-
-  if(geolocate && !navigator.geolocation) {
-    // Use the default latlon if the browser won't help.
-    console.log('geolocation is not available');
-    map.setView(latlon, zoom);
-
-  } else if(geolocate) {
-    // This uses the HTML5 geolocation API, which is available on most
-    // mobile browsers and modern browsers, but not in Internet Explorer.
-    //
-    // See this chart of compatibility for details:
-    // http://caniuse.com/#feat=geolocation
-    map.locate({setView:true, maxZoom:4});
-
-  } else {
-    map.setView(latlon, zoom);
-  }
 
   function brigadeAjaxURL(id)
   {
