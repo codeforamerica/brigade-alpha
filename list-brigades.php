@@ -24,7 +24,7 @@
 ?>
 <ul id="brigades-list" style="display: none">
     <? foreach($geojson['features'] as $feature) {
-            if ($feature['properties']['type'] == "Brigade") {
+            if (strpos($feature['properties']['type'], "Brigade") !== false) {
                 $id = $feature['id'];
                 $p = $feature['properties'];
                 $c = $feature['geometry']['coordinates'];
@@ -89,7 +89,7 @@
   <br />
 
   <? foreach($geojson['features'] as $feature) {
-          if ($feature['properties']['type'] == "Brigade") {
+          if (strpos($feature['properties']['type'], "Brigade") !== false) {
               $p = $feature['properties'];
               ?>
               <li class="billboard">
