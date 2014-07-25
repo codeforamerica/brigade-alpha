@@ -14,6 +14,7 @@
           <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1eMck9XmxPH6pWbx7gbn9Q_UZYEbRNFPFQfkj1YlYAEY/edit#'>Leader to Captain Process</a></li>
           <li><a href='https://docs.google.com/document/d/1oEB1CuzCHldxP_bzcvmcrmK0yAE1BzV2AGhtwtYKZVY/edit?usp=sharing'>Roles within a Local Brigade</a></li>
           <li><a href='https://docs.google.com/document/d/1ukivPQNeIH2GcJHcZ50yjzh1uQj70FlilFQcUKOH49k/edit?usp=sharing'>How To: Host a Hack Night</a></li>
+          <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1wo_skwazuom_Zkp7AmCSjy5JD8Z5WYSbhr2IUmqWdQ0/edit'>Projects for new Brigade members</a></li>
           <li><a href='https://docs.google.com/document/d/1WtoE_Kfqcu73MCUOIXujrzTfqrQAW3DGt0sC8iKJ6Rw/edit?usp=sharing'>How To: Collaborate with Government</a></li>
           <li><a href='https://docs.google.com/document/d/1LIUcCLwmn-SR6_X93TOMIoIJOhNXd0t_27TAIOofdIo/edit?usp=sharing'>How To: Brand and Market Your Brigade</a></li>
           <li><a href='https://docs.google.com/document/d/1AuMsUqCZ1Em99NvQje1dCI2cD1C54dD711sbm6FgYhE/edit?usp=sharing'>How To: Welcome New Members</a></li>
