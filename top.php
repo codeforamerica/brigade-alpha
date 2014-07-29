@@ -19,8 +19,8 @@
 
     <link rel="apple-touch-icon-precomposed" href="/style/favicons/60x60/flag-red.png"/>
 
-
-    <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    
     <link href='//api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
     <script src='//api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
 
