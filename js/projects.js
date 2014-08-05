@@ -9,12 +9,14 @@ $.getJSON("http://codeforamerica.org/api/organizations.geojson", function(respon
 
   // Add them to the form
   $.each(organizations, function(i, organization){
-    brigadeSelect.append("<option value="+organization.properties.name+">"+organization.properties.name+"</option>")
+    if (organization.properties.type.indexOf("Brigade") != -1) {
+      brigadeSelect.append("<option value="+organization.properties.name+">"+organization.properties.name+"</option>")
+    }
   })
 
 })
 
-var data_host = "http://codeforamerica.org/api/projects"
+var data_host = "http://codeforamerica.org/api/projects?organization_type=Brigade"
 
 // Go get projects! Then show them off.
 $.when( $.getJSON(data_host) ).then(showSomeProjects);
