@@ -23,10 +23,10 @@
         // http://codeforamerica.org/api/events/upcoming_events
         // http://localhost:5000/api/events/upcoming_events
         // Use /all at the end to get more than 25 events.
-        $.getJSON('http://codeforamerica.org/api/events/upcoming_events/all', function(response){
-          
+        $.getJSON('http://codeforamerica.org/api/events/upcoming_events?organization_type=Brigade&per_page=225', function(response){
+
           events = response.objects;
-          
+
           // Set up the fields that fullcalendarjs expects
           $.each(events, function(i, event){
             event.title = event.name;
