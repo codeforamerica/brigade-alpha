@@ -57,6 +57,7 @@
       <h5>Just for Brigades with Captains</h5>
       <ul>
           <li><a href="http://aws.amazon.com/">AWS Credits</a></li>
+          <li><a href="http://digitalocean.com/">Digital Ocean Credits</a></li>
           <li><a href="http://www.justinmind.com/">JustInMind</a></li>
       </ul>
       <h5>For all Brigades</h5>
