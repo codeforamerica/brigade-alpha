@@ -59,6 +59,7 @@
           <li><a href="http://aws.amazon.com/">AWS Credits</a></li>
           <li><a href="http://digitalocean.com/">Digital Ocean Credits</a></li>
           <li><a href="http://www.justinmind.com/">JustInMind</a></li>
+          <li><a href="https://www.mybalsamiq.com/">myBalsamiq</a></li>
       </ul>
       <h5>For all Brigades</h5>
       <ul>
