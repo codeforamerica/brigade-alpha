@@ -41,11 +41,8 @@
 
   <div id="organizer_text">
     <p><b>Thanks for signing up to organize in your community.</b></p>
-    <p>Currently, we are hosting a Brigade Organizers hangout outlining your next steps. We hope you will join.</p>
-
-   <p>Wednesday, September 17th, from 10:30 AM to 11:30 AM PDT <a href='
-https://www.eventbrite.com/e/september-17-2014-how-to-start-a-code-for-america-brigade-530pm-pst-tickets-12153213589'>RSVP</a></p>
-    <p>If you are writing us from abroad and can't make this time please contact us.</p>
+    <p>You can learn "How to Start a Brigade" by viewing this <a href='
+https://www.youtube.com/watch?v=f1oBpGQbdmg'>Hangout</a></p>
     <p>In the meantime, we have put together some materials for you to start looking through.</p>
     <p><a href='http://codeforamerica.org/brigade/tools'>http://codeforamerica.org/brigade/tools</a></p>
     <p>Thanks again and see you soon.</p>
