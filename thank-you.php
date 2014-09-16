@@ -41,11 +41,9 @@
 
   <div id="organizer_text">
     <p><b>Thanks for signing up to organize in your community.</b></p>
-    <p>The next step for you and your team is to watch 
-    <a href='
-https://www.youtube.com/watch?v=f1oBpGQbdmg'this recorded Hangout, which walks you through the initial process.</a></p>
-
-    <p>Next, you will want to browse through our support materials located at.</p>
+    <p>The next step for you and your team is to watch the recorded Hangout, which walks you through the initial process of starting a Brigade.
+    <p><a href='https://www.youtube.com/watch?v=f1oBpGQbdmg'>Click here to view the video.</a></p>
+    <p>Then, you will want to browse through our support materials located at.</p>
     <p><a href='http://codeforamerica.org/brigade/tools'>http://codeforamerica.org/brigade/tools</a></p>
     <p>Please reach out to us if you have any questions, and have fun as you start building you civic-tech community! 
     Thanks again and talk to you soon.</p>
@@ -59,9 +57,8 @@ https://www.youtube.com/watch?v=f1oBpGQbdmg'this recorded Hangout, which walks y
   <div id="no_brigade_text">
     <p><b>Thanks for your interest in the Code for America Brigade community.</b></p>
     <p>We will add you to our mailing list so you can keep stay up to date with both local opportunities and national events.</p>
-    <p>If you want to reconsider leading a Brigade in your city, you can watch 
-    <a href='
-https://www.youtube.com/watch?v=f1oBpGQbdmg'this recorded Hangout which walks you through the process.</a></p>.</p>
+    <p>If you want to reconsider leading a Brigade in your city,  
+    <p><a href='https://www.youtube.com/watch?v=f1oBpGQbdmg'>Click here to view the "How to start a Brigade" video.</a></p>
     <p>Good luck and we'll be in touch.</p>
     <br>
     <p><i>Brielle Plump - Communities Coordinator</i></p>
