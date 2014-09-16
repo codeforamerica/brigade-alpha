@@ -41,14 +41,12 @@
 
   <div id="organizer_text">
     <p><b>Thanks for signing up to organize in your community.</b></p>
-    <p>Currently, we are hosting a Brigade Organizers hangout outlining your next steps. We hope you will join.</p>
-
-   <p>Wednesday, September 17th, from 10:30 AM to 11:30 AM PDT <a href='
-https://www.eventbrite.com/e/september-17-2014-how-to-start-a-code-for-america-brigade-530pm-pst-tickets-12153213589'>RSVP</a></p>
-    <p>If you are writing us from abroad and can't make this time please contact us.</p>
-    <p>In the meantime, we have put together some materials for you to start looking through.</p>
+    <p>The next step for you and your team is to watch the recorded Hangout, which walks you through the initial process of starting a Brigade.
+    <p><a href='https://www.youtube.com/watch?v=f1oBpGQbdmg'>Click here to view the video.</a></p>
+    <p>Then, you will want to browse through our support materials located at.</p>
     <p><a href='http://codeforamerica.org/brigade/tools'>http://codeforamerica.org/brigade/tools</a></p>
-    <p>Thanks again and see you soon.</p>
+    <p>Please reach out to us if you have any questions, and have fun as you start building you civic-tech community! 
+    Thanks again and talk to you soon.</p>
     <br>
     <p><i>Brielle Plump - Communities Coordinator</i></p>
     <p><a href='mailto:brielle@codeforamerica.org'>brielle@codeforamerica.org</a></p>
@@ -57,9 +55,10 @@ https://www.eventbrite.com/e/september-17-2014-how-to-start-a-code-for-america-b
 <? } else { ?>
 
   <div id="no_brigade_text">
-    <p><b>Thanks for your interest in a Code for America Brigade in your community.</b></p>
-    <p>In the meantime, we’ll keep in touch about opportunities to participate in activities at the national level.</p>
-    <p>Remember, if you change your mind, you can always come back to sign up to be an organizer and take a more proactive role.</p>
+    <p><b>Thanks for your interest in the Code for America Brigade community.</b></p>
+    <p>We will add you to our mailing list so you can keep stay up to date with both local opportunities and national events.</p>
+    <p>If you want to reconsider leading a Brigade in your city,  
+    <p><a href='https://www.youtube.com/watch?v=f1oBpGQbdmg'>Click here to view the "How to start a Brigade" video.</a></p>
     <p>Good luck and we'll be in touch.</p>
     <br>
     <p><i>Brielle Plump - Communities Coordinator</i></p>
