@@ -1,4 +1,4 @@
-                <? include('global-footer.html') ?>
+                <? include('http://www.codeforamerica.org/fragments/global-footer.html') ?>
             </main>
         </div>
 
