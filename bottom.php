@@ -1,4 +1,4 @@
-                <? include('http://www.codeforamerica.org/fragments/global-footer.html') ?>
+                <?= file_get_contents('http://www.codeforamerica.org/fragments/global-footer.html') ?>
             </main>
         </div>
 
