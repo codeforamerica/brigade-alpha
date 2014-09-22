@@ -65,7 +65,7 @@
       <ul>
           <li><a href="https://community.socrata.com/">Socrata Community Data Portal</a></li>
           <li><a href="https://cloud.google.com/developers/starterpack/">Google Cloud Platform</a></li>
-          <li><a href="https://www.civicdata.com/en/home">CivicData.com</a></li>
+          <li><a href="http://www.civicdata.com/en/home">CivicData.com</a></li>
           <!-- <li><a href="#">OpenShift</a></li> -->
       </ul>
 
