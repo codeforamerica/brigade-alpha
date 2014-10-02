@@ -82,6 +82,10 @@
                 <input name="email" type="email" placeholder="benfranklin@codeforamerica.org" />
             </li>
             <li class="form-field">
+                <label for="location">City</label>
+                <input name="location" type="text" placeholder="Tulsa, OK">
+            </li>
+            <li class="form-field">
                 <label><input name="work_in_government" type="checkbox" value="1"> I work in government</label>
             </li>
             <li class="form-field">
