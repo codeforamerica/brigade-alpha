@@ -6,6 +6,7 @@
     $is_specific_brigade = ($_GET['source'] == 'brigade' && $_GET['brigade_url']) ? true : false;
     $is_organizer = (!$is_specific_brigade && $_GET['source'] == 'organizer') ? true : false;
     $is_generic = (!$is_specific_brigade && !$is_organizer) ? true : false;
+    $works_in_gov = $_GET['work_in_government'] ? true : false;
 
     //
     // Get information about the selected brigade, if there is one.
@@ -24,7 +25,13 @@
 
 <div class="layout-semibreve">
 
-<? if($is_specific_brigade) { ?>
+<? if($works_in_gov) { ?>
+
+  <div id="works_in_gov_text">
+    WHAT UP
+  </div>
+
+<? } elseif($is_specific_brigade) { ?>
 
   <div id="brigade_text">
     <p><b>Thanks for signing up for <?= $brigade_info['name'] ?>.</b></p>
