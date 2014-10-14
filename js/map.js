@@ -8,7 +8,7 @@ function showBrigadeSignupForm(button)
 $(function(){
 
   $('#map').css("height", ($(window).height() - 89));
-  $('#overlay').css("height", ($(window).height() - 139));
+  $('#overlay').css("height", ($(window).height() - 138));
 
   var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj',
     {
