@@ -59,7 +59,7 @@
             'willing_to_organize' => ($is_organizer ? 'true' : ''),
             ),
         'location' => $_POST['location'],
-        'cfapi_brigade_id' => $_POST['brigade_url']
+        'cfapi_brigade_id' => array_pop(explode("/", $_POST['brigade_url']))
         );
 
     //
