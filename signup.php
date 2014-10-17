@@ -57,8 +57,8 @@
             'location_id' => $_POST['user']['location_id'],
             'work_in_government' => $_POST['work_in_government'],
             'willing_to_organize' => ($is_organizer ? 'true' : ''),
-            'location' => $_POST['location']
             ),
+        'location' => $_POST['location'],
         'cfapi_brigade_id' => $_POST['brigade_url']
         );
 
