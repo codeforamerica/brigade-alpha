@@ -62,8 +62,6 @@
         'cfapi_brigade_id' => $_POST['brigade_url']
         );
 
-    // echo($posted);
-
     //
     // Send POST request to the old Brigade site.
     //
