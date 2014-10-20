@@ -44,6 +44,9 @@
     }
     
     $posted = array(
+        // SECRET KEY
+        'SECRET_KEY' => getenv('SECRET_KEY'),
+
         // Source is one of "organizer", "brigade", or "no_brigade".
         'source' => $source,
 
@@ -81,7 +84,7 @@
     //
     // Send POST request to the peopledb.
     //
-    $url = 'http://localhost:5000/brigade/sign-up';
+    $url = 'http://127.0.0.1:5000/brigade/sign-up';
     $peopledb_response = file_get_contents($url, false, $context, -1, 40000);
 
     /*
