@@ -132,7 +132,7 @@ var template = "\
         {{/github_details.participation_percent}}\
     </td>\
     <td>\
-        <p>{{github_details.description}}</p>\
+        <p class='project-description'>{{github_details.description}}</p>\
         <h4>Contributors</h4>\
         <p class='contributors'>\
         {{#github_details.owner}}\
