@@ -65,9 +65,6 @@
         'cfapi_brigade_id' => array_pop(explode("/", $_POST['brigade_url']))
         );
 
-    //
-    // Send POST request to the old Brigade site.
-    //
     $opts = array('http' =>
                   array(
                       'method'  => 'POST',
@@ -77,6 +74,9 @@
                       )
                   );
 
+    //
+    // Send POST request to the old Brigade site.
+    //
     $context  = stream_context_create($opts);
     $url = 'http://old-brigade.codeforamerica.org/members';
     $response = file_get_contents($url, false, $context, -1, 40000);
@@ -84,17 +84,8 @@
     //
     // Send POST request to the peopledb.
     //
-    $url = 'http://127.0.0.1:5000/brigade/sign-up';
+    $url = 'https://people.codeforamerica.org/brigade/sign-up';
     $peopledb_response = file_get_contents($url, false, $context, -1, 40000);
-
-    /*
-    header('Content-Type: text/plain');
-    print_r(compact('is_specific_brigade', 'is_organizer' , 'is_generic'));
-    echo "Got this:\n";
-    print_r($_POST);
-    echo "Posted to old-brigade:\n";
-    print_r($posted);
-    */
     
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
     $query = array('source' => $posted['source'], 'brigade_url' => $brigade_url);
