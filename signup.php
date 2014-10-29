@@ -6,6 +6,7 @@
     $is_specific_brigade = ($_POST['brigade_url']) ? true : false;
     $is_organizer = (!$is_specific_brigade && $_POST['source'] == 'organizer') ? true : false;
     $is_generic = (!$is_specific_brigade && !$is_organizer) ? true : false;
+    $works_in_gov = ($_POST['works_in_gov']) ? true : false;
 
     //
     // We're looking for numeric IDs from the old site for the Join form.
@@ -43,6 +44,9 @@
     }
     
     $posted = array(
+        // SECRET KEY
+        'SECRET_KEY' => getenv('SECRET_KEY'),
+
         // Source is one of "organizer", "brigade", or "no_brigade".
         'source' => $source,
 
@@ -55,13 +59,12 @@
             'full_name' => $_POST['name'],
             'location_id' => $_POST['user']['location_id'],
             'work_in_government' => $_POST['work_in_government'],
-            'willing_to_organize' => ($is_organizer ? 'true' : '')
-            )
+            'willing_to_organize' => ($is_organizer ? 'true' : ''),
+            ),
+        'location' => $_POST['location'],
+        'cfapi_brigade_id' => array_pop(explode("/", $_POST['brigade_url']))
         );
 
-    //
-    // Send POST request to the old Brigade site.
-    //
     $opts = array('http' =>
                   array(
                       'method'  => 'POST',
@@ -70,19 +73,19 @@
                       'timeout' => 5
                       )
                   );
-    
+
+    //
+    // Send POST request to the old Brigade site.
+    //
     $context  = stream_context_create($opts);
     $url = 'http://old-brigade.codeforamerica.org/members';
     $response = file_get_contents($url, false, $context, -1, 40000);
-    
-    /*
-    header('Content-Type: text/plain');
-    print_r(compact('is_specific_brigade', 'is_organizer' , 'is_generic'));
-    echo "Got this:\n";
-    print_r($_POST);
-    echo "Posted to old-brigade:\n";
-    print_r($posted);
-    */
+
+    //
+    // Send POST request to the peopledb.
+    //
+    $url = 'https://people.codeforamerica.org/brigade/sign-up';
+    $peopledb_response = file_get_contents($url, false, $context, -1, 40000);
     
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
     $query = array('source' => $posted['source'], 'brigade_url' => $brigade_url);

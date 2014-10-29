@@ -4,3 +4,5 @@
 #
 Options +MultiViews
 MultiviewsMatch Any
+
+SetEnv SECRET_KEY boop
