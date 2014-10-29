@@ -85,6 +85,8 @@
     // Send POST request to the peopledb.
     //
     $url = 'https://people.codeforamerica.org/brigade/sign-up';
+    error_log(json_encode($posted))
+    error_log(json_encode($opts))
     $peopledb_response = file_get_contents($url, false, $context, -1, 40000);
     
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
