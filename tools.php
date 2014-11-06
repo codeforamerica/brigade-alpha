@@ -10,8 +10,7 @@
     <div class="layout-crotchet-staccato">
       <h3><strong>Getting started</strong></h3>
       <ul class="list-ruled">
-          <li><a href='https://docs.google.com/document/d/1usHMpLu4FBdMTpfmQeQYz4Y4hfW-LXbGtTNpnMw20R4/edit?usp=sharing'>Introduction</a></li>
-          <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1eMck9XmxPH6pWbx7gbn9Q_UZYEbRNFPFQfkj1YlYAEY/edit#'>Leader to Captain Process</a></li>
+        
           <li><a href='https://docs.google.com/document/d/1oEB1CuzCHldxP_bzcvmcrmK0yAE1BzV2AGhtwtYKZVY/edit?usp=sharing'>Roles within a Local Brigade</a></li>
           <li><a href='https://docs.google.com/document/d/1ukivPQNeIH2GcJHcZ50yjzh1uQj70FlilFQcUKOH49k/edit?usp=sharing'>How To: Host a Hack Night</a></li>
           <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1wo_skwazuom_Zkp7AmCSjy5JD8Z5WYSbhr2IUmqWdQ0/edit'>Projects for new Brigade members</a></li>
