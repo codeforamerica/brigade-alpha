@@ -3,9 +3,7 @@
 // Allow people to checkin at a Code for America event.
 // 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-  // Required to set a timezone, but what about international?
-  date_default_timezone_set("America/Los_Angeles");
-
+  
   // Get params from url
   $brigade = $_GET["brigade"];
   $event = $_GET["event"];
@@ -114,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Send POST to the People app.
     //
     $context  = stream_context_create($opts);
-    $url = 'http://127.0.0.1:5000/checkin';
+    $url = 'https://people.codeforamerica.org/checkin';
     $response = file_get_contents($url, false, $context, -1, 40000);
 
     if ($http_response_header[0] == "HTTP/1.0 200 OK"){
