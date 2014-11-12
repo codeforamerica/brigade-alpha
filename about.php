@@ -14,12 +14,12 @@
     </div>
 </section>
 
-<div class="layout-semibreve layout-centered">
+<!-- <div class="layout-semibreve layout-centered">
 
     <h2>Hear From Brigade Leaders</h2>
     <iframe width="560" height="315" src="//www.youtube.com/embed/FL9ywBd9uKw?list=UUvIkEfE-3vohTJJj_5bbXYg" frameborder="0" allowfullscreen></iframe>
 
-</div>
+</div> -->
 
 <section class="slab-teal">
     <div class="layout-semibreve layout-centered">
