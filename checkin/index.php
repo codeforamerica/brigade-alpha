@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         <nav class="nav-global-secondary">
           <ul>
             <li><a href="http://www.codeforamerica.org/about/brigade/">About</a></li>
+            <li><a href="<?= $base_url ?>/organize">Organize</a></li>
             <li><a href="<?= $base_url ?>/tools">Tools</a></li>
             <!-- <li><a href="<?= $base_url ?>/events">Events</a></li> -->
             <li><a href="http://codeforamerica.tumblr.com">Tumblr</a></li>
@@ -153,6 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <nav class="nav-global-secondary">
                 <ul>
                   <li><a href="http://www.codeforamerica.org/about/brigade/">About</a></li>
+                  <li><a href="<?= $base_url ?>/organize">Organize</a></li>
                   <li><a href="<?= $base_url ?>/tools">Tools</a></li>
                   <!-- <li><a href="<?= $base_url ?>/events">Events</a></li> -->
                   <li><a href="http://codeforamerica.tumblr.com">Tumblr</a></li>
