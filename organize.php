@@ -1,6 +1,4 @@
-<? 
-          include('top.php');
-?>
+<? include('top.php'); ?>
 
 <section>
     <div class="layout-semibreve layout-centered">
@@ -130,3 +128,5 @@
     </ul>
   </div>
 </section>
+
+<? include('bottom.php') ?>
