@@ -33,8 +33,7 @@
         <li><strong>People</strong></li>
           <ul>
             <li>Hosting consistent hack nights (at least three)</li>
-            <li>Having a <a href="https://www.google.com/calendar/selfsched?sstoken=UUtHZ0tGNW9uOWxJfGRlZmF1bHR8MzQ0OGIzN2M3MjhiNDk0MTQ2Nzk4MzY0MTFjNDU4NzY">leadership team</a></li>
-            <li>Hosting consistent hack nights (at least three)</li>
+            <li>Having a <a href="https://docs.google.com/a/codeforamerica.org/document/d/1oEB1CuzCHldxP_bzcvmcrmK0yAE1BzV2AGhtwtYKZVY/edit">leadership team</a></li>
             <li>Sharing a Code of Conduct on your website</li>
           </ul>
         <li><strong>Participate</strong></li>
@@ -43,12 +42,11 @@
             <li>Contibute content to the CFAPI</li>
           </ul>
       </ol>
-      <p>Once your ready to join, sign up for the next Brigade Network Member onboarding session <a href="https://www.google.com/calendar/selfsched?sstoken=UUtHZ0tGNW9uOWxJfGRlZmF1bHR8MzQ0OGIzN2M3MjhiNDk0MTQ2Nzk4MzY0MTFjNDU4NzY"><FONT COLOR="#399fd3">FILL OUT THIS FORM</FONT></a>. 
+      <p>Once your ready to join, sign up for the next Brigade Network Member onboarding session <a href="https://docs.google.com/a/codeforamerica.org/forms/d/1UIcMpqI4eGeFizGaViPC6odaGGIe59pvOtWhToA6xtY/viewform?usp=send_form"><FONT COLOR="#399fd3">FILL OUT THIS FORM</FONT></a>. 
       We will host these calls once a month beginning January 2015.</p>
       
       <p>Once you’ve been onboarded, we’ll invite your leadership team to <strong></strong>participate</strong> in the Code for America Brigade Slack channel and the CFAPI.</p>
-      
-      <p><a href="http://www.codeforamerica.org/brigade"><img src="http://www.codeforamerica.org/media/images/logos/brigade.png" width="80%" /></a></p>
+     
     </div>
     <div class="layout-minim">
       <h3 class="isolate"> Official Brigade Chapters</h3>
@@ -58,7 +56,7 @@
         <li><strong>People</strong></li>
         <ul>
           <li>Hosting consistent hack nights (at least three)</li>
-          <li>Having a <a href="https://www.google.com/calendar/selfsched?sstoken=UUtHZ0tGNW9uOWxJfGRlZmF1bHR8MzQ0OGIzN2M3MjhiNDk0MTQ2Nzk4MzY0MTFjNDU4NzY">leadership team</a></li>
+          <li>Having a <a href="https://docs.google.com/a/codeforamerica.org/document/d/1oEB1CuzCHldxP_bzcvmcrmK0yAE1BzV2AGhtwtYKZVY/edit">leadership team</a></li>
           <li>Sharing a Code of Conduct on your website</li>
         </ul>
         <li><strong>Plans</strong></li>
@@ -75,7 +73,7 @@
           <li>Contibute content to the CFAPI</li>
         </ul>
       </ol>
-      <p>Once your ready to join, sign up for the next Official Brigade Chapter onboarding session <a href="https://www.google.com/calendar/selfsched?sstoken=UUtHZ0tGNW9uOWxJfGRlZmF1bHR8MzQ0OGIzN2M3MjhiNDk0MTQ2Nzk4MzY0MTFjNDU4NzY"><FONT COLOR="#399fd3">FILL OUT THIS FORM</FONT></a>.  We will host these calls once a month beginning January 2015.</p>
+      <p>Once your ready to join, sign up for the next Official Brigade Chapter onboarding session <a href="https://docs.google.com/a/codeforamerica.org/forms/d/1odKnV_eFA2F7gix-AQXuTUhhIYrG0R6P1QYRoXw2EL8/viewform?usp=send_form"><FONT COLOR="#399fd3">FILL OUT THIS FORM</FONT></a>.  We will host these calls once a month beginning January 2015.</p>
       <p>Once you’ve been onboarded, we’ll invite your leadership team to <strong></strong>participate</strong> in the Code for America Brigade Slack channel and the CFAPI.</p>
     </div>
   </div>
