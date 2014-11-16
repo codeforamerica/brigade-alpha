@@ -2,8 +2,8 @@
 
 <section>
     <div class="layout-semibreve layout-centered">
-        <h2 class="isolate">Want to Organize a Brigade?</h2>
-        <p>Thats fantastic!  We are so excited you and your team are interested in joining this awesome network of developers, community organizers, story-tellers, government partners, and caring residents!
+        <h2 class="isolate">Want to organize a Brigade?</h2>
+        <p>That's fantastic!  We are so excited you and your team are interested in joining this awesome network of developers, designers, community organizers, storytellers, government partners, and caring residents!
     </div>
  </section>
 
@@ -27,15 +27,13 @@
   <div class="layout-semibreve">
     <div class="layout-minim">
       <h3 class="isolate">Brigade Network Members</h3>
-      <p>A Brigade Network Member is a local Brigade committed to organizing <strong>people</strong> and <strong>participating</strong> in the Code for America Brigade network.</p>
-      <p><u>We ask groups demonstrate this by:</u></p>
+      <p>Brigade Network Members have access to the Code for America Brigade network platforms Slack and the CFAPI, as well as toolkits and workshops. To access this level of support, your Brigade needs people and participation.</p>
       <ol>
         <li><strong>People</strong></li>
           <ul>
-            <li>Hosting consistent hack nights (at least three)</li>
-            <li>Having a <a href="https://www.google.com/calendar/selfsched?sstoken=UUtHZ0tGNW9uOWxJfGRlZmF1bHR8MzQ0OGIzN2M3MjhiNDk0MTQ2Nzk4MzY0MTFjNDU4NzY">leadership team</a></li>
-            <li>Hosting consistent hack nights (at least three)</li>
-            <li>Sharing a Code of Conduct on your website</li>
+            <li>Host consistent hack nights (at least three)</li>
+            <li>Organize a <a href="https://docs.google.com/a/codeforamerica.org/document/d/1oEB1CuzCHldxP_bzcvmcrmK0yAE1BzV2AGhtwtYKZVY/edit">leadership team</a></li>
+            <li>Publish a <a href="https://github.com/codeforamerica/codeofconduct">Code of Conduct,</a> on your website</li>
           </ul>
         <li><strong>Participate</strong></li>
           <ul>
@@ -43,31 +41,29 @@
             <li>Contibute content to the CFAPI</li>
           </ul>
       </ol>
-      <p>Once your ready to join, sign up for the next Brigade Network Member onboarding session <a href="https://www.google.com/calendar/selfsched?sstoken=UUtHZ0tGNW9uOWxJfGRlZmF1bHR8MzQ0OGIzN2M3MjhiNDk0MTQ2Nzk4MzY0MTFjNDU4NzY"><FONT COLOR="#399fd3">FILL OUT THIS FORM</FONT></a>. 
+      <p>Once your ready to join, <a href="https://docs.google.com/a/codeforamerica.org/forms/d/1OZ_prvPITkPD1EzodwLVEzd4MSbBI0EjSb9hinuAzBE/viewform"><FONT COLOR="#399fd3">sign up</FONT></a> for the next Brigade Network Member onboarding session. 
       We will host these calls once a month beginning January 2015.</p>
       
       <p>Once you’ve been onboarded, we’ll invite your leadership team to <strong></strong>participate</strong> in the Code for America Brigade Slack channel and the CFAPI.</p>
-      
-      <p><a href="http://www.codeforamerica.org/brigade"><img src="http://www.codeforamerica.org/media/images/logos/brigade.png" width="80%" /></a></p>
+     
     </div>
     <div class="layout-minim">
       <h3 class="isolate"> Official Brigade Chapters</h3>
-      <p>An Official Brigade Chapter is local Brigade committed to organizing <strong>people</strong>, <strong>participating</strong> in the Code for America Brigade network, and working with municipal and community <strong>partners</strong> to execute on a strategic <strong>plan</strong> that aligns with the Code for America <a href="http://www.codeforamerica.org/governments/principles/"><FONT COLOR="#399fd3">Principles for 21st Century Government.</FONT></a></p>
-      <p><u>We ask groups demonstrate this by:</u></p>
+      <p>Official Brigade Chapters have access to a full range of Code for America support, including financial resources. To access this level of support, your Brigade needs to organize around the 4Ps: people, plans, partnerships, participation. </FONT></a></p>
       <ol>
         <li><strong>People</strong></li>
         <ul>
-          <li>Hosting consistent hack nights (at least three)</li>
-          <li>Having a <a href="https://www.google.com/calendar/selfsched?sstoken=UUtHZ0tGNW9uOWxJfGRlZmF1bHR8MzQ0OGIzN2M3MjhiNDk0MTQ2Nzk4MzY0MTFjNDU4NzY">leadership team</a></li>
-          <li>Sharing a Code of Conduct on your website</li>
+          <li>Host consistent hack nights (at least three)</li>
+          <li>Organize <a href="https://docs.google.com/a/codeforamerica.org/document/d/1oEB1CuzCHldxP_bzcvmcrmK0yAE1BzV2AGhtwtYKZVY/edit">leadership team</a></li>
+          <li>Publish a <a href="https://github.com/codeforamerica/codeofconduct">Code of Conduct,</a> on your website</li>
         </ul>
         <li><strong>Plans</strong></li>
         <ul>
-          <li>Create a plan that aligns with the Code for America Digital Government Principles.</li>
+          <li>Create a plan that aligns with the <a href= "http://www.codeforamerica.org/governments/principles/">Code for America Digital Government Principles.</a></li>
         </ul>
         <li><strong>Partners</strong></li>
         <ul>
-          <li>Collaborate within local government and local community groups and nonprofits.</li>
+          <li>Collaborate with local government and local community groups and nonprofits.</li>
         </ul>
         <li><strong>Participate</strong></li>
         <ul>
@@ -75,8 +71,8 @@
           <li>Contibute content to the CFAPI</li>
         </ul>
       </ol>
-      <p>Once your ready to join, sign up for the next Official Brigade Chapter onboarding session <a href="https://www.google.com/calendar/selfsched?sstoken=UUtHZ0tGNW9uOWxJfGRlZmF1bHR8MzQ0OGIzN2M3MjhiNDk0MTQ2Nzk4MzY0MTFjNDU4NzY"><FONT COLOR="#399fd3">FILL OUT THIS FORM</FONT></a>.  We will host these calls once a month beginning January 2015.</p>
-      <p>Once you’ve been onboarded, we’ll invite your leadership team to <strong></strong>participate</strong> in the Code for America Brigade Slack channel and the CFAPI.</p>
+      <p>Once your ready to join, <a href="https://docs.google.com/a/codeforamerica.org/forms/d/1odKnV_eFA2F7gix-AQXuTUhhIYrG0R6P1QYRoXw2EL8/viewform"><FONT COLOR="#399fd3">sign up</FONT></a> for the next Official Brigade Chapter onboarding session.  We will host these calls once a month beginning January 2015.</p>
+      <p>Once you’ve been onboarded, we’ll invite your leadership team to participate in the Code for America Brigade Slack channel and the CFAPI.</p>
     </div>
   </div>
 </section>
