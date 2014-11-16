@@ -27,6 +27,12 @@
     </div>
 
     <div class="layout-crotchet-staccato">
+      <h3><strong>For Your Website</strong></h3>
+      <ul class="list-ruled">
+        <li><a href="http://www.codeforamerica.org/brigade/form">A sign up form</a> - <a href="https://github.com/codeforamerica/brigade-alpha/tree/master/checkin#brigade-checkins">More info</a></li>
+        <li><a href="http://www.codeforamerica.org/brigade/checkin/">An event check in tool</a> - <a href="https://github.com/codeforamerica/brigade-alpha#sign-ups">More info</a></li>
+        <li><a href="http://www.codeforamerica.org/geeks/civicissues/embed">Embed your Brigade's GitHub Issues</a></li>
+      </ul>
       <h3><strong>Marketing</strong></h3>
       <ul class="list-ruled">
           <li><a href='https://docs.google.com/document/d/1OY0s8BJR9A2aW1ivlNACTbi0dWOh9njYpHp53G1shFs/edit'>One Page Flyer</a> <a href='https://www.dropbox.com/s/d8omlxmg8g0gd1h/TemplateOnePager.pdf'>[PDF version]</a></li>
