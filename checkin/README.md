@@ -18,7 +18,7 @@ If your Brigade has built its own attendace tool, have it post to http://www.cod
 ```
 {
   "name" : "Caeser Chavez",
-  "email" : "cchavez@ufw.org
+  "email" : "cchavez@ufw.org,
   "event" : "Labor Protest",
   "brigade" : "United Farm Workers"
 }
