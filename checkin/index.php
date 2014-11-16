@@ -8,50 +8,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   $brigade = $_GET["brigade"];
   $event = $_GET["event"];
 
+    include('../top.php');
+
 ?>
-
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Code for America - Check In</title>
-    <link rel="stylesheet" href="http://style.codeforamerica.org/style/css/main.css">
-    <link rel="stylesheet" href="http://style.codeforamerica.org/style/css/layout.css" media="all and (min-width: 40em)">
-
-    <!-- Need to use full link for hosting on gh-pages -->
-    <link rel="stylesheet" href="../css/style.css">
-
-    <link rel="apple-touch-icon-precomposed" href="/style/favicons/60x60/flag-red.png"/>
-
-  </head>
-  <body>
-  <div class="js-container">
-
-    <nav class="nav-global-primary">
-    </nav>
-
-      <div class="global-header">
-        <a href="<?= $base_url ?>/" class="global-header-logo">
-            <img src="../images/logo.png" />
-        </a>
-        <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
-
-        <nav class="nav-global-secondary">
-          <ul>
-            <li><a href="<?= $base_url ?>/about">About</a></li>
-            <li><a href="<?= $base_url ?>/organize">Organize</a></li>
-            <li><a href="<?= $base_url ?>/tools">Tools</a></li>
-            <!-- <li><a href="<?= $base_url ?>/events">Events</a></li> -->
-            <li><a href="http://codeforamerica.tumblr.com">Tumblr</a></li>
-            <li><a href="http://codeforamerica.org/donate" class="button">Donate</a></li>
-          </ul>
-        </nav>
-      </div>
-
-    <main role="main">
-
 
       <section>
         <div class="layout-semibreve">   
