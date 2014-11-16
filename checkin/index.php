@@ -75,10 +75,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $url = 'https://people.codeforamerica.org/checkin';
     $response = file_get_contents($url, false, $context, -1, 40000);
 
-    if ($http_response_header[0] == "HTTP/1.0 200 OK"){
-
-      $query = array("event" => $_POST["event"], "brigade" => $_POST["brigade"]);
-      $redirect = sprintf("?%s", http_build_query($query));
+    $query = array("event" => $_POST["event"], "brigade" => $_POST["brigade"]);
+    $redirect = sprintf("?%s", http_build_query($query));
 
     include('../top.php');
 
@@ -97,7 +95,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <? 
     include('../bottom.php');
-}
 
 }
 
