@@ -20,11 +20,11 @@ If your Brigade has built its own attendace tool, have it post to http://www.cod
   "name" : "Caeser Chavez",
   "email" : "cchavez@ufw.org,
   "event" : "Labor Protest",
-  "brigade" : "United Farm Workers"
+  "brigade" : "United-Farm-Workers"
 }
 
 ```
-
+The `brigade` attribute should be your Brigade's ID on the CfAPI. For example Code for San Francisco is on the CfAPI at http://codeforamerica.org/api/organizations/Code-for-San-Francisco so the ID is `Code-for-San-Francisco`.
 
 
 
