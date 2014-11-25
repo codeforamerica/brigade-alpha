@@ -6,6 +6,13 @@
     <p>Brigades are volunteer organizations that build participatory power in their cities by holding regular civic hack nights and events, advocating for open data, and deploying apps. Brigades celebrate and share their successes with the Brigade network to further the global civic innovation movement.</p>
 </div>
 
+<section class="slab-gray">
+    <div class="layout-semibreve layout-centered">
+        <h2>Hear From Brigade Leaders</h2>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/PinRhW8Psn4" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
 <section class="slab-red">
     <div class="layout-semibreve layout-centered">
         <h2>Who We Are</h2>
@@ -13,12 +20,6 @@
         <a class="button" href="http://www.codeforamerica.org/brigade/organize">Learn more about how to organize and grow a Brigade</a>
     </div>
 </section>
-
-<!-- <div class="layout-semibreve layout-centered">
-
-    <h2>Hear From Brigade Leaders</h2>
-    <iframe width="560" height="315" src="//www.youtube.com/embed/PinRhW8Psn4" frameborder="0" allowfullscreen></iframe>
-</div> -->
 
 <section class="slab-teal">
     <div class="layout-semibreve layout-centered">
