@@ -48,15 +48,15 @@
 
     <button id="show-form-mobile">Want to get connected?</button>
 
-    <form accept-charset="UTF-8" id="new_user_mobile" novalidate="novalidate" style="display: none;" action="<?= $base_url ?>/signup" method="POST">
+    <form accept-charset="UTF-8" id="new_user_mobile" style="display: none;" action="<?= $base_url ?>/signup" method="POST">
       <ul class="list-form">
         <li class="form-field">
             <label for="user_full_name">Full name</label>
-            <input id="user_full_name_mobile" name="name" type="text" placeholder="Ben Franklin">
+            <input id="user_full_name_mobile" name="name" type="text" placeholder="Ben Franklin" required>
         </li>
         <li class="form-field">
             <label for="user_email">Email</label>
-            <input id="user_email_mobile" name="email" type="text" placeholder="benfranklin@codeforamerica.org">
+            <input id="user_email_mobile" name="email" type="text" placeholder="benfranklin@codeforamerica.org" required>
         </li>
         <li class="form-field">
             <label for="user_work_in_geovernment_mobile"><input id="user_work_in_government" name="work_in_government" type="checkbox" value="1">I work in government</label>

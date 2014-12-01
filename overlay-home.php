@@ -14,11 +14,11 @@
       <ul class="list-form">
         <li class="form-field">
             <label for="name">Full name</label>
-            <input name="name" type="text" placeholder="Ben Franklin">
+            <input name="name" type="text" placeholder="Ben Franklin" required>
         </li>
         <li class="form-field">
             <label for="email">Email</label>
-            <input name="email" type="text" placeholder="benfranklin@codeforamerica.org">
+            <input name="email" type="text" placeholder="benfranklin@codeforamerica.org" required>
         </li>
         <li class="form-field">
             <label for="location">City</label>
