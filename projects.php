@@ -5,6 +5,7 @@
     $base_url = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
 
 ?>
+
 <section>
 
   <div class="layout-semibreve">
@@ -79,6 +80,8 @@
         var id = window.location.pathname.split("/").reverse()[0];
         if (id != "projects" && id){
 
+          $("h1").text(id + " Projects");
+
           showProjects('http://codeforamerica.org/api/organizations/'+id+'/projects');
 
         } else {
@@ -89,7 +92,7 @@
 
         $("#orgs").change(function () {
             var id = $( "#orgs option:selected" ).val();
-            window.location.href = id
+            window.location.href = "projects/" + id
         });
 
     });
