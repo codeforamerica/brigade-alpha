@@ -38,7 +38,6 @@
           orgs.sort(compare);
           $.each(orgs, function(i, org){
             id = org.properties.name.replace(/\s+/g, "-");
-            alert(id);
             html = "<option value="+id+">";
             html += org.properties.name
             html += "</option>";
