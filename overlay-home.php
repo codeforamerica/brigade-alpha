@@ -8,11 +8,9 @@
     <p id="program-info">The Code for America Brigade program is an international network of people committed to using their voices and hands, in collaboration with local governments, to make their cities better.</p>
   </div>
 
-  <h4>Want to join a Brigade?</h4>
-  <p>Find your local Brigade on the map.</p>
+  <p>Find your local Brigade on the map to see what kind of work they do and join them.</p>
 
-  <h4>Want to start a new Brigade?</h4>
-  <p>Check out our <a href="<?= $base_url ?>/organize">Organize</a> page.</p>
+  <p>Want to start a new Brigade? Check out the <a href="<?= $base_url ?>/organize">Organize</a> page.</p>
 
   <div id="join-form">
     <h4>Want to get connected?</h4>
