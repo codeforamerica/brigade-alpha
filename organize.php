@@ -53,6 +53,7 @@
     <!-- <p>A group can join the Code for America Brigade network as a Brigade Network Member or an Official Brigade Chapter.</p> -->
     <!-- <p>Code for America Brigades organize through the four Ps:</p> -->
     <!-- <h4>people, plans, partnerships, and participation</h4> -->
+    A group can join the Code for America Brigade network as a <b>Brigade Network Member</b> or an <b>Official Brigade Chapter</b>. 
     <h3>People & Participation</h3>
     <p>Your first step will be to get your <b>people</b> together. This includes:</p>
     <ul>
@@ -61,20 +62,27 @@
       <li>Hosting three consistent hack nights</li>
     </ul>
     <p>
-      Once you've done that, we'll invite you to <b>participate</b> in the 
-      Brigade Network channels where you'll be able to connect with 
-      other Brigades around the world to learn how they work and to 
+      Once you've done that, we'll invite you to <b>participate</b> as a 
+      <b>Brigade Network Member</b>. You'll be able to connect with 
+      other Brigades around the world through our various digitial channels to learn how they work and to 
       share your experiences with them.
     </p>
     <h3>Plans & Partners</h3>
-    <p>To receive funding and additional resource and support, you'll need a <b>plan</b> and <b>partners</b>. This includes:</p>
+    <p>To receive funding and additional resource and support, you'll need get your people in order, participate in the network, AND establish a <b>plan</b> and <b>partners</b>. This includes:</p>
     <ul>
       <li>Writing a strategic plan that maps to the Code for America <a href="http://www.codeforamerica.org/governments/principles/">Principles</a></li>
       <li>Building partnerships with community groups and local government</li>
     </ul>
-
+     <p>
+      Once you've done that, we'll invite you to join us as an 
+      <b>Official Brigade Chapter</b>. You'll be able to connect with 
+      other Brigades just as a Network Member does, plus recieve fincial and organizing resources.  
+    </p>
     <p>
-      Joining from outside the United States? Find out more at 
+    <b>To learn more about becoming either a Brigade Network Member or an Official Brigade Chapter fill out the above form and we will send you all the details!</b>
+    </p>
+    <p>
+     <b> Joining from outside the United States?</b> Find out more at 
       <a href="http://code-for-all.github.io/codeforall.org/">codeforall.org</a>.
     </p>
 </section>
