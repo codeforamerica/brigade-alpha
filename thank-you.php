@@ -74,6 +74,8 @@
     Hannah, Brielle, Preston, Andrew, and Catherine
     Code for America Communities Team</p>
 
+  </div>
+
 
 <? } else { ?>
 
