@@ -42,28 +42,31 @@
   <div id="organizer_text">
     <p>Thank you for signing up to start a Brigade! We’re excited to help you organize in your community.</p>
 
-    <p>Code for America Brigades organize through the four Ps: people, plans, partnerships, and participation. </p>
+    <p>Code for America Brigades organize through the four Ps: <b> people, plans, partnerships, and participation. </b> </p>
 
     <p>What to do next</p>
 
-    <p>Your first step in starting a Brigade is to get your people together! This includes:</p>
+    <p>Your first step in starting a Brigade is to get your <b>people </b>together! This includes:</p>
     <ul>
         <li>Organizing a <a href="https://docs.google.com/a/codeforamerica.org/document/d/1oEB1CuzCHldxP_bzcvmcrmK0yAE1BzV2AGhtwtYKZVY/edit">core leadership team</a></li>
         <li>Putting up a website that includes a <a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fcodeforamerica%2Fcodeofconduct&sa=D&sntz=1&usg=AFQjCNHLV1eOOQEJLnypprXD_lXHMlg58g">Code of Conduct</a></li>
         <li>Hosting three consistent <a href="https://docs.google.com/a/codeforamerica.org/document/d/1ukivPQNeIH2GcJHcZ50yjzh1uQj70FlilFQcUKOH49k/edit">hack nights</a></li>
     </ul>
     <p>
-    Once you've done that, we will invite you to participate in the Brigade Network channels where you can connect with Brigades around the world to learn and to share your experiences with them.
+    Once you've done that, <a href="https://docs.google.com/a/codeforamerica.org/forms/d/1UIcMpqI4eGeFizGaViPC6odaGGIe59pvOtWhToA6xtY/viewform">fill out this form</a> and we'll set up some time to chat and invite you to <b> participate </b> as a <b> Brigade Network Member </b>. You'll be able to connect with other Brigades around the world through our various digitial channels to learn how they work and to share your experiences with them.
     </p>
 
-    <p>Want access to funding and additional resources?</p>
+    <p>Want access to funding and additional resources? Whenever you are ready you can join us an <b> Official Brigade Chapter </b>by making <b> plans </b> and <b> partnerships </b>. I.E. You can join as an Official Brigade Chapter after you have participated as a Brigade Network Member for a while, or moving straight through that step towards an Official Chapter in one swoop). </p>
     <ul>
-        <li>Writing a strategic plan that maps to the Code for America Principles</li>
-        <li>Building partnerships with community groups and local government</li>
+        <li>Writing a <a href="https://docs.google.com/a/codeforamerica.org/document/d/16GO5lnwEBKMFhhvewhKiNUcvVbTw5NtunVxhmCS6vw0/edit">strategic plan</a> that maps to the <a href="http://www.codeforamerica.org/governments/principles/">Code for America Principles</a></li>
+        <li>Building partnerships with other community groups and local government</li>
     </ul>
-
-
-    <p>If you are joining from outside the United States, you can participate in the Brigade network, too. Find out more at <a href="code-for-all.github.io/codeforall.org">codeforall.org</a>.</p>
+    
+     <p>
+    Once you've done that, <a href="https://docs.google.com/a/codeforamerica.org/forms/d/1odKnV_eFA2F7gix-AQXuTUhhIYrG0R6P1QYRoXw2EL8/viewform">fill out this form</a> and we'll set up some time to chat and invite you to <b> participate </b> as an <b> Official Brigade Chapter</b>. 
+    </p>
+    
+    <p>If you are joining from outside the United States, you can participate in the Brigade network as an Brigade Network Member. If your Brigade grows, we may want to consider becoming a <b> Code for All </b> member, which is the support route interntaional Brigades take instead of becoming Official Brigade Chapters.   Find out more at <a href="code-for-all.github.io/codeforall.org">codeforall.org</a>.</p>
 
     <p>Questions? Hit us up at brigade-info@codeforamerica.org</p>
 
