@@ -13,7 +13,7 @@
   <div class="layout-semibreve">
 
     <div class="layout-centered">
-        <h2 class="isolate">Want to organize a Brigade?</h2>
+        <h2 class="isolate">Want to Organize a Brigade?</h2>
         <p>That's fantastic!  We are so excited you and your 
           team are interested in joining this awesome network 
           of developers, designers, community organizers, 
@@ -87,7 +87,7 @@
     <p>*To get full instructions on becoming either a Brigade Network Member or an Official Brigade Chapter fill out the above form, click "I want to lead a Brigade in my community" and we will send you all the details!</p>
 
     <p><b>Joining from outside the United States?</b> Learn how you can participate as a Brigade Network Member by visiting 
-      <a href="codeforall.org">codeforall.org</a>.</p>
+      <a href="codeforall.org">codeforall.org/about</a>.</p>
 
 </section>
 
