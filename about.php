@@ -2,13 +2,13 @@
 
 
 <div class="layout-semibreve layout-centered">
-    <h2>Brigade Overview</h2>
+    <h2>About the Brigade: An Overview</h2>
     <p>Brigades are volunteer organizations that build participatory power in their cities by holding regular civic hack nights and events where people from all over the community can join together while advocating for open data and deploying apps. Brigades celebrate and share their successes with the Brigade Network to further the global civic innovation movement.</p>
 </div>
 
 <section class="slab-gray">
     <div class="layout-semibreve layout-centered">
-        <h2>Hear From Brigade Leaders</h2>
+        <h2>Hear from Brigade Leaders</h2>
         <iframe width="560" height="315" src="//www.youtube.com/embed/PinRhW8Psn4" frameborder="0" allowfullscreen></iframe>
     </div>
 </section>
@@ -37,9 +37,8 @@
             <h3 class="heading-contrast">For <strong>Citizens</strong></h3>
             <div class="list-ruled">
                 <ul>
-                <li><a href="http://brigade.codeforamerica.org/">Sign up</a> to join or start a civic hacking group.</li>
+                <li>Deploy and build apps in your city! Find a <a href="http://brigade.codeforamerica.org/">CfA Brigade</a> in your city.</li>
                 <li>Get in our <a href="https://github.com/codeforamerica">code</a> and hack.</li>
-                <li>Deploy and build apps in your city. Join a local <a href="http://brigade.codeforamerica.org/">CfA Brigade</a>.</li>
                 <li>Code with us!<a href="http://www.codeforamerica.org/geeks/civicissues"> Check out the new Civic Tech Issue Finder.</a></li>
                 </ul>
             </div>
@@ -49,8 +48,8 @@
             <h3 class="heading-contrast">For <strong>Governments</strong></h3>
             <ul class="list-ruled">
             <li>Connect with your local <a href="http://brigade.codeforamerica.org">Brigade.</a></li>
-            <li>Release more <a href="http://codeforamerica.org/governments/capabilities/open-data/index.html">open data</a>.</li>
-            <li>Learn about <a href="http://wiki.civiccommons.org/Open_Data_Guidelines">open data best practices</a>.</li>
+            <li>Join the Code for America government employee<a href="https://codeforamerica.wufoo.com/forms/welcome-to-the-code-for-america-government-network/">Peer Network</a>.</li>
+            <li>Learn about out <a href="http://www.codeforamerica.org/governments/principles/">Principles for 21st Century Government</a>.</li>
             </ul>
         </div>
 
