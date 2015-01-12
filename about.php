@@ -34,8 +34,7 @@
 <div class="layout-semibreve layout-centered">
     <h4>Funders</h4>
     <ul class="list-no-bullets layout-grid">
-        <li class="layout-minim"><a href="http://www.sap.com/index.html" target="_blank"><img src="images/SAP.jpg" height="80"></a></li>
-        <li class="layout-minim"><a href="http://www.accela.com/" target="_blank"><img src="images/accela.gif"></a></li>
+        <li class="layout-minim"><a href="https://www.rallydev.com/about/rally-for-impact"><img src="images/rally.png" height="100px"></a></li>
     </ul>
 </div>
 
