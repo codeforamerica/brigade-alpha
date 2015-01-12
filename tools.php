@@ -78,9 +78,8 @@
           <!-- <li><a href="#">OpenShift</a></li> -->
       </ul>
 
-      <h3>Brigade Sponsors</h3>
-      <p><a href='http://accela.com'><img src="images/accela.gif" width="300"></a></p>
-      <p><a href='http://sap.com'><img src="images/SAP.jpg" width="180" hspace="60"></a></p>
+      <h3>Funders</h3>
+      <p><a href="https://www.rallydev.com/about/rally-for-impact"><img src="images/rally.png"></a></p>
 
     </div>
   </div>
