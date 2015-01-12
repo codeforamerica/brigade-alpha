@@ -16,7 +16,7 @@
 <section class="slab-red">
     <div class="layout-semibreve layout-centered">
         <h2>How to Get Involved</h2>
-        <p>A civic-tech group can participate in the Code for America Brigade network as a <i>Brigade Network Member</i> or as an <i>Official Brigade Chapter.</i> All Brigades organize people around civic outcomes, participate in Code for America communication channels, and recieve support from the Code for America network.  You can visit our <font color="=black"><a href="http://www.codeforamerica.org/brigade">interactive Brigade map</a></font> to locate a chapter near you and join in on the fun!</p> 
+        <p>A civic-tech group can participate in the Code for America Brigade network as a <i>Brigade Network Member</i> or as an <i>Official Brigade Chapter.</i> All Brigades organize people around civic outcomes, participate in Code for America communication channels, and recieve support from the Code for America network.  You can visit our <font color="=black"><a href="http://www.codeforamerica.org/brigade">interactive Brigade map</a></font> to locate a chapter near you and join in on the fun!</p>
         <br>
         Don't see a Brigade in your city?<br>
         <a class="button" href="http://www.codeforamerica.org/brigade/organize">Learn how to organize and grow a Brigade in your city!</a>
@@ -28,40 +28,6 @@
         <h2>We Need Everyone to Participate</h2>
         <p>Brigades offer positive and safe environments for all members of their city. In order to help build an ecosystem that values free and open technologies and processes, everyone in the community must get involved. Therefore, Code for America developed a Code of Conduct to further support Brigades as they fulfill their mission in a way that is inclusive and participatory of all people. We do not tolerate discrimiation or harrassment of any kind!</p>
         <a class="button" href="https://github.com/codeforamerica/codeofconduct">Check out our full Code of Conduct</a>
-    </div>
-</section>
-
-<section>
-    <div class="layout-breve">
-        <div class="layout-crotchet-staccato">
-            <h3 class="heading-contrast">For <strong>Citizens</strong></h3>
-            <div class="list-ruled">
-                <ul>
-                <li>Deploy and build apps in your city! Find a <a href="http://brigade.codeforamerica.org/">CfA Brigade</a> in your city.</li>
-                <li>Get in our <a href="https://github.com/codeforamerica">code</a> and hack.</li>
-                <li>Code with us!<a href="http://www.codeforamerica.org/geeks/civicissues"> Check out the new Civic Tech Issue Finder.</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="layout-crotchet-staccato">
-            <h3 class="heading-contrast">For <strong>Governments</strong></h3>
-            <ul class="list-ruled">
-            <li>Connect with your local <a href="http://brigade.codeforamerica.org">Brigade.</a></li>
-            <li>Join the Code for America government employee<a href="https://codeforamerica.wufoo.com/forms/welcome-to-the-code-for-america-government-network/">Peer Network</a>.</li>
-            <li>Learn about out <a href="http://www.codeforamerica.org/governments/principles/">Principles for 21st Century Government</a>.</li>
-            </ul>
-        </div>
-
-        <div class="layout-crotchet-staccato">
-            <h3 class="heading-contrast">For <strong>Sponsors</strong></h3>
-            <ul class="list-ruled">
-                <li><a href="https://secure.codeforamerica.org/page/contribute/default?source_codes=Brigade-page">Donate</a> to Support the CfA Brigade</li>
-                <li>To discuss a sizable donation to support the Brigade, please contact <a href="mailto:jchilds@codeforamerica.org ">Jennifer Childs</a>.</li>
-                <li>To donate to a specific Brigade, please contact the <a href="http://codeforamerica.org/geeks/our-geeks/brigade-captains/">Brigade Captain</a>.</li>
-            </ul>
-        </div>
-
     </div>
 </section>
 
