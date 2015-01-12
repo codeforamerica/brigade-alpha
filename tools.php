@@ -77,7 +77,7 @@
       </ul>
 
       <h3>Funders</h3>
-      <p><a href="https://www.rallydev.com/about/rally-for-impact"><img src="images/rally.png"></a></p>
+      <p><a href="https://www.rallydev.com/about/rally-for-impact"><img src="images/rally.png" height="100px"></a></p>
 
     </div>
   </div>
