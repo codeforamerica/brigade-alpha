@@ -50,8 +50,6 @@
       <h3>Logos</h3>
       <ul class="list-ruled">
           <li><li><a href="images/new_logo.png"><img src="images/new_logo.png" /></a></li>
-          <li><a href='http://codeforamerica.org/wp-content/uploads/2013/04/tumblr_glasses.png'><img height='100' src='http://codeforamerica.org/wp-content/uploads/2013/04/tumblr_glasses.png' width='100'></a></li>
-          <li><a href='http://www.codeforamerica.org/wp-content/uploads/2013/02/the_brigade.png'><img height='100' src='http://www.codeforamerica.org/wp-content/uploads/2013/02/the_brigade.png' width='300'></a></li>
           <li><a href='http://codeforamerica.org/logos/'>More Code for America logos</a></li>
       </ul>
 
