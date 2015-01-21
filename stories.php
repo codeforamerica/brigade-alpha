@@ -16,7 +16,7 @@
     <script>
     $(document).ready(function() {
 
-        $.getJSON('http://codeforamerica.org/api/stories', function(response){
+        $.getJSON('http://codeforamerica.org/api/stories?organization_type=Brigade', function(response){
 
           stories = response.objects;
 
