@@ -36,8 +36,8 @@
     <div class="layout-crotchet-staccato">
       <h3>For Your Website</h3>
       <ul class="list-ruled">
-        <li><a href="http://www.codeforamerica.org/brigade/form">A sign up form</a> - <a href="https://github.com/codeforamerica/brigade-alpha/tree/master/checkin#brigade-checkins">More info</a></li>
-        <li><a href="http://www.codeforamerica.org/brigade/checkin/">An event check in tool</a> - <a href="https://github.com/codeforamerica/brigade-alpha#sign-ups">More info</a></li>
+        <li><a href="http://www.codeforamerica.org/brigade/form">A sign up form</a> - <a href="https://github.com/codeforamerica/brigade-alpha#sign-ups">More info</a></li>
+        <li><a href="http://www.codeforamerica.org/brigade/checkin/">An event check in tool</a> - <a href="https://github.com/codeforamerica/brigade-alpha/tree/master/checkin#brigade-checkins">More info</a></li>
         <li><a href="http://www.codeforamerica.org/geeks/civicissues/embed">Embed your Brigade's GitHub Issues</a></li>
       </ul>
       <h3>Marketing</h3>
