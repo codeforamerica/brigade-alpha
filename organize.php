@@ -87,7 +87,7 @@
     <p>*To get full instructions on becoming either a Brigade Network Member or an Official Brigade Chapter fill out the above form, click "I want to lead a Brigade in my community" and we will send you all the details!</p>
 
     <p><b>Joining from outside the United States?</b> Learn how you can participate as a Brigade Network Member by visiting 
-      <a href="codeforall.org">codeforall.org/about</a>.</p>
+      <a href="http://codeforall.org/about">codeforall.org/about</a>.</p>
 
 </section>
 
