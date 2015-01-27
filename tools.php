@@ -73,6 +73,7 @@
           <li><a href="https://cloud.google.com/developers/starterpack/">Google Cloud Platform</a></li>
           <li><a href="http://www.civicdata.com/en/home">CivicData.com</a></li>
           <li><a href="https://readme.io/">README.io</a> - <a href="http://forum.codeforamerica.org/t/free-readme-io-donation-for-brigade-projects">Forum post</a></li>
+          <li><a href="https://www.flowdock.com/">Flowdock</a></li>
           <!-- <li><a href="#">OpenShift</a></li> -->
       </ul>
 
