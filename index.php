@@ -26,7 +26,7 @@
 
 <div id="sponsors" class="layout-semibreve">
     <h4>Funders</h4>
-    <p><a href="https://www.rallydev.com/about/rally-for-impact"><img src="images/rally.png" height="100px"></a></p>
+    <p><a href="https://www.rallydev.com/about/rally-for-impact"><img src="http://www.codeforamerica.org/brigade/images/rally.png" height="100px"></a></p>
 </div>
 
 <script src="<?= $base_url ?>/js/map.js"></script>
