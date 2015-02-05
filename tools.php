@@ -69,7 +69,7 @@
       </ul>
       <h5>For all Brigades</h5>
       <ul>
-          <li><a href="https://community.socrata.com/">Socrata Community Data Portal</a></li>
+          <li><a href="https://brigades.opendatanetwork.com/">Socrata Open Data Portals</a></li>
           <li><a href="https://cloud.google.com/developers/starterpack/">Google Cloud Platform</a></li>
           <li><a href="http://www.civicdata.com/en/home">CivicData.com</a></li>
           <li><a href="https://readme.io/">README.io</a> - <a href="http://forum.codeforamerica.org/t/free-readme-io-donation-for-brigade-projects">Forum post</a></li>
