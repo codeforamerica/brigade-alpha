@@ -64,6 +64,7 @@
           <li><a href="http://www.justinmind.com/">JustInMind</a></li>
           <li><a href="https://www.mybalsamiq.com/">myBalsamiq</a></li>
           <li><a href="https://www.twilio.com/">Twilio</a> - <a href="https://docs.google.com/document/d/1nPM9mAFMnhH7dozX51W9aPkKbANJczkseoQLNhmSBoU/edit?usp=sharing">How to use</a></li>
+          <li><a href="https://www.usertesting.com/">UserTesting.com</a> - <a href="http://forum.codeforamerica.org/t/free-usertesting-com-videos-for-brigades/161">Forum post</a>
           <!-- <li><a href="https://readme.io/">README.io</a></li>
           <li><a href="https://office.com/">Office 365</a></li> -->
       </ul>
