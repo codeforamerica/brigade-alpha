@@ -11,7 +11,9 @@
 ?>
 
 <? include('list-brigades.php') ?>
+
 <div id="map"></div>
+
 <div id="overlay" class="slab-red">
     <? if($brigade_slug) {
 

@@ -27,10 +27,15 @@
             if (strpos($feature['properties']['type'], "Brigade") !== false) {
                 $id = $feature['id'];
                 $p = $feature['properties'];
+                if (strpos($feature['properties']['type'], "Official") !== false) {
+                  $color = "#aa1c3a";
+                } else {
+                  $color = "#6D6E71";
+                }
                 $c = $feature['geometry']['coordinates'];
                 $on = ($id == $brigade_slug) ? 1 : 0;
                 ?>
-                <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>" data-id="<?= $id ?>">
+                <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>" data-id="<?= $id ?>" data-color="<?= h($color) ?>">
                     <a href="<?= $base_url.'/index/'.$id ?>"><?= h($p['name']) ?></a>
                 </li>
                 <?
