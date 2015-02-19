@@ -10,7 +10,7 @@
     <div class="layout-crotchet-staccato">
       <h3><strong>Getting started</strong></h3>
       <ul class="list-ruled">
-        
+
           <li><a href='https://docs.google.com/document/d/1oEB1CuzCHldxP_bzcvmcrmK0yAE1BzV2AGhtwtYKZVY/edit?usp=sharing'>Roles within a Local Brigade</a></li>
           <li><a href='https://docs.google.com/document/d/1ukivPQNeIH2GcJHcZ50yjzh1uQj70FlilFQcUKOH49k/edit?usp=sharing'>How To: Host a Hack Night</a></li>
           <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1wo_skwazuom_Zkp7AmCSjy5JD8Z5WYSbhr2IUmqWdQ0/edit'>Projects for new Brigade members</a></li>
@@ -65,8 +65,7 @@
           <li><a href="https://www.mybalsamiq.com/">myBalsamiq</a></li>
           <li><a href="https://www.twilio.com/">Twilio</a> - <a href="https://docs.google.com/document/d/1nPM9mAFMnhH7dozX51W9aPkKbANJczkseoQLNhmSBoU/edit?usp=sharing">How to use</a></li>
           <li><a href="https://www.usertesting.com/">UserTesting.com</a> - <a href="http://forum.codeforamerica.org/t/free-usertesting-com-videos-for-brigades/161">Forum post</a>
-          <!-- <li><a href="https://readme.io/">README.io</a></li>
-          <li><a href="https://office.com/">Office 365</a></li> -->
+          <li><a href="https://office.com/">Office 365</a></li>
       </ul>
       <h5>For all Brigades</h5>
       <ul>
