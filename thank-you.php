@@ -82,7 +82,7 @@
   <div id="no_brigade_text">
     <p><b><h3>Thank you for your interest in the Code for America Brigade community!</h3></b></p>
     <p>We will add you to our mailing list so you can keep stay up to date with both local opportunities and national events.</p>
-    <p>If you want to reconsider leading a Brigade in your city,<a href='https://www.youtube.com/watch?v=f1oBpGQbdmg'>click here to view the "How to start a Brigade" video</a>, then re-submit your name into the form on <a href="codeforamerica.org/brigade">on our website </a> and click "I want to lead a Brigade in my community."</a></p>
+    <p>If you want to reconsider leading a Brigade in your city,<a href='https://www.youtube.com/watch?v=f1oBpGQbdmg'>click here to view the "How to start a Brigade" video</a>, then re-submit your name into the form on <a href="http://www.codeforamerica.org/brigade/">on our website </a> and click "I want to lead a Brigade in my community."</a></p>
     <p>We'll be in touch, but feel free to reach out with your ideas and questions anytime.</p>
     <p>Sincerley,<br>
     Brielle Plump - Communities Coordinator<br>
