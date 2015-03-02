@@ -41,9 +41,9 @@
       </ul>
       <h3>Marketing</h3>
       <ul class="list-ruled">
+          <li><a href='https://docs.google.com/document/d/1LIUcCLwmn-SR6_X93TOMIoIJOhNXd0t_27TAIOofdIo/edit?usp=sharing'>Branding Guidelines</a></li>
           <li><a href='https://docs.google.com/document/d/1OY0s8BJR9A2aW1ivlNACTbi0dWOh9njYpHp53G1shFs/edit'>One Page Flyer</a></li>
           <li><a href='https://docs.google.com/presentation/d/1MSyVMauTv4HcPcgXmF2l-Afzjw35UfieCj5mKDK7fvY/edit?usp=sharing'>Slide Deck</a></li>
-          <li><a href='https://docs.google.com/document/d/1LIUcCLwmn-SR6_X93TOMIoIJOhNXd0t_27TAIOofdIo/edit?usp=sharing'>Branding Guidelines</a></li>
       </ul>
       <h3>Logos</h3>
       <ul class="list-ruled">
