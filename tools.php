@@ -36,16 +36,14 @@
     <div class="layout-crotchet-staccato">
       <h3>For Your Website</h3>
       <ul class="list-ruled">
-        <li><a href="http://www.codeforamerica.org/brigade/form">A sign up form</a> - <a href="https://github.com/codeforamerica/brigade-alpha#sign-ups">More info</a></li>
         <li><a href="http://www.codeforamerica.org/brigade/checkin/">An event check in tool</a> - <a href="https://github.com/codeforamerica/brigade-alpha/tree/master/checkin#brigade-checkins">More info</a></li>
         <li><a href="http://www.codeforamerica.org/geeks/civicissues/embed">Embed your Brigade's GitHub Issues</a></li>
       </ul>
       <h3>Marketing</h3>
       <ul class="list-ruled">
-          <li><a href='https://docs.google.com/document/d/1OY0s8BJR9A2aW1ivlNACTbi0dWOh9njYpHp53G1shFs/edit'>One Page Flyer</a> <a href='https://www.dropbox.com/s/d8omlxmg8g0gd1h/TemplateOnePager.pdf'>[PDF version]</a></li>
-          <li><a href='https://docs.google.com/presentation/d/1MSyVMauTv4HcPcgXmF2l-Afzjw35UfieCj5mKDK7fvY/edit?usp=sharing'>Slide Deck</a> <a href='https://www.dropbox.com/s/t0ipq3okluv6p8l/Code%20for%20America%20Brigade%20-%20General%20Edition.pdf'>[PDF Version]</a> </li>
-          <li><a href='https://www.dropbox.com/s/pkj0y9wt6fc4c6p/stickers.pdf' title='2.5 in sticker template'>Stickers</a></li>
-          <li><a href='https://docs.google.com/document/d/1LIUcCLwmn-SR6_X93TOMIoIJOhNXd0t_27TAIOofdIo/edit?usp=sharing'>Style Guide</a></li>
+          <li><a href='https://docs.google.com/document/d/1OY0s8BJR9A2aW1ivlNACTbi0dWOh9njYpHp53G1shFs/edit'>One Page Flyer</a></li>
+          <li><a href='https://docs.google.com/presentation/d/1MSyVMauTv4HcPcgXmF2l-Afzjw35UfieCj5mKDK7fvY/edit?usp=sharing'>Slide Deck</a></li>
+          <li><a href='https://docs.google.com/document/d/1LIUcCLwmn-SR6_X93TOMIoIJOhNXd0t_27TAIOofdIo/edit?usp=sharing'>Branding Guidelines</a></li>
       </ul>
       <h3>Logos</h3>
       <ul class="list-ruled">
