@@ -63,7 +63,8 @@
           <li><a href="https://www.mybalsamiq.com/">myBalsamiq</a></li>
           <li><a href="https://www.twilio.com/">Twilio</a> - <a href="https://docs.google.com/document/d/1nPM9mAFMnhH7dozX51W9aPkKbANJczkseoQLNhmSBoU/edit?usp=sharing">How to use</a></li>
           <li><a href="https://www.usertesting.com/">UserTesting.com</a> - <a href="http://forum.codeforamerica.org/t/free-usertesting-com-videos-for-brigades/161">Forum post</a>
-          <li><a href="https://office.com/">Office 365</a></li>
+          <li><a href="https://office.com/">Microsoft Office 365</a> - <a href="http://forum.codeforamerica.org/t/free-email-for-your-brigade-google-apps-and-office-365/172">Forum post</a></li>
+          <li><a href="http://www.google.com/nonprofits/">Google Apps for Nonprofits</a> - <a href="http://forum.codeforamerica.org/t/free-email-for-your-brigade-google-apps-and-office-365/172">Forum post</a></li>
       </ul>
       <h5>For all Brigades</h5>
       <ul>
