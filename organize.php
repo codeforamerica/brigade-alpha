@@ -64,7 +64,7 @@
 
     <p><strong>People</strong> power Brigades, and everyone is invited to join! Brigades have a Code of Conduct to ensure everyone feels welcome and respected.</p>
     <p><strong>Participation</strong> allows our network to grow and sustain. We connect through communication channels and collective days of action, such as CodeAcross, and National Day of Civic Hacking.</p>
-    <p><strong>Plans enable Brigades to set goals and measure outcomes. Brigades orient projects around the Principles for 21st Century Government and the Code for America Focus Areas.</p>
+    <p><strong>Plans</strong> enable Brigades to set goals and measure outcomes. Brigades orient projects around the Principles for 21st Century Government and the Code for America Focus Areas.</p>
     <p><strong>Partnerships</strong> with local community organizations and government are at the core of Brigades. Collaborating with partners is key to building civic technology that works for everyone.</p>
 
 
