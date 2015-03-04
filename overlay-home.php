@@ -5,7 +5,8 @@
 ?>
 
   <div id="brigade-info">
-    <p id="program-info">The Code for America Brigade program is an international network of people committed to using their voices and hands, in collaboration with local governments, to make their cities better.</p>
+    <p id="program-info">Code for America Brigades are volunteer groups that collaborate with local government and community partners to build new tools that help with local civic issues. Code for America supports Brigade chapters with resources, tools, and access to the wider civic technology movement.
+</p>
   </div>
 
   <p>Find your local Brigade on the map to see what kind of work they do and join them.</p>
