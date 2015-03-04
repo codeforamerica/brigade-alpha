@@ -5,7 +5,7 @@
 ?>
 
   <div id="brigade-info">
-    <p id="program-info">Code for America Brigades are volunteer groups that collaborate with local government and community partners to build new tools that help with local civic issues. Code for America supports Brigade chapters with resources, tools, and access to the wider civic technology movement.
+    <p id="program-info">Code for America Brigades are volunteer groups that collaborate with local government and community partners to build new tools that help with local civic issues. Code for America supports Brigade chapters with resources, training, and access to the wider civic technology movement.
 </p>
   </div>
 
