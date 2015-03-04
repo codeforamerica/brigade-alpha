@@ -56,33 +56,17 @@
 </section>
 
 <section class="layout-semibreve">
-    
-    <h2 class="layout-centered">Ready to Get Started?</h2>
-    <p>A group can join the Code for America Brigade network as a <b>Brigade Network Member</b> or an <b>Official Brigade Chapter</b>.  Brigades organize and build around the four Ps: <b>people, plans, partnerships,</b> and <b>participation</b></p>
-    
-    <h3>People & Participation</h3>
-    <p>Your first step will be to get your people together. This includes:</p>
-    <ul>
-      <li>Organizing a core leadership team</li>
-      <li>Putting up a website that includes a <a href="https://github.com/codeforamerica/codeofconduct">Code of Conduct</a></li>
-      <li>Hosting three consistent hack nights</li>
-    </ul>
-    <p>
-      Once you've done that, we'll invite you to participate as a 
-      <b>Brigade Network Member</b>. You'll be able to connect with 
-      other Brigades around the world through our various digitial channels to learn how they work and to 
-      share your experiences with them.
-    </p>
-    
-    <h3>Plans & Partners</h3>
-    <p>To receive funding and additional resource and support, you'll need get your people in order, participate in the network, AND establish a plan and partners. This includes:</p>
-    <ul>
-      <li>Writing a strategic plan that maps to the <a href="http://www.codeforamerica.org/governments/principles/">Code for America Principles for 21st Century Government</a></li>
-      <li>Building partnerships with community groups and local government</li>
-    </ul>
-     <p>Once you've done that, we'll invite you to join us as an 
-      <b>Official Brigade Chapter</b>. You'll be able to connect with 
-      other Brigades just as a Network Member does, plus recieve financial and organizing resources.</p>
+    <h2>How Does Code for America Support Brigades</h2>
+    <p>Code for America provides resources, training, and access to the wider civic technology movement for volunteers who are interested in starting, leading, or participating in a Brigade. Brigades can participate and engage in the Brigade network at different levels.</p>
+
+    <h2>How Are Brigades Organized</h2>
+    <p>Brigades are organized through the “Four Ps:”</p>
+
+    <p><strong>People</strong> power Brigades, and everyone is invited to join! Brigades have a Code of Conduct to ensure everyone feels welcome and respected.</p>
+    <p><strong>Participation</strong> allows our network to grow and sustain. We connect through communication channels and collective days of action, such as CodeAcross, and National Day of Civic Hacking.</p>
+    <p><strong>Plans enable Brigades to set goals and measure outcomes. Brigades orient projects around the Principles for 21st Century Government and the Code for America Focus Areas.</p>
+    <p><strong>Partnerships</strong> with local community organizations and government are at the core of Brigades. Collaborating with partners is key to building civic technology that works for everyone.</p>
+
 
     <p>*To get full instructions on becoming either a Brigade Network Member or an Official Brigade Chapter fill out the above form, click "I want to lead a Brigade in my community" and we will send you all the details!</p>
 
