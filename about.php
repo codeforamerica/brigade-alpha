@@ -2,8 +2,8 @@
 
 
 <div class="layout-semibreve layout-centered">
-    <h2>About the Brigade: An Overview</h2>
-    <p>Brigades are volunteer organizations that build participatory power in their cities by holding regular civic hack nights and events where people from all over the community can join together while advocating for open data and deploying apps. Brigades celebrate and share their successes with the Brigade Network to further the global civic innovation movement.</p>
+    <h2>What are Brigades</h2>
+    <p>Code for America Brigades are volunteer groups that collaborate with local government and community partners to build new tools that help with local civic issues. Code for America supports Brigade chapters with resources, tools, and access to the wider civic technology movement. </p>
 </div>
 
 <section class="slab-gray">
@@ -16,7 +16,7 @@
 <section class="slab-red">
     <div class="layout-semibreve layout-centered">
         <h2>How to Get Involved</h2>
-        <p>A civic-tech group can participate in the Code for America Brigade network as a <i>Brigade Network Member</i> or as an <i>Official Brigade Chapter.</i> All Brigades organize people around civic outcomes, participate in Code for America communication channels, and recieve support from the Code for America network.  You can visit our <font color="=black"><a href="http://www.codeforamerica.org/brigade">interactive Brigade map</a></font> to locate a chapter near you and join in on the fun!</p>
+        <p>A group can participate in the Code for America Brigade network as a <i>Brigade Network Member</i> or as an <i>Official Brigade Chapter.</i> All Brigades organize people around civic outcomes, participate in Code for America communication channels, and recieve support from the Code for America network.  You can visit our <font color="=black"><a href="http://www.codeforamerica.org/brigade">interactive Brigade map</a></font> to locate a chapter near you and join in on the fun!</p>
         <br>
         Don't see a Brigade in your city?<br>
         <a class="button" href="http://www.codeforamerica.org/brigade/organize">Learn how to organize and grow a Brigade in your city!</a>
@@ -28,6 +28,16 @@
         <h2>We Need Everyone to Participate</h2>
         <p>Brigades offer positive and safe environments for all members of their city. In order to help build an ecosystem that values free and open technologies and processes, everyone in the community must get involved. Therefore, Code for America developed a Code of Conduct to further support Brigades as they fulfill their mission in a way that is inclusive and participatory of all people. We do not tolerate discrimiation or harrassment of any kind!</p>
         <a class="button" href="https://github.com/codeforamerica/codeofconduct">Check out our full Code of Conduct</a>
+    </div>
+</section>
+
+<section class="slab-blue">
+    <div class="layout-semibreve layout-centered">
+        <h2>Four Common Activities of Brigades</h2>
+        <p><strong>Leading & Organizing:</strong> Brigades build teams and provide a space for residents to voice and act on their ideas.</p>
+        <p><strong>Opening civic data:</strong> Brigades use open data, user research, and other metrics to visualize trends and support their city.</p>
+        <p><strong>Deploying & hacking civic apps:</strong> Brigades offer new ways for cities to use the web and mobile software in government operations and community outreach.</p>
+        <p><strong>Advocating for open government:</strong> Brigades teach local governments the benefits of transparency, collaboration, and engagement so cities can grow for, and by the people.</p>
     </div>
 </section>
 
