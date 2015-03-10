@@ -27,10 +27,15 @@
             if (strpos($feature['properties']['type'], "Brigade") !== false) {
                 $id = $feature['id'];
                 $p = $feature['properties'];
+                if (strpos($feature['properties']['type'], "Official") !== false) {
+                  $color = "#aa1c3a";
+                } else {
+                  $color = "#6D6E71";
+                }
                 $c = $feature['geometry']['coordinates'];
                 $on = ($id == $brigade_slug) ? 1 : 0;
                 ?>
-                <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>" data-id="<?= $id ?>">
+                <li data-lat="<?= h($c[1]) ?>" data-lon="<?= h($c[0]) ?>" data-on="<?= h($on) ?>" data-id="<?= $id ?>" data-color="<?= h($color) ?>">
                     <a href="<?= $base_url.'/index/'.$id ?>"><?= h($p['name']) ?></a>
                 </li>
                 <?
@@ -48,15 +53,15 @@
 
     <button id="show-form-mobile">Want to get connected?</button>
 
-    <form accept-charset="UTF-8" id="new_user_mobile" novalidate="novalidate" style="display: none;" action="<?= $base_url ?>/signup" method="POST">
+    <form accept-charset="UTF-8" id="new_user_mobile" style="display: none;" action="<?= $base_url ?>/signup" method="POST">
       <ul class="list-form">
         <li class="form-field">
             <label for="user_full_name">Full name</label>
-            <input id="user_full_name_mobile" name="name" type="text" placeholder="Ben Franklin">
+            <input id="user_full_name_mobile" name="name" type="text" placeholder="Ben Franklin" required>
         </li>
         <li class="form-field">
             <label for="user_email">Email</label>
-            <input id="user_email_mobile" name="email" type="text" placeholder="benfranklin@codeforamerica.org">
+            <input id="user_email_mobile" name="email" type="text" placeholder="benfranklin@codeforamerica.org" required>
         </li>
         <li class="form-field">
             <label for="user_work_in_geovernment_mobile"><input id="user_work_in_government" name="work_in_government" type="checkbox" value="1">I work in government</label>

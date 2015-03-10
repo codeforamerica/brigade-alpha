@@ -7,8 +7,8 @@ function showBrigadeSignupForm(button)
 
 $(function(){
 
-  $('#map').css("height", ($(window).height() - 89));
-  $('#overlay').css("height", ($(window).height() - 138));
+  $('#map').css("height", $(window).height());
+  $('#overlay').css("height", ($(window).height() - 49));
 
   var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj',
     {
@@ -16,7 +16,10 @@ $(function(){
     }
     );
 
-  map.zoomControl.setPosition('bottomright');
+  map.legendControl.setPosition('topright');
+  map.legendControl.addLegend('<img src="http://localhost/~hackyourcity/brigade-alpha/images/red-marker.png" style="vertical-align: middle;"><strong>Official Brigade</strong>');
+  map.zoomControl.setPosition('topright');
+
 
   var latlon = [27, -85], zoom = 2;
 
@@ -43,7 +46,8 @@ $(function(){
         id = item.data('id'),
         anchor = item.find('a'),
         name = anchor.text(),
-        href = anchor.attr('href');
+        href = anchor.attr('href'),
+        color = item.data('color');
 
     var brigade = {
         name: name,
@@ -52,7 +56,7 @@ $(function(){
         };
 
     var marker = new BrigadeMarker(new L.LatLng(lat, lon), {
-      icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall'}),
+      icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall', 'marker-color': color}),
       title: name,
       brigade: brigade // Add Brigade data to marker
     });

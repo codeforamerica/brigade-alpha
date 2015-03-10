@@ -16,6 +16,19 @@ This site is built with HTML, CSS, Javascript, and PHP. Place it in a publicly-v
 
 The data about the Brigades is from the [Code for America API](http://codeforamerica.org/api). The work on that project is happening under the [cfapi](https://github.com/codeforamerica/cfapi) repository.
 
+## Sign Ups
+There is a sign up form you can embed in your own website at http://www.codeforamerica.org/brigade/form
+
+This form will post to http://www.codeforamerica.org/brigade/signup
+
+Brigade Captain's with access will be able to see everyone who has signed up for their Brigade at https://people.codeforamerica.org/
+
+## Attendance
+There is a check in tool available at http://www.codeforamerica.org/brigade/checkin/
+More info about this tool is at https://github.com/codeforamerica/brigade-alpha/tree/master/checkin#brigade-checkins
+
+Brigade Captain's with access will be able to to see attendance at their events at https://people.codeforamerica.org/
+
 
 Contacts
 --------
