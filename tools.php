@@ -11,13 +11,14 @@
       <h3><strong>Getting started</strong></h3>
       <ul class="list-ruled">
 
+          <li><a href='https://github.com/codeforamerica/codeofconduct'>Code for America's Code of Conduct</a></li>
           <li><a href='https://docs.google.com/document/d/1oEB1CuzCHldxP_bzcvmcrmK0yAE1BzV2AGhtwtYKZVY/edit?usp=sharing'>Roles within a Local Brigade</a></li>
           <li><a href='https://docs.google.com/document/d/1ukivPQNeIH2GcJHcZ50yjzh1uQj70FlilFQcUKOH49k/edit?usp=sharing'>How To: Host a Hack Night</a></li>
-          <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1wo_skwazuom_Zkp7AmCSjy5JD8Z5WYSbhr2IUmqWdQ0/edit'>Projects for new Brigade members</a></li>
+          <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1Zg2FDt7awgfCmdcbzMwKHMb1A7KDOhs_z7ibCb3TLLQ/edit'>How To: Anti-Harassment Policy</a></li>
           <li><a href='https://docs.google.com/document/d/1WtoE_Kfqcu73MCUOIXujrzTfqrQAW3DGt0sC8iKJ6Rw/edit?usp=sharing'>How To: Collaborate with Government</a></li>
           <li><a href='https://docs.google.com/document/d/1LIUcCLwmn-SR6_X93TOMIoIJOhNXd0t_27TAIOofdIo/edit?usp=sharing'>How To: Brand and Market Your Brigade</a></li>
           <li><a href='https://docs.google.com/document/d/1AuMsUqCZ1Em99NvQje1dCI2cD1C54dD711sbm6FgYhE/edit?usp=sharing'>How To: Welcome New Members</a></li>
-          <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1Zg2FDt7awgfCmdcbzMwKHMb1A7KDOhs_z7ibCb3TLLQ/edit'>How To: Anti-Harassment Policy</a></li>
+           <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1wo_skwazuom_Zkp7AmCSjy5JD8Z5WYSbhr2IUmqWdQ0/edit'>Projects for new Brigade members</a></li>
           <li><a href='https://docs.google.com/document/d/1fR-uImfI3zbH__BhEzlsTgsKxgs21FK4C6zIwgeuWGw/edit?usp=sharing'>Websites, Meetups, and Social Media</a></li>
           <li><a href='https://docs.google.com/document/d/1r0aEcMwpMSwo4P-x6PJ5WV5y1ouciOkvRTiGATFJAmU/edit?usp=sharing'>Template: City Profile / City Assessment Document</a></li>
           <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/16GO5lnwEBKMFhhvewhKiNUcvVbTw5NtunVxhmCS6vw0/edit#heading=h.yqfbsdykacwf'>Template: Strategic Plan (Offical Brigades)</a></li>
