@@ -62,6 +62,7 @@
       <h3>Financial Resources</h3>
         <ul class="list-ruled">
           <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1Uc8cmQt9-c4DaMD0hvamQwG6cOxNtjFO5Mq6dcdQ9_o/edit'> Local Fundraising Guide</a></li>
+          <li><a href='https://docs.google.com/a/codeforamerica.org/spreadsheets/d/1ANUIfVr0M3kAFr5F6M-EnJt8dK4fMNRzBELlCfIiyUg/edit#gid=975530202'>Template: Budget Tracking Spreadsheet</a></li>
           <li><a href='https://docs.google.com/a/codeforamerica.org/forms/d/1smbubzz4J-L_KuRt4CTbVIzxf9vvG7ts7gNAbM01Lqw/viewform'>Brigade Support Request Form</a></li>
           <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1RKkjW0YZfysBZ6JiJgV8j7o61H_Sh9y9pUl9fZzI2Bw/edit#heading=h.lfbjsp7i33tk'>Support Reimbursement Process</a></li>
 
