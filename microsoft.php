@@ -9,10 +9,10 @@
     <div class="badge-heading badge-rocket badge-red">
       <h2>Explore what civic hacker groups across the country are working on.</h2>
 
-      <div id="map"></div>
+      <div id="msftmap"></div>
 
       <script>
-      var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', { scrollWheelZoom:false});
+      var map = L.mapbox.map('msftmap', 'codeforamerica.map-hhckoiuj', { scrollWheelZoom:false});
 
       $.getJSON('http://codeforamerica.org/api/organizations.geojson', function(response){
         $.each(response.features, function(i, org){
@@ -38,7 +38,7 @@
       </script>
 
       <style>
-        #map {
+        #msftmap {
           height:500px;
         }
       </style>
