@@ -7,7 +7,8 @@
     <h2>Here are three easy ways for you to help out with civic tech projects.</h2>
 
     <div class="badge-heading badge-rocket badge-red">
-      <h2>Explore what civic hacker groups across the country are working on.</h2>
+      <h2>Explore our volunteer civic hacker groups across the country</h2>
+      <p>Visit their sites and see what local projects they are working on.</p>
 
       <div id="msftmap"></div>
 
@@ -47,7 +48,7 @@
 
     <div class="badge-heading badge-glasses badge-teal">
       <h2>Get involved in a civic tech project</h2>
-      <p>Here are three most recently updated projects from our volunteer groups.</p>
+      <p>Here are three active projects from our volunteer groups. If one interests you, send them a message to get involved.</p>
 
       <div id="projects"></div>
 
@@ -84,8 +85,8 @@
     <div class="badge-heading badge-github badge-blue">
       <h2>Code for America Right Now</h2>
       <p>These are open GitHub Issues
-        from across the civic technology movement. Powered by the
-        <a href="http://codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
+        from across the civic technology movement that have the help wanted label. Powered by the
+        <a href="http://codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>. </p>
     </div>
     <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?org_type=Brigade&number=6" width="100%" height="500px" frameBorder="0" onLoad="resize();"> </iframe>
 
