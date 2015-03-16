@@ -88,7 +88,7 @@
         from across the civic technology movement that have the help wanted label. Powered by the
         <a href="http://codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>. </p>
     </div>
-    <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?org_type=Brigade&number=6" width="100%" height="500px" frameBorder="0" onLoad="resize();"> </iframe>
+    <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?org_type=Brigade&labels=help wanted&number=6" width="100%" height="500px" frameBorder="0" onLoad="resize();"> </iframe>
 
     <script>
     // Resize iframe to fit content
