@@ -1,6 +1,6 @@
 <? include('top.php'); ?>
 
-<section>
+<section id="msft">
   <div class="layout-semibreve">
     <h1>Hello Microsoft</h1>
 

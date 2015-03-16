@@ -24,6 +24,10 @@ body {
 	#brigades-list-mobile {
 		padding-top: 65px;
 	}
+
+	#msft {
+		padding-top: 50px;
+	}
 }
 
 @media (min-width: 40em) {
