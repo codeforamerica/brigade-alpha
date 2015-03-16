@@ -7,8 +7,8 @@
     <h2>Here are three easy ways for you to help out with civic tech projects.</h2>
 
     <div class="badge-heading badge-rocket badge-red">
-      <h2>Explore our volunteer civic hacker groups across the country</h2>
-      <p>Visit their sites and see what local projects they are working on.</p>
+      <h2>1. Explore our volunteer civic hacker groups</h2>
+      <p>These local <a href="/brigade">Brigade</a> chapters do great work for their cities. Join one of their hack nights to get involved.</p>
 
       <div id="msftmap"></div>
 
@@ -47,8 +47,8 @@
     </div>
 
     <div class="badge-heading badge-glasses badge-teal">
-      <h2>Get involved in a civic tech project</h2>
-      <p>Here are three active projects from our volunteer groups. If one interests you, send them a message to get involved.</p>
+      <h2>2. Get involved in a civic tech project</h2>
+      <p>Here are three active projects from across the civic technology movement. <a href="/brigade/projects">More Projects</a></p>
 
       <div id="projects"></div>
 
@@ -83,12 +83,15 @@
     </div>
 
     <div class="badge-heading badge-github badge-blue">
-      <h2>Code for America Right Now</h2>
+      <h2>3. Code for America Right Now</h2>
       <p>These are open GitHub Issues
-        from across the civic technology movement that have the help wanted label. Powered by the
-        <a href="http://codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>. </p>
+        from civic tech projects that have the help wanted label. Powered by the
+        <a href="http://codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
+
+        <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?org_type=Brigade&labels=help wanted&number=6" width="100%" height="500px" frameBorder="0" onLoad="resize();"> </iframe>
+
     </div>
-    <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?org_type=Brigade&labels=help wanted&number=6" width="100%" height="500px" frameBorder="0" onLoad="resize();"> </iframe>
+
 
     <script>
     // Resize iframe to fit content

@@ -17,6 +17,10 @@ body {
 	margin-bottom : 0px;
 }
 
+.badge-heading {
+	border-bottom: 0px;
+}
+
 @media (max-width: 40em) {
   #map, #overlay {
     display: none;
