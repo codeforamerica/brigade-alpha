@@ -32,7 +32,7 @@
         </li>
         <li class="form-field">
             <input type="hidden" name="user[location_id]" value="" /><!-- why is this here? -->
-            <button>Join</button>
+            <button onClick="ga('send', 'event', 'Brigade Sign Up', 'click', '', 1 );">Join</button>
         </li>
       </ul>
     </form>
