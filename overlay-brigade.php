@@ -29,15 +29,9 @@
     <button style="float: right" onclick="showBrigadeSignupForm(this)">Join</button>
 
 	<h2 id="brigade-name"><?= h($info['name']); ?></h2>
-	<p>
-        <a id="brigade-url" href="<?= h($info['website']); ?>" style="display: inline;"><?= h($info['website']); ?></a>
-	</p>
 
-    <!--
-	<p id="program-info">
-		The Brigade program helps local volunteer groups partner with government in an effort to enhance their communities. Brigades hold regular hack nights, events, advocate for open data, and deploy apps.
-	</p>
-	-->
+  <h4> <a id="brigade-url" href="<?= h($info['website']); ?>" style="display: inline;"><?= h($info['website']); ?></a> </h4>
+
 	<div id="brigade-item-lists">
         <? if($info['current_stories']) { ?>
             <h5>Current Stories</h4>
