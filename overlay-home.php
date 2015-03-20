@@ -9,13 +9,11 @@
 </p>
   </div>
 
-  <p>Find your local Brigade on the map to see what kind of work they do and join them.</p>
-
   <p>Want to start a new Brigade? Check out the <a href="<?= $base_url ?>/organize">Organize</a> page.</p>
 
   <div id="join-form">
     <h4>Want to get connected?</h4>
-    <p>We'll add you to our mailing list</p>
+
     <form action="<?= $base_url ?>/signup" method="POST" accept-charset="UTF-8">
       <ul class="list-form">
         <li class="form-field">
