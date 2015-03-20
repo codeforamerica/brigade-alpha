@@ -9,8 +9,6 @@
 </p>
   </div>
 
-  <p>Want to start a new Brigade? Check out the <a href="<?= $base_url ?>/organize">Organize</a> page.</p>
-
   <div id="join-form">
     <h4>Want to get connected?</h4>
 
@@ -34,6 +32,8 @@
         </li>
       </ul>
     </form>
+
+    <p>Want to start a new Brigade? Check out the <a href="<?= $base_url ?>/organize">Organize</a> page.</p>
 
     <p>If you are a member of government, join our <a href="https://codeforamerica.wufoo.com/forms/welcome-to-the-code-for-america-government-network/">Peer Network</a>.</p>
   </div>
