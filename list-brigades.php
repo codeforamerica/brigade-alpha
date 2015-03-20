@@ -74,7 +74,7 @@
       </ul>
       <input id="user_human_check_mobile" name="user[human_check]" size="50" type="hidden">
       <input name="utf8" type="hidden" value="✓">
-      <button id="join-button-mobile" style="display: none;">Join</button>
+      <button id="join-button-mobile" style="display: none;" onClick="ga('send', 'event', 'Brigade Sign Up', 'sign up', '', 1 );">Join</button>
     </form>
   </div>
 
