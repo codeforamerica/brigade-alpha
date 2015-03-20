@@ -56,7 +56,7 @@ $(function(){
         };
 
     var marker = new BrigadeMarker(new L.LatLng(lat, lon), {
-      icon: L.mapbox.marker.icon({'marker-symbol': 'town-hall', 'marker-color': color}),
+      icon: L.mapbox.marker.icon({'marker-symbol': 'rocket', 'marker-color': color}),
       title: name,
       brigade: brigade // Add Brigade data to marker
     });

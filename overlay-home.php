@@ -24,7 +24,7 @@
         </li>
         <li class="form-field">
             <label for="location">City</label>
-            <input name="location" type="text" placeholder="Tulsa, OK">
+            <input name="location" type="text" placeholder="Philadelphia, PA">
         </li>
         <li class="form-field">
             <input type="hidden" name="user[location_id]" value="" /><!-- why is this here? -->
