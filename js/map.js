@@ -17,7 +17,7 @@ $(function(){
     );
 
   map.legendControl.setPosition('topright');
-  map.legendControl.addLegend('<img src="http://localhost/~hackyourcity/brigade-alpha/images/red-marker.png" style="vertical-align: middle;"><strong>Official Brigade</strong>');
+  map.legendControl.addLegend('<img src="http://www.codeforamerica.org/brigade/images/red-marker.png" style="vertical-align: middle;"><strong>Official Brigade</strong>');
   map.zoomControl.setPosition('topright');
 
 
