@@ -64,13 +64,8 @@
             <input id="user_email_mobile" name="email" type="text" placeholder="benfranklin@codeforamerica.org" required>
         </li>
         <li class="form-field">
-            <label for="user_work_in_geovernment_mobile"><input id="user_work_in_government" name="work_in_government" type="checkbox" value="1">I work in government</label>
-        </li>
-        <li class="form-field">
-            <label>
-              <input id="user_willing_to_organize_true" name="source" type="checkbox" value="organizer" />
-              I want to lead a Brigade in my community!
-            </label>
+            <label for="location">City</label>
+            <input name="location" type="text" placeholder="Philadelphia, PA">
         </li>
         <select id="user_location_id_mobile" name="user[location_id]" style="display:none;">
           <option value></option>

@@ -76,9 +76,6 @@
                 <input name="email" type="email" placeholder="benfranklin@codeforamerica.org" required>
             </li>
             <li class="form-field">
-                <label><input name="work_in_government" type="checkbox" value="1"> I work in government</label>
-            </li>
-            <li class="form-field">
                 <input type="hidden" name="user[location_id]" value="" /><!-- why is this here? -->
                 <input type="hidden" name="brigade_url" value="<?= h($brigade_url) ?>" />
                 <button>Join</button>

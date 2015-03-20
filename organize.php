@@ -36,7 +36,7 @@
             <label for="location">City</label>
             <input name="location" type="text" placeholder="Tulsa, OK">
         </li>
-        <li class="form-field">
+        <li class="form-field" style="display:none;">
             <label>
               <input name="source" type="checkbox" value="organizer" checked/>
               I want to lead a Brigade in my community!
