@@ -1,10 +1,10 @@
 <? include('top.php'); ?>
 
-<section class="slab-black">
+<section class="slab-black" id="organize-video">
     <div class="layout-semibreve layout-centered">
       <figure>
         <iframe width="560" height="315" style="padding:1px;border:1px solid black;" src="//www.youtube.com/embed/_9-E7CLQX48?list=PL65XgbSILalW_PV2Cgmz7gOWY3YLwC87M" frameborder="0" allowfullscreen></iframe>
-      </figure> 
+      </figure>
     </div>
 </section>
 

@@ -32,6 +32,10 @@ body {
 	#msft {
 		padding-top: 50px;
 	}
+
+	#organize-video {
+		margin-top: 50px;
+	}
 }
 
 @media (min-width: 40em) {
