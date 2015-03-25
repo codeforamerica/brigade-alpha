@@ -8,8 +8,8 @@
 
     <h2>
       <ol>
-        <li>Copy the code from this template at <a href="https://raw.githubusercontent.com/codeforamerica/brigade-alpha/master/toolkits/template.php" target="_blank">https://github.com/codeforamerica/brigade-alpha/toolkits/template.php</a></li>
-        <li>Make a new file at <a href="https://github.com/codeforamerica/brigade-alpha/blob/master/toolkits/" target="_blank">https://github.com/codeforamerica/brigade-alpha/blob/master/toolkits</a></li>
+        <li>Copy the code from this template at <a href="https://raw.githubusercontent.com/codeforamerica/brigade-alpha/master/tools/template.php" target="_blank">https://github.com/codeforamerica/brigade-alpha/tools/template.php</a></li>
+        <li>Make a new file at <a href="https://github.com/codeforamerica/brigade-alpha/blob/master/tools/" target="_blank">https://github.com/codeforamerica/brigade-alpha/blob/master/tools</a></li>
         <li>Paste in the template code, then edit to your liking.</li>
         <li><img src="https://camo.githubusercontent.com/88f56d646f58cd9cb7f15283a39cf227d4cb3c21/687474703a2f2f692e67697068792e636f6d2f53495633696a41776b4e7439432e676966" /></li>
       </ol>
