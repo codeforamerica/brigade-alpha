@@ -45,7 +45,7 @@
       <h3>Partnerships</h3>
         <ul class="list-ruled">
       <li><a href='https://docs.google.com/document/d/1WtoE_Kfqcu73MCUOIXujrzTfqrQAW3DGt0sC8iKJ6Rw/edit?usp=sharing'>10 Ways to  Collaborate with Government</a></li>
-      <li><a href= https://docs.google.com/a/codeforamerica.org/document/d/1HtwcxiARA57TFI3wpeIMfE27adTa7TTJG-I12XepMLU/edit >Build Community Partnerships <br/> (Girl Develop It) </a></li>
+      <li><a href= https://drive.google.com/drive/#folders/0B263j4q7SRYOflhRU1lLMjNyVTdNcW45ZmJURG9nWTltZndlZGFUVm9DazkzWjdUMXltdjA>Build Community Partnerships <br/> (Template: Girl Develop It - but you can hack to fit any partnership!) </a></li>
 
         </ul>
 
