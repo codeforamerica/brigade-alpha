@@ -32,8 +32,8 @@
             <li>Get a facilitator and have leadership meetings outside of hack nights.</li>
             <li>Put in place an action plan.</li>
             <li>Note that leadership roles aren't about recognition - they are about hard work and an opportunity to do more, think bigger, and work harder for the organization.</li>
-</li>
           </ol>
+        </li>
         <li>Open Oakland developed a "SWAT" team to identify roles and people to fill them that would represent Oakland's community. They first identified functional areas, then added roles to cover that work, like partnerships, outreach, development. <a href="http://openoakland.org/jobs/">Visit Open Oakland's website</a> for position descriptions.</li>
         <li>Open Oakland engaged some seed funding from the Kapor Foundation to get <a href="https://twitter.com/nmsanchez">Nicole Sanchez</a> from Vaya Consulting to help them develop a process to recruit people.</li>
         <li>They did a lot of broad outreach to find new voices. The relationships among existing Open Oakland volunteers were already close, and they did not want the process to only engage their close associations as this would not help them reach more of Oakland. They used anonymous applications as much as possible, and couldn’t see each other’s hand-written notes or speculations or analysis. Nicole explained this controlled the process, kept our selection based on gut feedback, catalyzed by people’s observations which was a fair assessment. They didn’t know demographic info until they had ranked the roles. The leadership team only analyzed diversity after they had picked the best qualified folks [on paper] for the job. This process resulted in 11 new leaders, a majority of them people of color, several of them queer. However, Open Oakland contends they could have done better with gender diversity.</li>
