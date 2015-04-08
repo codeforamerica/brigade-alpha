@@ -95,6 +95,7 @@
             <li><a href="http://www.civicdata.com/">CivicData.com</a></li>
             <li><a href="https://readme.io/">README.io</a> - <a href="http://forum.codeforamerica.org/t/free-readme-io-donation-for-brigade-projects">Forum post</a></li>
             <li><a href="https://www.flowdock.com/">Flowdock</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/1_HfM2dLBZY0e8qEVzETDttiTGGrgkgF5dg6PdHEHTuk/edit#gid=0">Open Health Data Spreadsheet</a></li>
             <!-- <li><a href="#">OpenShift</a></li> -->
         </ul>
 
