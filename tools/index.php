@@ -32,7 +32,6 @@
         <li><a href='https://docs.google.com/document/d/1LIUcCLwmn-SR6_X93TOMIoIJOhNXd0t_27TAIOofdIo/edit?usp=sharing'>Branding Guidelines</a></li>
         <li><a href='https://docs.google.com/document/d/1OY0s8BJR9A2aW1ivlNACTbi0dWOh9njYpHp53G1shFs/edit'>Brigade Overview</a></li>
         <li><a href='https://docs.google.com/presentation/d/1MSyVMauTv4HcPcgXmF2l-Afzjw35UfieCj5mKDK7fvY/edit?usp=sharing'>Sample Intro Slide Deck</a></li>
-        <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1wo_skwazuom_Zkp7AmCSjy5JD8Z5WYSbhr2IUmqWdQ0/edit'>Projects for new Brigade members</a></li>
         <li><a href="http://www.codeforamerica.org/brigade/checkin/">Event check in tool</a> - <a href="https://github.com/codeforamerica/brigade-alpha/tree/master/checkin#brigade-checkins">More info</a></li>
      </ul>
 
@@ -67,7 +66,14 @@
           <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1RKkjW0YZfysBZ6JiJgV8j7o61H_Sh9y9pUl9fZzI2Bw/edit#heading=h.lfbjsp7i33tk'>Support Reimbursement Process</a></li>
 
         </ul>
-
+    
+        <h3>Projects</h3>
+        <ul class="list-ruled">
+            <li><a href='https://github.com/codeforamerica/project-ideas'>Health Project Ideas</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/1_HfM2dLBZY0e8qEVzETDttiTGGrgkgF5dg6PdHEHTuk/edit#gid=0">Open Health Data Spreadsheet</a></li>
+            <li><a href='https://docs.google.com/a/codeforamerica.org/document/d/1wo_skwazuom_Zkp7AmCSjy5JD8Z5WYSbhr2IUmqWdQ0/edit'>Projects for new Brigade members</a></li>
+        </ul>    
+        
         <h3>Logos</h3>
         <ul class="list-ruled">
             <li><li><a href="../images/new_logo.png"><img src="../images/new_logo.png" /></a></li>
@@ -95,7 +101,6 @@
             <li><a href="http://www.civicdata.com/">CivicData.com</a></li>
             <li><a href="https://readme.io/">README.io</a> - <a href="http://forum.codeforamerica.org/t/free-readme-io-donation-for-brigade-projects">Forum post</a></li>
             <li><a href="https://www.flowdock.com/">Flowdock</a></li>
-            <li><a href="https://docs.google.com/spreadsheets/d/1_HfM2dLBZY0e8qEVzETDttiTGGrgkgF5dg6PdHEHTuk/edit#gid=0">Open Health Data Spreadsheet</a></li>
             <!-- <li><a href="#">OpenShift</a></li> -->
         </ul>
 
