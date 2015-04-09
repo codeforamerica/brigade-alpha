@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="http://style.codeforamerica.org/style/css/layout.css" media="all and (min-width: 40em)">
 
     <!-- Need to use full link for hosting on gh-pages -->
-    <link rel="stylesheet" href="http://www.codeforamerica.org/brigade/css/style.css">
+    <link rel="stylesheet" href="<?= $base_url ?>/css/style.css">
 
     <link rel="apple-touch-icon-precomposed" href="/style/favicons/60x60/flag-red.png"/>
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    
+
     <link href='//api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
     <script src='//api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
 
