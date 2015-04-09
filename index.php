@@ -12,6 +12,10 @@
 
 <? include('list-brigades.php') ?>
 
+<div id="banner">
+    <h2><a href="http://hackforchange.org/">National Day of Civic Hacking - <span style="color:#399fd3">June 6th 2015</span> !</a></h2>
+</div>
+
 <div id="map"></div>
 
 <div id="overlay" class="slab-red">
