@@ -51,16 +51,16 @@
 
 <section class="slab-teal">
 
-    <div class="layout-semibreve layout-centered">
+    <div class="layout-semibreve">
 
        <h2>More resources</h2>
        <p>Here are some resources that Open Oakland shared with us.</p>
         <h3>
-      <ol>
+      <ul>
         <li><a href="https://docs.google.com/document/d/1mXJAno1oIF_chfr9I0C8wyNSF5_A8naQgBiS_gWr49g/edit?usp=sharing">Email for public recruitment</a></li>
         <li><a href="https://docs.google.com/document/d/1HXZhLbOk6peqyMFAufI0q0YX2F9JDFTCKq7u54pSGdM/edit?usp=sharing">Job descriptions</li>
         <li><a href="https://docs.google.com/document/d/1cQpZb7VBwHE7MlxGtIugjOoDm5m5Gs3wNNt3sph0eu8/edit?usp=sharing">Welcome email to the new team</a></li>
-      </ol>
+      </ul>
         </h3>
 
     </div>
