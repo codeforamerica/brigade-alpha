@@ -8,7 +8,7 @@
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/cVY0L4_BPrE" frameborder="0" allowfullscreen></iframe>
 
-<p>Check out the conversation we had with Spike and Ellie to learn about how they recruited for diverse leadership when building out their executive team.</p>
+<p>Check out the conversation we had with <a href="https://twitter.com/spjika">Spike</a>, <a href="https://twitter.com/ellietumbuan">Ellie</a>, and <a href="https://twitter.com/eddietejeda">Eddie</a> to learn how they recruited for diverse leadership when building the <a href="https://www.openoakland.org/">OpenOakland</a> executive team.</p>
 
   </div>
 
@@ -35,7 +35,7 @@
         </li>
         <li>Open Oakland developed a "SWAT" team to identify roles and people to fill them that would represent Oakland's community. They first identified functional areas, then added roles to cover that work, like partnerships, outreach, development. <a href="http://openoakland.org/jobs/">Visit Open Oakland's website</a> for position descriptions.</li>
         <li>Open Oakland used seed funding from the Kapor Foundation to get <a href="https://twitter.com/nmsanchez">Nicole Sanchez</a> from Vaya Consulting to help them develop a process to recruit leaders.</li>
-        <li>They did a lot of broad outreach to find new voices. The relationships among existing Open Oakland volunteers were already close, and they did not want the process to only engage their close associations as this would not help them reach more of Oakland. They used anonymous applications as much as possible, and couldn’t see each other’s hand-written notes or speculations or analysis. Nicole explained this controlled the process, kept our selection based on gut feedback, catalyzed by people’s observations which was a fair assessment. They didn’t know demographic info until they had ranked the roles. The leadership team only analyzed diversity after they had picked the best qualified folks [on paper] for the job. This process resulted in 11 new leaders, a majority of them people of color, several of them LGBTQ. However, Open Oakland contends they could have done better with gender diversity.</li>
+        <li>They did a lot of broad outreach to find new voices. The existing leadership did not want the process to only engage their close associations as this would not help them reach more of Oakland. They used anonymous applications as much as possible, and couldn’t see each other’s hand-written notes or analysis. Nicole explained that this controlled the process, keeping the selection based on gut reaction catalyzed by people’s observations which was a fair assessment. Selectors didn’t know demographic info until they had ranked the roles by applicant. Thus, the leadership team only analyzed diversity after they had picked the best qualified folks [on paper] for the job. This process resulted in 11 new leaders, a majority of them people of color, several of them LGBTQ. However, Open Oakland contends they could have done better with gender diversity.</li>
         <li>The big takeaway:
           <blockquote>
     <p>ELLIE: We were really thoughtful about it and learned a lot.</br>
